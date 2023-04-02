@@ -75,10 +75,12 @@ pd.set_option('display.max_rows', 500)
 
 # df.to_parquet('./data/shootings.parquet')
 
+# Read from parquet
 df = pd.read_parquet('./data/shootings.parquet')
-df = df.query("Injured != 800")
-# df = df.dropna()
-# df.to_parquet('./data/shootings.parquet')
+
+df = df.query('Dead > 2')
+df = df.dropna()
+df.to_parquet('./data/shootings.parquet')
 
 fig = px.scatter_mapbox(df, lat="Latitude", lon="Longitude", color="Dead", zoom=3, mapbox_style='open-street-map', size="Dead")
 fig.show()
