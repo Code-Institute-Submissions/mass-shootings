@@ -2,7 +2,7 @@
 
 Welcome USER_NAME,
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+
 
 ## Reminders
 
@@ -32,4 +32,8 @@ Happy coding!
 
 # Credits
 
-[Assigning a tuple to multiple DataFrame Columns](https://stackoverflow.com/questions/44269926/how-to-efficiently-apply-tuple-to-multiple-columns-in-a-pandas-dataframe-simulta)
+Regular Expressions built using [Regex builder](https://pythex.org/)
+
+[How to efficiently apply tuple to multiple columns in a pandas dataframe simultaneously](https://stackoverflow.com/questions/44269926/how-to-efficiently-apply-tuple-to-multiple-columns-in-a-pandas-dataframe-simulta)
+
+[Meet Plotly Mapbox. Best Choice for Geographic Data Visualization](https://towardsdatascience.com/meet-plotly-mapbox-best-choice-for-geographic-data-visualization-599b514bcd9a)

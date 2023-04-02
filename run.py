@@ -63,7 +63,6 @@ pd.set_option('display.max_rows', 500)
 
 # # Data cleanup
 # df = df.drop(['Year', 'Events', 'Victims'], axis='columns')
-# df = df.dropna()
 # df['Date'] = df['Date'].apply(clean_date)
 # df = df.query("Date != 'January 1923'")
 # df['Date'] = pd.to_datetime(df['Date'])
@@ -71,16 +70,27 @@ pd.set_option('display.max_rows', 500)
 # df = df.query("Injured != 'unknown'")
 # df['Injured'] = df['Injured'].apply(clean_number)
 # df['Total'] = df['Total'].apply(clean_number)
-# df[['Latitude','Longitude']] = df['Location'].apply(get_location).apply(pd.Series)
 
+# Solution to cast tuple into two columns efficiently proposed by DYZ 
+# here: https://stackoverflow.com/questions/44269926/how-to-efficiently-apply-tuple-to-multiple-columns-in-a-pandas-dataframe-simulta
+# df[['Latitude','Longitude']] = df['Location'].apply(get_location).apply(pd.Series)
+# df = df.query('Dead > 2')
+# df = df.dropna()
 # df.to_parquet('./data/shootings.parquet')
+
 
 # Read from parquet
 df = pd.read_parquet('./data/shootings.parquet')
 
-df = df.query('Dead > 2')
-df = df.dropna()
-df.to_parquet('./data/shootings.parquet')
 
-fig = px.scatter_mapbox(df, lat="Latitude", lon="Longitude", color="Dead", zoom=3, mapbox_style='open-street-map', size="Dead")
+# Code based on the tutorial "Meet Plotly Mapbox. Best Choice for Geographic Data Visualization"
+fig = px.scatter_mapbox(df, 
+                        lat="Latitude", 
+                        lon="Longitude", 
+                        color="Dead", 
+                        hover_name='Location',
+                        hover_data=['Date', 'Dead', 'Injured'],
+                        zoom=3, 
+                        mapbox_style='open-street-map', 
+                        size="Dead")
 fig.show()
