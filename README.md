@@ -29,3 +29,7 @@ The deployment terminal is set to 80 columns by 24 rows. That means that each li
 
 -----
 Happy coding!
+
+# Credits
+
+[Assigning a tuple to multiple DataFrame Columns](https://stackoverflow.com/questions/44269926/how-to-efficiently-apply-tuple-to-multiple-columns-in-a-pandas-dataframe-simulta)
