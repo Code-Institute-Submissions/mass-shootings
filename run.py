@@ -180,13 +180,17 @@ scatter_map = px.scatter_mapbox(df,
                         lon="Longitude", 
                         title="Map of approximate shootings' locations in the US",
                         color="Dead",
+                        color_continuous_scale='solar',
                         hover_name='Location',
                         hover_data={'Date': False, 
                                     'Latitude': False,
-                                    'Longitude': False },
+                                    'Longitude': False,
+                                    'Dead': True,
+                                    'Total': True },
                         labels={
-                            "Dead": "Number of fatal victims",
-                            "Injured": "Number of non-fatal victims"
+                            'Total': 'Total Victims',
+                            "Dead": "Fatal Victims",
+                            "Injured": "Non-Fatal Victims"
                         },
                         zoom=3, 
                         mapbox_style='open-street-map', 
@@ -199,27 +203,43 @@ rates_plot = px.bar(rates,
                     title="Deaths Per Million By State",
                     hover_name='State',
                     color='Deaths_Per_1M',
-                    color_continuous_scale='RdYlGn_r', 
-                    range_color=[0,35],
+                    color_continuous_scale='Hot_r',
+                    range_color=[-25,40],
                     labels={
                      "Deaths_Per_1M": "Deaths Per Million",
                      "State": "State"
                     },
-                    height=800)
+                    height=900)
+rates_plot.update_coloraxes(showscale=False)
 
-rates_plot.show()
+rates_plot.update_layout(
+    yaxis=dict(
+        automargin=True
+    ))
 
 month_plot = px.bar(month, 
                     x='Month',
                     y='Shootings',
                     title="Shooting Incidents by Month of occurrence",
-                    hover_name='Shootings', 
+                    hover_name='Shootings',
                     color='Shootings',
                     color_continuous_scale='reds',
+                    range_color=[20,35],
                     range_y=[0, 37],
                     labels={
                      "Month": "Month",
                      "Shootings": "Number of Shootings"
                     }, 
                     height=500)
-month_plot.show()
+month_plot.update_coloraxes(showscale=False)
+# Create dashboard with all three plots using
+app = dash.Dash(__name__)
+
+layout = html.Div(children=[
+                            html.H1('Mass shootings in the US', style={'text-align': 'center', 'font-family': 'Verdana'}),
+                            dcc.Graph(id='example-graph', figure=scatter_map),
+                            dcc.Graph(id='example-graph', figure=rates_plot),
+                            dcc.Graph(id='example-graph', figure=month_plot)
+                            ])
+app.layout = layout
+app.run_server(debug=True, port=8000)
