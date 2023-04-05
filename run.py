@@ -1,22 +1,38 @@
-import os 
+# Filesystem
+import os
+from dash import dash
+from dash import html
+from dash import dcc
 
+
+# Requests, time and regex
 import requests
 import time
 import re
+
+# Scraping and Data Structure
 import pandas as pd
 from bs4 import BeautifulSoup
 from pprint import pprint
+
+# Plotting
 import plotly.express as px
+
 import colorcet as cc
 from geopy.geocoders import Nominatim
 
+# Basic Settings
 pd.options.plotting.backend = "plotly"
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 6)
 
+COLOR_SCALE = 'Redor'
+
+# File path to save scraped data to disk
 dir = './data'
 file_name = 'shootings.parquet'
 file_path = os.path.join(dir, file_name)
+
 
 df = pd.DataFrame()
 
@@ -126,7 +142,7 @@ def scrape_wikipedia(df):
     df.to_parquet(file_path)
     return df
 
-def calculate_rates_per_state(df):
+def get_rates_per_state(df):
     census = get_population()
     df['State'] = df['Location'].apply(get_state)
     df = df.dropna()
@@ -135,12 +151,59 @@ def calculate_rates_per_state(df):
     result = result.dropna()
     result['Victims_Per_1M'] = result['Total'] * 1_000_000 / result['Population']
     result['Deaths_Per_1M']  =  result['Dead'] * 1_000_000 / result['Population']
+    result.sort_values(by=['State'])
     return result
+
+def get_shootings_by_month(df):
+    """
+    Returns a DataFrame containing a count of shooting incidents grouped by month.
+    """
+    df['Month'] = df['Date'].dt.month_name()
+    df['Month_Number'] = df['Date'].dt.month
+
+    result = df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
+    result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
+    
+    return result  
 
 if os.path.exists(file_path):
     df = pd.read_parquet(file_path)
 else:
     df = scrape_wikipedia(df)
 
-print(calculate_rates_per_state(df))
+rates = get_rates_per_state(df)
 
+month = get_shootings_by_month(df)
+
+scatter_map = px.scatter_mapbox(df, 
+                        lat="Latitude", 
+                        lon="Longitude", 
+                        title="Map of approximate shootings' locations in the US",
+                        color="Dead",
+                        hover_name='Location',
+                        hover_data={'Date': False, 
+                                    'Latitude': False,
+                                    'Longitude': False },
+                        labels={
+                            "Dead": "Number of fatal victims",
+                            "Injured": "Number of non-fatal victims"
+                        },
+                        zoom=3, 
+                        mapbox_style='open-street-map', 
+                        size="Dead",
+                        height=700)
+
+rates_plot = px.bar(rates, 
+                    x='Deaths_Per_1M',
+                    y='State',
+                    title="Deaths Per Million By State",
+                    hover_name='State',
+                    color='Deaths_Per_1M',
+                    color_continuous_scale='RdYlGn_r', 
+                    range_color=[0,35],
+                    labels={
+                     "Deaths_Per_1M": "Deaths Per Million",
+                     "State": "State"
+                    },
+                    height=800)
+rates_plot.show()
