@@ -206,4 +206,20 @@ rates_plot = px.bar(rates,
                      "State": "State"
                     },
                     height=800)
+
 rates_plot.show()
+
+month_plot = px.bar(month, 
+                    x='Month',
+                    y='Shootings',
+                    title="Shooting Incidents by Month of occurrence",
+                    hover_name='Shootings', 
+                    color='Shootings',
+                    color_continuous_scale='reds',
+                    range_y=[0, 37],
+                    labels={
+                     "Month": "Month",
+                     "Shootings": "Number of Shootings"
+                    }, 
+                    height=500)
+month_plot.show()
