@@ -172,26 +172,29 @@ rates = get_rates_per_state(df)
 month = get_shootings_by_month(df)
 
 scatter_map = px.scatter_mapbox(df, 
-                        lat="Latitude", 
-                        lon="Longitude", 
-                        title="Map of approximate shootings' locations in the US",
-                        color="Dead",
-                        color_continuous_scale='solar',
-                        hover_name='Location',
-                        hover_data={'Date': False, 
-                                    'Latitude': False,
-                                    'Longitude': False,
-                                    'Dead': True,
-                                    'Total': True },
-                        labels={
-                            'Total': 'Total Victims',
-                            "Dead": "Fatal Victims",
-                            "Injured": "Non-Fatal Victims"
-                        },
-                        zoom=3, 
-                        mapbox_style='open-street-map', 
-                        size="Dead",
-                        height=700)
+                                lat="Latitude", 
+                                lon="Longitude", 
+                                color="Dead",
+                                color_continuous_scale='Hot_r',
+                                range_color=[-60, 50],
+                                hover_name='Location',
+                                hover_data={'Date': False, 
+                                            'Latitude': False,
+                                            'Longitude': False,
+                                            'Dead': True,
+                                            'Total': True },
+                                labels={
+                                    'Total': 'Total Victims',
+                                    "Dead": "Fatal Victims",
+                                    "Injured": "Non-Fatal Victims"
+                                },
+                                zoom=3, 
+                                mapbox_style='open-street-map', 
+                                size="Dead",
+                                height=700)
+
+scatter_map.update_coloraxes(showscale=False)
+scatter_map.update_layout(margin=dict(l=10, t=20, r=10, b=10))
 
 rates_plot = px.bar(rates, 
                     x='Deaths_Per_1M',
@@ -205,7 +208,7 @@ rates_plot = px.bar(rates,
                      "Deaths_Per_1M": "Deaths Per Million",
                      "State": "State"
                     },
-                    height=900)
+                    height=700)
 rates_plot.update_coloraxes(showscale=False)
 
 rates_plot.update_layout(
@@ -233,10 +236,21 @@ app = dash.Dash(__name__)
 server = app.server
 
 layout = html.Div(children=[
-                            html.H1('Mass shootings in the US', style={'text-align': 'center', 'font-family': 'Verdana'}),
-                            dcc.Graph(id='example-graph', figure=scatter_map),
-                            dcc.Graph(id='example-graph', figure=rates_plot),
-                            dcc.Graph(id='example-graph', figure=month_plot)
+                                html.H1('Mass shootings in the US', style={'text-align': 'center', 'font-family': 'Verdana', 'font-weight': '300'}),
+                                html.Div(children=[
+                                    html.H2('Map of shootings\' approximate locations', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
+                                    dcc.Graph(id='scatter-map', figure=scatter_map)
+                                ]),
+
+                                html.Div(children=[
+                                    html.H2('Deaths Per Million By State', style={'text-align': 'left', 'font-family': 'Verdana'}), 
+                                    dcc.Graph(id='rates-plot', figure=rates_plot)
+                                ]),
+
+                                html.Div(children=[
+                                    html.H2('Shooting Incidents by Month of occurrence', style={'text-align': 'left', 'font-family': 'Verdana'}), 
+                                    dcc.Graph(id='month-plot', figure=month_plot)
+                                ])                            
                             ])
 
 
