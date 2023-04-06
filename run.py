@@ -4,7 +4,6 @@ from dash import dash
 from dash import html
 from dash import dcc
 
-
 # Requests, time and regex
 import requests
 import time
@@ -13,12 +12,9 @@ import re
 # Scraping and Data Structure
 import pandas as pd
 from bs4 import BeautifulSoup
-from pprint import pprint
 
 # Plotting
 import plotly.express as px
-
-import colorcet as cc
 from geopy.geocoders import Nominatim
 
 # Basic Settings
