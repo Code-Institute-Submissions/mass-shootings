@@ -230,6 +230,7 @@ month_plot = px.bar(month,
 month_plot.update_coloraxes(showscale=False)
 # Create dashboard with all three plots using
 app = dash.Dash(__name__)
+server = app.server
 
 layout = html.Div(children=[
                             html.H1('Mass shootings in the US', style={'text-align': 'center', 'font-family': 'Verdana'}),
@@ -243,5 +244,6 @@ app.layout = layout
 
 if __name__ == '__main__':
     app.run_server(debug=True)
+
 
 # test heroku deployment
