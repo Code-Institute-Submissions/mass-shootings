@@ -241,5 +241,9 @@ layout = html.Div(children=[
                             dcc.Graph(id='example-graph', figure=rates_plot),
                             dcc.Graph(id='example-graph', figure=month_plot)
                             ])
+
+
 app.layout = layout
-app.run_server(debug=True, port=8000)
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
