@@ -243,12 +243,12 @@ layout = html.Div(children=[
                                 ]),
 
                                 html.Div(children=[
-                                    html.H2('Deaths Per Million By State', style={'text-align': 'left', 'font-family': 'Verdana'}), 
+                                    html.H2('Deaths Per Million By State', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
                                     dcc.Graph(id='rates-plot', figure=rates_plot)
                                 ]),
 
                                 html.Div(children=[
-                                    html.H2('Shooting Incidents by Month of occurrence', style={'text-align': 'left', 'font-family': 'Verdana'}), 
+                                    html.H2('Shooting Incidents by Month of occurrence', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
                                     dcc.Graph(id='month-plot', figure=month_plot)
                                 ])                            
                             ])
