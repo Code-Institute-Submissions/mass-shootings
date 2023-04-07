@@ -22,7 +22,7 @@ pd.options.plotting.backend = "plotly"
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 6)
 
-COLOR_SCALE = 'Redor'
+COLOR_SCALE = ['#ffba08', '#faa307', '#f48c06', '#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f']
 
 # File path to save scraped data to disk
 dir = './data'
@@ -175,8 +175,8 @@ scatter_map = px.scatter_mapbox(df,
                                 lat="Latitude", 
                                 lon="Longitude", 
                                 color="Dead",
-                                color_continuous_scale='Hot_r',
-                                range_color=[-60, 50],
+                                color_continuous_scale=COLOR_SCALE,
+                                range_color=[0, 65],
                                 hover_name='Location',
                                 hover_data={'Date': False, 
                                             'Latitude': False,
@@ -188,13 +188,14 @@ scatter_map = px.scatter_mapbox(df,
                                     "Dead": "Fatal Victims",
                                     "Injured": "Non-Fatal Victims"
                                 },
-                                zoom=3, 
+                                zoom=2.5, 
                                 mapbox_style='open-street-map', 
                                 size="Dead",
-                                height=700)
+                                height=700,
+                                template='plotly_dark')
 
-scatter_map.update_coloraxes(showscale=False)
 scatter_map.update_layout(margin=dict(l=10, t=20, r=10, b=10))
+
 
 rates_plot = px.bar(rates, 
                     x='Deaths_Per_1M',
@@ -202,14 +203,14 @@ rates_plot = px.bar(rates,
                     title="Deaths Per Million By State",
                     hover_name='State',
                     color='Deaths_Per_1M',
-                    color_continuous_scale='Hot_r',
-                    range_color=[-25,40],
+                    color_continuous_scale=COLOR_SCALE,
+                    range_color=[0, 30],
                     labels={
                      "Deaths_Per_1M": "Deaths Per Million",
                      "State": "State"
                     },
-                    height=700)
-rates_plot.update_coloraxes(showscale=False)
+                    height=700,
+                    template='plotly_dark')
 
 rates_plot.update_layout(
     yaxis=dict(
@@ -222,42 +223,42 @@ month_plot = px.bar(month,
                     title="Shooting Incidents by Month of occurrence",
                     hover_name='Shootings',
                     color='Shootings',
-                    color_continuous_scale='reds',
-                    range_color=[20,35],
+                    color_continuous_scale=COLOR_SCALE,
+                    range_color=[20, 40],
                     range_y=[0, 37],
                     labels={
                      "Month": "Month",
                      "Shootings": "Number of Shootings"
                     }, 
-                    height=500)
-month_plot.update_coloraxes(showscale=False)
+                    height=500,
+                    template='plotly_dark')
+
 # Create dashboard with all three plots using
 app = dash.Dash(__name__)
 server = app.server
 
+start_year = df['Date'].tail(1).dt.year.item()
+end_year = df['Date'].head(1).dt.year.item()
+
 layout = html.Div(children=[
-                                html.H1('Mass shootings in the US', style={'text-align': 'center', 'font-family': 'Verdana', 'font-weight': '300'}),
+                                html.H1(f'Mass shootings in the US from {start_year} to {end_year}'),
                                 html.Div(children=[
-                                    html.H2('Map of shootings\' approximate locations', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
+                                    html.H2('Map of shootings\' approximate locations'), 
                                     dcc.Graph(id='scatter-map', figure=scatter_map)
                                 ]),
 
                                 html.Div(children=[
-                                    html.H2('Deaths Per Million By State', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
+                                    html.H2('Deaths Per Million By State'), 
                                     dcc.Graph(id='rates-plot', figure=rates_plot)
                                 ]),
 
                                 html.Div(children=[
-                                    html.H2('Shooting Incidents by Month of occurrence', style={'text-align': 'left', 'font-family': 'Verdana', 'font-weight': '300'}), 
+                                    html.H2('Shooting Incidents by Month of occurrence'), 
                                     dcc.Graph(id='month-plot', figure=month_plot)
                                 ])                            
                             ])
-
 
 app.layout = layout
 
 if __name__ == '__main__':
     app.run_server(debug=True)
-
-
-# test heroku deployment
