@@ -20,17 +20,17 @@ from geopy.geocoders import Nominatim
 # Basic Settings
 pd.options.plotting.backend = "plotly"
 pd.set_option('display.max_rows', 500)
-pd.set_option('display.max_columns', 6)
+pd.set_option('display.max_columns', 10)
 
-COLOR_SCALE = ['#ffba08', '#faa307', '#f48c06', '#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f']
+COLOR_SCALE = ['#f48c06', '#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f']
 
 # File path to save scraped data to disk
-dir = './data'
+dir_name = './data'
 file_name = 'shootings.parquet'
-file_path = os.path.join(dir, file_name)
+file_path = os.path.join(dir_name, file_name)
 
 
-df = pd.DataFrame()
+shootings_df = pd.DataFrame()
 
 def get_population():
     """
@@ -53,7 +53,7 @@ def get_state (location):
     try:
         state = re.search(r'\w* \w+$', location).group(0).strip()
         return state
-    except Exception as e:
+    except AttributeError:
         return None
 
 def clean_date(date_str):
@@ -62,14 +62,13 @@ def clean_date(date_str):
     """
     try:
         date_str = date_str.replace('–', '-')
-        pattern = '\s{0,1}((\-.*,)|(\-\d{0,2}))|(\-\s\w*\s)'
+        pattern = r'\s{0,1}((\-.*,)|(\-\d{0,2}))|(\-\s\w*\s)'
         date_str = re.sub(pattern, ',', date_str)
-        pattern = '(?<=\d{4}), \d{4}'
+        pattern = r'(?<=\d{4}), \d{4}'
         date_str = re.sub(pattern, '', date_str)
     except Exception as e:
-        # print(e)
-        pass
-    
+        print(e)
+
     return date_str
 
 def clean_number(number):
@@ -94,10 +93,10 @@ def get_location(search):
         print(location)
         time.sleep(1.2)
         return (location.latitude, location.longitude)
-    except Exception as e:
+    except Exception:
         return (None, None)
 
-def scrape_wikipedia(df):
+def scrape_wikipedia(shootings_df):
     """
     Scrapes wikipedia page for list of US mass shootings.
     Stores the information in the dataframe passed as argument.
@@ -113,36 +112,36 @@ def scrape_wikipedia(df):
         new_df = pd.read_html(str(table))
         new_df = new_df[0]
         if 'Events' not in new_df:
-            df = pd.concat([df, new_df], ignore_index=True)
+            shootings_df = pd.concat([shootings_df, new_df], ignore_index=True)
 
     # Data cleanup
     ## Format date column
-    df['Date'] = df['Date'].apply(clean_date)
-    df = df.query("Date != 'January 1923'")
-    df['Date'] = pd.to_datetime(df['Date'])
+    shootings_df['Date'] = shootings_df['Date'].apply(clean_date)
+    shootings_df = shootings_df.query("Date != 'January 1923'")
+    shootings_df['Date'] = pd.to_datetime(shootings_df['Date'])
     
     ## Remove wikipedia citation from numbers
-    df['Dead'] = df['Dead'].apply(clean_number)
-    df = df.query("Injured != 'unknown'")
-    df['Injured'] = df['Injured'].apply(clean_number)
-    df['Total'] = df['Total'].apply(clean_number)
+    shootings_df['Dead'] = shootings_df['Dead'].apply(clean_number)
+    shootings_df = shootings_df.query("Injured != 'unknown'")
+    shootings_df['Injured'] = shootings_df['Injured'].apply(clean_number)
+    shootings_df['Total'] = shootings_df['Total'].apply(clean_number)
 
     ## Exclude shootings with less than 3 victims and drop NaNs
-    df = df.query('Total > 2')
-    df = df.dropna()
+    shootings_df = shootings_df.query('Total > 2')
+    shootings_df = shootings_df.dropna()
     
     # Get latitude and longitude with geopy package
-    df[['Latitude','Longitude']] = df['Location'].apply(get_location).apply(pd.Series)
+    shootings_df[['Latitude','Longitude']] = shootings_df['Location'].apply(get_location).apply(pd.Series)
 
     # Save dataframe to file
-    df.to_parquet(file_path)
-    return df
+    shootings_df.to_parquet(file_path)
+    return shootings_df
 
-def get_rates_per_state(df):
+def get_rates_per_state(shootings_df):
     census = get_population()
-    df['State'] = df['Location'].apply(get_state)
-    df = df.dropna()
-    result = df.groupby('State')[['Total', 'Dead']].sum()
+    shootings_df['State'] = shootings_df['Location'].apply(get_state)
+    shootings_df = shootings_df.dropna()
+    result = shootings_df.groupby('State')[['Total', 'Dead']].sum()
     result = pd.merge(result, census, on=['State'], how='left')
     result = result.dropna()
     result['Victims_Per_1M'] = result['Total'] * 1_000_000 / result['Population']
@@ -150,36 +149,35 @@ def get_rates_per_state(df):
     result.sort_values(by=['State'])
     return result
 
-def get_shootings_by_month(df):
+def get_shootings_by_month(shootings_df):
     """
     Returns a DataFrame containing a count of shooting incidents grouped by month.
     """
-    df['Month'] = df['Date'].dt.month_name()
-    df['Month_Number'] = df['Date'].dt.month
+    shootings_df['Month'] = shootings_df['Date'].dt.month_name()
+    shootings_df['Month_Number'] = shootings_df['Date'].dt.month
 
-    result = df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
+    result = shootings_df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
     result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
     
     return result  
 
 if os.path.exists(file_path):
-    df = pd.read_parquet(file_path)
+    shootings_df = pd.read_parquet(file_path)
 else:
-    df = scrape_wikipedia(df)
+    shootings_df = scrape_wikipedia(shootings_df)
 
-rates = get_rates_per_state(df)
+rates = get_rates_per_state(shootings_df)
 
-month = get_shootings_by_month(df)
+month = get_shootings_by_month(shootings_df)
 
-scatter_map = px.scatter_mapbox(df, 
+scatter_map = px.scatter_mapbox(shootings_df, 
                                 lat="Latitude", 
                                 lon="Longitude", 
                                 color="Dead",
                                 color_continuous_scale=COLOR_SCALE,
                                 range_color=[0, 65],
                                 hover_name='Location',
-                                hover_data={'Date': False, 
-                                            'Latitude': False,
+                                hover_data={'Latitude': False,
                                             'Longitude': False,
                                             'Dead': True,
                                             'Total': True },
@@ -206,7 +204,7 @@ rates_plot = px.bar(rates,
                     color_continuous_scale=COLOR_SCALE,
                     range_color=[0, 30],
                     labels={
-                     "Deaths_Per_1M": "Deaths Per Million",
+                     "Deaths_Per_1M": "Deaths Per 1M",
                      "State": "State"
                     },
                     height=700,
@@ -228,7 +226,7 @@ month_plot = px.bar(month,
                     range_y=[0, 37],
                     labels={
                      "Month": "Month",
-                     "Shootings": "Number of Shootings"
+                     "Shootings": "#Shootings"
                     }, 
                     height=500,
                     template='plotly_dark')
@@ -237,8 +235,8 @@ month_plot = px.bar(month,
 app = dash.Dash(__name__)
 server = app.server
 
-start_year = df['Date'].tail(1).dt.year.item()
-end_year = df['Date'].head(1).dt.year.item()
+start_year = shootings_df['Date'].tail(1).dt.year.item()
+end_year = shootings_df['Date'].head(1).dt.year.item()
 
 layout = html.Div(children=[
                                 html.H1(f'Mass shootings in the US from {start_year} to {end_year}'),
@@ -261,4 +259,4 @@ layout = html.Div(children=[
 app.layout = layout
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
