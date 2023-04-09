@@ -1,15 +1,16 @@
-# Filesystem
+# Filesystem and Dashboard App
 import os
-from dash import dash
+import dash
 from dash import html
 from dash import dcc
+import dash_bootstrap_components as dbc
 
 # Requests, time and regex
 import requests
 import time
 import re
 
-# Scraping and Data Structure
+# Scraping and Data Structures
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -193,6 +194,8 @@ scatter_map = px.scatter_mapbox(shootings_df,
                                 template='plotly_dark')
 
 scatter_map.update_layout(margin=dict(l=10, t=20, r=10, b=10))
+scatter_map.update_coloraxes(colorbar_title_side='right')
+scatter_map.update_coloraxes(colorbar_ticklabelposition='inside bottom')
 
 
 rates_plot = px.bar(rates, 
@@ -232,7 +235,7 @@ month_plot = px.bar(month,
                     template='plotly_dark')
 
 # Create dashboard with all three plots using
-app = dash.Dash(__name__)
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 start_year = shootings_df['Date'].tail(1).dt.year.item()
@@ -259,4 +262,4 @@ layout = html.Div(children=[
 app.layout = layout
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
