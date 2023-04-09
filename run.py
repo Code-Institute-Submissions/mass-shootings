@@ -10,6 +10,8 @@ import requests
 import time
 import re
 
+from pprint import pprint
+
 # Scraping and Data Structures
 import pandas as pd
 from bs4 import BeautifulSoup
@@ -30,7 +32,6 @@ dir_name = './data'
 file_name = 'shootings.parquet'
 file_path = os.path.join(dir_name, file_name)
 
-
 shootings_df = pd.DataFrame()
 
 def get_population():
@@ -44,6 +45,10 @@ def get_population():
     census = census.drop(['a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l'], axis=1)
     census['State'] = census['State'].str.strip('.')
 
+    # census = pd.read_csv('data/apportionment.csv')
+    # census = census[['Name', 'Year', 'Resident Population']]
+    # census = census.groupby('Year').value_counts().reset_index()
+    # census = census.rename(columns={'Name': 'State', 'Resident Population': 'Population'})
     return census
 
 def get_state (location):
@@ -145,19 +150,21 @@ def get_rates_per_state(shootings_df):
     result = shootings_df.groupby('State')[['Total', 'Dead']].sum()
     result = pd.merge(result, census, on=['State'], how='left')
     result = result.dropna()
+    # print(result.head(20))
+    # exit()
     result['Victims_Per_1M'] = result['Total'] * 1_000_000 / result['Population']
     result['Deaths_Per_1M']  =  result['Dead'] * 1_000_000 / result['Population']
     result.sort_values(by=['State'])
     return result
 
-def get_shootings_by_month(shootings_df):
+def get_shootings_by_month(df):
     """
     Returns a DataFrame containing a count of shooting incidents grouped by month.
     """
-    shootings_df['Month'] = shootings_df['Date'].dt.month_name()
-    shootings_df['Month_Number'] = shootings_df['Date'].dt.month
+    df['Month'] = df['Date'].dt.month_name()
+    df['Month_Number'] = df['Date'].dt.month
 
-    result = shootings_df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
+    result = df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
     result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
     
     return result  
@@ -190,49 +197,43 @@ scatter_map = px.scatter_mapbox(shootings_df,
                                 zoom=2.5, 
                                 mapbox_style='open-street-map', 
                                 size="Dead",
-                                height=700,
-                                template='plotly_dark')
-
-scatter_map.update_layout(margin=dict(l=10, t=20, r=10, b=10))
-scatter_map.update_coloraxes(colorbar_title_side='right')
-scatter_map.update_coloraxes(colorbar_ticklabelposition='inside bottom')
-
+                                height=500)
 
 rates_plot = px.bar(rates, 
                     x='Deaths_Per_1M',
                     y='State',
-                    title="Deaths Per Million By State",
                     hover_name='State',
                     color='Deaths_Per_1M',
                     color_continuous_scale=COLOR_SCALE,
                     range_color=[0, 30],
+                    # range_y=[-2, 51],
                     labels={
                      "Deaths_Per_1M": "Deaths Per 1M",
                      "State": "State"
                     },
-                    height=700,
-                    template='plotly_dark')
+                    height=700)
 
-rates_plot.update_layout(
-    yaxis=dict(
-        automargin=True
-    ))
+rates_plot.update_layout(yaxis=dict(automargin=True))
 
-month_plot = px.bar(month, 
-                    x='Month',
-                    y='Shootings',
-                    title="Shooting Incidents by Month of occurrence",
-                    hover_name='Shootings',
+month_plot = px.bar(month[::-1], 
+                    y='Month',
+                    x='Shootings',
+                    text_auto='.2s',
                     color='Shootings',
                     color_continuous_scale=COLOR_SCALE,
                     range_color=[20, 40],
-                    range_y=[0, 37],
+                    range_y=[-0.5, 11.5],
                     labels={
                      "Month": "Month",
-                     "Shootings": "#Shootings"
+                     "Shootings": " Number of Shooting Incidents"
                     }, 
-                    height=500,
-                    template='plotly_dark')
+                    height=700)
+
+plots = [scatter_map, rates_plot, month_plot]
+
+for plot in plots:
+    plot.update(layout_coloraxis_showscale=False)
+    plot.update_layout(margin=dict(l=10, t=10, r=10, b=10))
 
 # Create dashboard with all three plots using
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -241,25 +242,66 @@ server = app.server
 start_year = shootings_df['Date'].tail(1).dt.year.item()
 end_year = shootings_df['Date'].head(1).dt.year.item()
 
-layout = html.Div(children=[
-                                html.H1(f'Mass shootings in the US from {start_year} to {end_year}'),
-                                html.Div(children=[
-                                    html.H2('Map of shootings\' approximate locations'), 
-                                    dcc.Graph(id='scatter-map', figure=scatter_map)
-                                ]),
 
-                                html.Div(children=[
-                                    html.H2('Deaths Per Million By State'), 
-                                    dcc.Graph(id='rates-plot', figure=rates_plot)
-                                ]),
+layout = dbc.Container(
+    [
+        html.Div([
+            html.Div([
+                html.H1(f'Mass shootings in the US from {start_year} to {end_year} From Wikipedia', className='display-6 mb-4'),
+                html.Div([
+                    html.Div([
+                        html.Div([
+                            html.H5('Map of shootings\' approximate locations', className='card-title'),
+                            dcc.Graph(id='scatter-map', figure=scatter_map)
+                        ], className='card-body')
+                    ], className='card')
+                ], className='col-12')                
+            ], className='row p-3'),
+            html.Div([
+                html.Div([
+                    html.Div([
+                        html.Div([
+                            html.H5('Death rate per 1M', className='card-title'), 
+                            dcc.Graph(id='rates-plot', figure=rates_plot)
+                        ], className='card-body')
+                    ], className='card')
+                ], className='col-6'),
 
-                                html.Div(children=[
-                                    html.H2('Shooting Incidents by Month of occurrence'), 
-                                    dcc.Graph(id='month-plot', figure=month_plot)
-                                ])                            
-                            ])
+                html.Div([
+                    html.Div([
+                        html.Div([
+                            html.H5('Shooting Incidents by Month', className='card-title'), 
+                            dcc.Graph(id='month-plot', figure=month_plot)
+                        ], className='card-body')
+                    ], className='card')
+                ], className='col-6')
+            ], className='row p-3')
+        ])
+        
+    ], 
+    fluid=True
+)
+
+
+# layout = html.Div([
+#                         html.H1(f'Mass shootings in the US from {start_year} to {end_year}'),
+#                         html.Div([
+#                             html.H2('Map of shootings\' approximate locations'), 
+#                             dcc.Graph(id='scatter-map', figure=scatter_map)
+#                         ]),
+
+#                         html.Div([
+#                             html.H2('Deaths Per Million By State'), 
+#                             dcc.Graph(id='rates-plot', figure=rates_plot)
+#                         ]),
+
+#                         html.Div([
+#                             html.H2('Shooting Incidents by Month of occurrence'), 
+#                             dcc.Graph(id='month-plot', figure=month_plot)
+#                         ])
+#                     ])
 
 app.layout = layout
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)
