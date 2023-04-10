@@ -9,6 +9,7 @@ import dash_bootstrap_components as dbc
 import requests
 import time
 import re
+import calendar
 
 from pprint import pprint
 
@@ -23,7 +24,7 @@ from geopy.geocoders import Nominatim
 # Basic Settings
 pd.options.plotting.backend = "plotly"
 pd.set_option('display.max_rows', 500)
-pd.set_option('display.max_columns', 10)
+# pd.set_option('display.max_columns', 6)
 
 COLOR_SCALE = ['#f48c06', '#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f']
 
@@ -88,148 +89,153 @@ def clean_number(number):
     number = int(number)
     return number
 
+def clean_address(address):
+    pattern = r'\d+.\W*([B|b]lock of)\W'
+    print(address)
+    try:
+        address = re.sub(pattern, '', address)
+    except Exception as e:
+        print(address)
+
+    return address
+
 def get_location(search):
     """
     Returns a tuple containting the latitude and longitude of the searched address
     or returns a tuple (None, None) if no location is found.
     """
-    try:
+    if search != 'nan':
         geolocator = Nominatim(user_agent="shootings")
-        location = geolocator.geocode(search)
-        print(location)
-        time.sleep(1.2)
-        return (location.latitude, location.longitude)
-    except Exception:
-        return (None, None)
+        
+        try:
+            location = geolocator.geocode(search)
+            time.sleep(1)
+            print((location.latitude, location.longitude))
+            return (location.latitude, location.longitude)
+        except Exception as error:
+            try:
+                search = search.split(',')[1:3]
+                return get_location(search)
+            except Exception as error:
+                print(error)
+    return (None, None)
 
-def scrape_wikipedia(shootings_df):
+def get_shootings(df):
     """
-    Scrapes wikipedia page for list of US mass shootings.
-    Stores the information in the dataframe passed as argument.
+    Returns a pandas DataFrame containning mass shootings in the US. 
+    1. Loads data from 'data/mass_shootings.csv' file. 
+    2. Searches coordinates for locations of the incidents. 
+    3. Cleans up and prepares the data for analysis
     """
-    # Scrape Wikipedia for list of mass shootings in the US. 
-    url = 'https://en.wikipedia.org/wiki/List_of_mass_shootings_in_the_United_States'
-    req = requests.get(url)
-    page = BeautifulSoup(req.content, 'lxml')
-    # Select tables from all years containing the shooting. 
-    tables = page.find_all('table', attrs={'class' : 'wikitable'})
 
-    for table in tables:
-        new_df = pd.read_html(str(table))
-        new_df = new_df[0]
-        if 'Events' not in new_df:
-            shootings_df = pd.concat([shootings_df, new_df], ignore_index=True)
+    df = pd.read_csv('data/gun_violence.csv')
 
-    # Data cleanup
-    ## Format date column
-    shootings_df['Date'] = shootings_df['Date'].apply(clean_date)
-    shootings_df = shootings_df.query("Date != 'January 1923'")
-    shootings_df['Date'] = pd.to_datetime(shootings_df['Date'])
+    # Filter shootings with more than 3 victims, drop unnecessary columns and missing values.
+    df = df.query('n_killed + n_injured > 3')
+    df = df.drop(['incident_id', 'incident_url', 'source_url','incident_url_fields_missing',
+                  'congressional_district', 'gun_stolen','incident_characteristics',
+                  'notes', 'participant_name', 'participant_relationship', 'participant_status',
+                  'participant_type', 'sources', 'state_house_district', 'state_senate_district', 
+                  'location_description', 'participant_age', 'participant_age_group',
+                  'participant_gender', 'n_guns_involved', 'gun_type' ],
+                  axis=1)
+    df = df.dropna()
     
-    ## Remove wikipedia citation from numbers
-    shootings_df['Dead'] = shootings_df['Dead'].apply(clean_number)
-    shootings_df = shootings_df.query("Injured != 'unknown'")
-    shootings_df['Injured'] = shootings_df['Injured'].apply(clean_number)
-    shootings_df['Total'] = shootings_df['Total'].apply(clean_number)
-
-    ## Exclude shootings with less than 3 victims and drop NaNs
-    shootings_df = shootings_df.query('Total > 2')
-    shootings_df = shootings_df.dropna()
+    # Data cleanup and pre processing
+    df['date'] = pd.to_datetime(df['date']).dt.date
+    df = df.sort_values(by='date')
+    df['total'] = df['n_killed'] + df['n_injured']
     
-    # Get latitude and longitude with geopy package
-    shootings_df[['Latitude','Longitude']] = shootings_df['Location'].apply(get_location).apply(pd.Series)
+    # Clean address string and get latitude and longitude with geopy package
+    df['full_address'] = df['address'] + ', ' + df['city_or_county'] + ', ' + df['state']
 
     # Save dataframe to file
-    shootings_df.to_parquet(file_path)
-    return shootings_df
+    df.to_parquet(file_path)
+    return df
 
-def get_rates_per_state(shootings_df):
-    census = get_population()
-    shootings_df['State'] = shootings_df['Location'].apply(get_state)
-    shootings_df = shootings_df.dropna()
-    result = shootings_df.groupby('State')[['Total', 'Dead']].sum()
-    result = pd.merge(result, census, on=['State'], how='left')
-    result = result.dropna()
-    # print(result.head(20))
-    # exit()
-    result['Victims_Per_1M'] = result['Total'] * 1_000_000 / result['Population']
-    result['Deaths_Per_1M']  =  result['Dead'] * 1_000_000 / result['Population']
-    result.sort_values(by=['State'])
+def get_shootings_by_state(df):
+    """
+    Returns a DataFrame containing counting of shootings grouped by state.
+    """
+    result = df.groupby(['state']).size().to_frame('shootings').reset_index()
+    # result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
     return result
 
 def get_shootings_by_month(df):
     """
     Returns a DataFrame containing a count of shooting incidents grouped by month.
     """
-    df['Month'] = df['Date'].dt.month_name()
-    df['Month_Number'] = df['Date'].dt.month
-
-    result = df.groupby(['Month', 'Month_Number']).size().to_frame('Shootings').reset_index()
-    result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
     
-    return result  
+    df['month_name'] = df['date'].apply(lambda x: calendar.month_name[x.month])
+    df['month_number'] = df['date'].apply(lambda x: x.month)
+
+    result = df.groupby(['month_name', 'month_number']).size().to_frame('shootings').reset_index()
+    result = result.sort_values(by=['month_number']).reset_index(drop=True)
+    
+    return result
+
 
 if os.path.exists(file_path):
     shootings_df = pd.read_parquet(file_path)
 else:
-    shootings_df = scrape_wikipedia(shootings_df)
+    shootings_df = get_shootings(shootings_df)
 
-rates = get_rates_per_state(shootings_df)
 
-month = get_shootings_by_month(shootings_df)
+state_df = get_shootings_by_state(shootings_df)
+
+month_df = get_shootings_by_month(shootings_df)
 
 scatter_map = px.scatter_mapbox(shootings_df, 
-                                lat="Latitude", 
-                                lon="Longitude", 
-                                color="Dead",
+                                lat="latitude", 
+                                lon="longitude", 
+                                color="n_killed",
                                 color_continuous_scale=COLOR_SCALE,
-                                range_color=[0, 65],
-                                hover_name='Location',
-                                hover_data={'Latitude': False,
-                                            'Longitude': False,
-                                            'Dead': True,
-                                            'Total': True },
+                                range_color=[shootings_df['n_killed'].min(), shootings_df['n_killed'].max()],
+                                hover_name='full_address',
+                                hover_data={'latitude': False,
+                                            'longitude': False,
+                                            'n_killed': True,
+                                            'total': True },
                                 labels={
-                                    'Total': 'Total Victims',
-                                    "Dead": "Fatal Victims",
-                                    "Injured": "Non-Fatal Victims"
+                                    'total': 'Total Victims',
+                                    "n_killed": "Fatal Victims",
+                                    "n_injured": "Non-Fatal Victims"
                                 },
-                                zoom=2.5, 
+                                zoom=3, 
                                 mapbox_style='open-street-map', 
-                                size="Dead",
+                                size="total",
                                 height=500)
 
-rates_plot = px.bar(rates, 
-                    x='Deaths_Per_1M',
-                    y='State',
-                    hover_name='State',
-                    color='Deaths_Per_1M',
+state_plot = px.bar(state_df, 
+                    x='shootings',
+                    y='state',
+                    hover_name='state',
+                    color='shootings',
                     color_continuous_scale=COLOR_SCALE,
-                    range_color=[0, 30],
+                    range_color=[state_df['shootings'].min(), state_df['shootings'].max()],
                     # range_y=[-2, 51],
                     labels={
-                     "Deaths_Per_1M": "Deaths Per 1M",
-                     "State": "State"
+                     "shootings": "Shootings by State",
                     },
-                    height=700)
+                    height=800)
 
-rates_plot.update_layout(yaxis=dict(automargin=True))
+state_plot.update_layout(yaxis=dict(automargin=True))
 
-month_plot = px.bar(month[::-1], 
-                    y='Month',
-                    x='Shootings',
+month_plot = px.bar(month_df[::-1], 
+                    y='month_name',
+                    x='shootings',
                     text_auto='.2s',
-                    color='Shootings',
+                    color='shootings',
                     color_continuous_scale=COLOR_SCALE,
-                    range_color=[20, 40],
+                    range_color=[month_df['shootings'].min(), month_df['shootings'].max()],
                     range_y=[-0.5, 11.5],
                     labels={
-                     "Month": "Month",
-                     "Shootings": " Number of Shooting Incidents"
+                     "month_name": "Month",
+                     "shootings": " Number of Shooting Incidents"
                     }, 
-                    height=700)
+                    height=800)
 
-plots = [scatter_map, rates_plot, month_plot]
+plots = [scatter_map, state_plot, month_plot]
 
 for plot in plots:
     plot.update(layout_coloraxis_showscale=False)
@@ -239,19 +245,19 @@ for plot in plots:
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
-start_year = shootings_df['Date'].tail(1).dt.year.item()
-end_year = shootings_df['Date'].head(1).dt.year.item()
+start_year = shootings_df['date'].head(1).item().year
+end_year = shootings_df['date'].tail(1).item().year
 
 
 layout = dbc.Container(
     [
         html.Div([
             html.Div([
-                html.H1(f'Mass shootings in the US from {start_year} to {end_year} From Wikipedia', className='display-6 mb-4'),
+                html.H1(f'Mass shootings in the US from {start_year} to {end_year}', className='display-6 mb-4'),
                 html.Div([
                     html.Div([
                         html.Div([
-                            html.H5('Map of shootings\' approximate locations', className='card-title'),
+                            html.H5('Shootings Map', className='card-title'),
                             dcc.Graph(id='scatter-map', figure=scatter_map)
                         ], className='card-body')
                     ], className='card')
@@ -261,8 +267,8 @@ layout = dbc.Container(
                 html.Div([
                     html.Div([
                         html.Div([
-                            html.H5('Death rate per 1M', className='card-title'), 
-                            dcc.Graph(id='rates-plot', figure=rates_plot)
+                            html.H5('Shootings by State', className='card-title'), 
+                            dcc.Graph(id='rates-plot', figure=state_plot)
                         ], className='card-body')
                     ], className='card')
                 ], className='col-6'),
@@ -270,7 +276,7 @@ layout = dbc.Container(
                 html.Div([
                     html.Div([
                         html.Div([
-                            html.H5('Shooting Incidents by Month', className='card-title'), 
+                            html.H5('Shooting by Month', className='card-title'), 
                             dcc.Graph(id='month-plot', figure=month_plot)
                         ], className='card-body')
                     ], className='card')
