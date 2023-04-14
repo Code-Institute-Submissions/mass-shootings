@@ -1,7 +1,7 @@
 # Filesystem and Dashboard App
 import os
 import dash
-from dash import html, dcc, Input, Output, State
+from dash import html, dcc, Input, Output, State, dash_table
 
 import dash_bootstrap_components as dbc
 
@@ -25,7 +25,6 @@ from geopy.geocoders import Nominatim
 
 # Basic Settings
 pd.options.plotting.backend = "plotly"
-pd.set_option('display.max_rows', 500)
 
 COLOR_SCALE = ['#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f', '#370617']
 
@@ -34,7 +33,10 @@ dir_name = './data'
 file_name = 'shootings.parquet'
 file_path = os.path.join(dir_name, file_name)
 
-shootings_df = pd.DataFrame()
+global shootings_df
+global state_df
+global month_df
+
 
 def get_population():
     """
@@ -48,53 +50,6 @@ def get_population():
     census['State'] = census['State'].str.strip('.')
 
     return census
-
-def get_state (location):
-    """
-    Extracts and returns the State name for a given location. 
-    Returns None if an error occurs
-    """
-    try:
-        state = re.search(r'\w* \w+$', location).group(0).strip()
-        return state
-    except AttributeError:
-        return None
-
-def clean_date(date_str):
-    """
-    Returns date with only starting date of the event, removes bad formatting. 
-    """
-    try:
-        date_str = date_str.replace('–', '-')
-        pattern = r'\s{0,1}((\-.*,)|(\-\d{0,2}))|(\-\s\w*\s)'
-        date_str = re.sub(pattern, ',', date_str)
-        pattern = r'(?<=\d{4}), \d{4}'
-        date_str = re.sub(pattern, '', date_str)
-    except Exception as e:
-        print(e)
-
-    return date_str
-
-def clean_number(number):
-    """
-    Strips citation text and returns first number where more than 1 figure is present. 
-    """
-    pattern = r'\[\w\s\d*\]'
-    number = re.sub(pattern, '', str(number))
-    number = number.split('–')[0]
-    number = number.split('+')[0]
-    number = int(number)
-    return number
-
-def clean_address(address):
-    pattern = r'\d+.\W*([B|b]lock of)\W'
-    print(address)
-    try:
-        address = re.sub(pattern, '', address)
-    except Exception as e:
-        print(address)
-
-    return address
 
 def get_location(search):
     """
@@ -170,6 +125,9 @@ def get_shootings_by_month(df):
 # PLOTS
 ## MAP PLOT
 def get_map_plot(df):
+    """
+    Generates a map plot using the dataframe given.
+    """
     plt = px.scatter_mapbox(
         df, 
         lat="latitude", 
@@ -195,10 +153,15 @@ def get_map_plot(df):
         height=500
     )
     plt.update_layout(mapbox_style="carto-darkmatter")
+    plt.update(layout_coloraxis_showscale=False)
+    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
     return plt
 
 ## BAR PLOT BY STATE
 def get_state_plot(df):
+    """
+    Generates a bar plot by state using the dataframe given.
+    """
     plt = px.bar(
         df, 
         x='shootings',
@@ -213,10 +176,15 @@ def get_state_plot(df):
         height=800
     )
     plt.update_layout(yaxis=dict(automargin=True))
+    plt.update(layout_coloraxis_showscale=False)
+    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
     return plt    
 
 ## BAR PLOT BY MONTH
 def get_month_plot(df):
+    """
+    Generates a bar plot by month using the dataframe given.
+    """
     plt = px.bar(
         df[::-1], 
         y='month_name',
@@ -230,8 +198,10 @@ def get_month_plot(df):
             "month_name": "Month",
             "shootings": " Number of Shooting Incidents"
         }, 
-        height=800
+        height=600
     )
+    plt.update(layout_coloraxis_showscale=False)
+    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
     return plt
 
 
@@ -246,16 +216,15 @@ state_plot = get_state_plot(state_df)
 scatter_map = get_map_plot(shootings_df)
 month_plot = get_month_plot(month_df)
 
-plots = [scatter_map, state_plot, month_plot]
+# plots = [scatter_map, state_plot, month_plot]
 
-for plot in plots:
-    plot.update(layout_coloraxis_showscale=False)
-    plot.update_layout(margin=dict(l=10, t=10, r=10, b=10))
+# for plot in plots:
+#     plot.update(layout_coloraxis_showscale=False)
+#     plot.update_layout(margin=dict(l=10, t=10, r=10, b=10))
 
-# Creates a dashboard app using Dash
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+# CREATES DASH APP
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.PULSE])
 server = app.server
-
 
 start_year = shootings_df['date'].head(1).item().year
 end_year = shootings_df['date'].tail(1).item().year
@@ -283,88 +252,125 @@ date_picker = dcc.DatePickerSingle(
 )
 
 input_address = dbc.FormFloating([
-    dbc.Input(id='form-address', type='text', placeholder='Address', size='sm', required=True),
-    dbc.Label('Address', size='sm'),
+    dbc.Input(id='form-address', type='text', placeholder='Address', required=True),
+    dbc.Label('Address'),
 ])
 
 input_injured = dbc.FormFloating([
-    dbc.Input(id='form-injured', type='number', placeholder='Injured', size='sm', step='1', required=True),
-    dbc.Label('Injured', size='sm'),
+    dbc.Input(id='form-injured', type='number', placeholder='Injured', step='1', required=True),
+    dbc.Label('Injured'),
 ])
 
 input_killed = dbc.FormFloating([
-    dbc.Input(id='form-killed', type='number', placeholder='Killed', size='sm', step='1', required=True),
-    dbc.Label('Killed', size='sm')
+    dbc.Input(id='form-killed', type='number', placeholder='Killed', step='1', required=True),
+    dbc.Label('Killed')
 ])
 
-btn_save = dbc.Button('Save', color='danger', outline=True, className='me-1 btn-lg', id='form-save')
+btn_save = dbc.Button('Save', color='danger', className='me-1 btn-lg', id='form-save')
 
-
-# DASHBOARD LAYOUT
-layout = dbc.Container(
-    [
+# DASHBOARD PAGE LAYOUT
+# MAP TAB
+map_tab = dbc.Card([
+    dbc.CardBody([
         html.Div([
-            dbc.Card([
-                dbc.CardBody([
-                    html.H4("Record Shooting", className="card-title d-inline"),
-                    
-                    dbc.Row([
-                        dbc.Col([
-                            date_picker
-                            
-                        ], className='col-12')
-                    ], className='mb-3 mt-3'),
-                    dbc.Row([
-                        dbc.Col([
-                            input_address
-                        ], className='d-flex align-items-center col-2'),
-                        dbc.Col([
-                            input_injured
-                        ], className='d-flex align-items-center justify-content-center col-4'),
-                        dbc.Col([
-                            input_killed
-                        ], className='d-flex align-items-center justify-content-center col-4'),
-                        dbc.Col([
-                            btn_save
-                        ], className='d-flex align-items-center justify-content-end col-2')
-                    ])   
-                ]),
-                dbc.Alert(children='', color='warning', id='form-alert', is_open=False, duration=4000, className='m-2' ),
-            ], className='m-3 d-inline-block'),
-            
-
-            html.Div([
-                html.H1(f'Mass shootings in the US from {start_year} to {end_year}', className='display-6 mb-4'),
-                html.Div([
-                    html.Div([
-                        html.Div([
-                            html.H5('Shootings Map', className='card-title'),
-                            dcc.Graph(id='scatter-map', figure=scatter_map)
-                        ], className='card-body')
-                    ], className='card')
-                ], className='col-12')                
-            ], className='row p-3'),
-            html.Div([
-                html.Div([
-                    html.Div([
-                        html.Div([
-                            html.H5('Number of Shootings by State', className='card-title'), 
-                            dcc.Graph(id='state-plot', figure=state_plot)
-                        ], className='card-body')
-                    ], className='card')
-                ], className='col-6'),
-
-                html.Div([
-                    html.Div([
-                        html.Div([
-                            html.H5('Number of Shooting by Month', className='card-title'), 
-                            dcc.Graph(id='month-plot', figure=month_plot)
-                        ], className='card-body')
-                    ], className='card')
-                ], className='col-6')
-            ], className='row p-3')
+            html.H5('Shootings Map', className='card-title'),
+            dcc.Graph(id='scatter-map', figure=scatter_map)
         ])
-        
+    ], className='card-body')
+], className='card')
+
+# STATE TAB
+state_tab = dbc.Card([
+    dbc.CardBody([
+        html.Div([
+            html.H5('Number of Shootings by State', className='card-title'), 
+            dcc.Graph(id='state-plot', figure=state_plot)
+        ])
+    ], className='card-body')
+], className='card')
+
+# MONTH TAB
+month_tab = dbc.Card([
+    dbc.CardBody([
+        html.Div([
+            html.H5('Number of Shooting by Month', className='card-title'), 
+            dcc.Graph(id='month-plot', figure=month_plot)
+        ])
+    ], className='card-body')
+], className='card')
+
+# RECORDS TAB
+records_tab = html.Div([
+    dbc.Card([
+        dbc.CardBody([
+            html.H4("Add New Shooting", className="card-title"),
+            
+            dbc.Row([
+                dbc.Col([
+                    date_picker   
+                ], className='col-12')
+            ], className='mb-3 mt-3'),
+
+            dbc.Row([
+                dbc.Col([
+                    input_address
+                ], className='col-7'),
+                dbc.Col([
+                    input_injured
+                ], className='d-flex align-items-center justify-content-center col-2'),
+                dbc.Col([
+                    input_killed
+                ], className='d-flex align-items-center justify-content-center col-2'),
+                dbc.Col([
+                    btn_save
+                ], className='d-flex align-items-center justify-content-end col-1')
+            ]),
+
+            dbc.Alert(
+                children='', 
+                color='warning', 
+                id='form-alert', 
+                is_open=False, 
+                duration=4000, 
+                className='m-2'
+            )
+        ]),
+    ]),
+
+    dbc.Card([
+        dbc.CardBody([
+            html.H4("Shootings", className="card-title"),
+            dash_table.DataTable(
+                shootings_df.to_dict('records'), 
+                [{"name": i, "id": i} for i in shootings_df.columns],
+                style_cell={
+                    'overflow': 'hidden',
+                    'textOverflow': 'ellipsis',
+                    'maxWidth': 0
+                }
+            )
+        ])
+    ], className='card mt-3')
+], className='m-3')
+
+tabs = dbc.Tabs(
+    [
+        dbc.Tab(map_tab, label='Map', tab_id='map-tab', activeTabClassName='dark'),
+        dbc.Tab(state_tab, label='Shootings by State', tab_id='state-tab'),
+        dbc.Tab(month_tab, label='Shootings by Month', tab_id='month-tab'),
+        dbc.Tab(records_tab, label='Shootings List', tab_id='records-tab')
+    ], 
+    id='tabs', 
+    active_tab='map-tab'
+)
+
+layout = dbc.Container([
+        dbc.Card([
+            dbc.CardBody([
+                html.H1(f'Mass shootings in the US from {start_year} to {end_year}', className='card-title mb-4'),
+                tabs
+            ])
+        ], className='card mt-3')
     ], fluid=True)
 
 app.layout = layout
@@ -378,45 +384,87 @@ app.layout = layout
     Output(component_id='state-plot',  component_property='figure'),
     Output(component_id='month-plot',  component_property='figure'),
 
-    Input(component_id='form-save', component_property='n_clicks'),
-    [State(component_id='form-date', component_property='date')],
+    Output(component_id='form-address', component_property='value'),
+    Output(component_id='form-date',    component_property='date'),
+    Output(component_id='form-injured', component_property='value'),
+    Output(component_id='form-killed',  component_property='value'),
+
+    Input(component_id='form-save',     component_property='n_clicks'),
+    [State(component_id='form-date',    component_property='date')],
     [State(component_id='form-address', component_property='value')],
     [State(component_id='form-injured', component_property='value')],
-    [State(component_id='form-killed', component_property='value')],
+    [State(component_id='form-killed',  component_property='value')],
     prevent_initial_call=True
 )
-def validate_form (n_clicks, date_value, address_value, injured_value, killed_value):
-
+def record_shooting (n_clicks, date_value, address_value, injured_value, killed_value):
+    """
+    Validates user inpout, fetch geo coordinates and adds shooting to dataset.
+    """
     fields = [date_value, address_value, injured_value, killed_value]
 
     for field in fields:
         if field is None:
-            return 'All fields are required.', True
-    
-    location = get_location(address_value)
+            return (
+                'All fields are required.', 
+                True, 
+                get_map_plot(shootings_df), 
+                get_state_plot(state_df), 
+                get_month_plot(month_df),
+                fields[0],
+                fields[1],
+                fields[2],
+                fields[3]
+            )
 
+    
+    # GET GEOCODE AND EXTRACT VALUES TO ADD TO DATASET
+    location = get_location(address_value)
     location_arr = location[0].split(',')
     
-    address = location_arr[0] + location_arr[1]
-    city_or_county = location_arr[-4].strip()
-    state = location_arr[-3].strip()
-    country = location_arr[-1].strip()
-    full_address = f'{address}, {city_or_county}, {state}, {country}'
+    address         = location_arr[0] + location_arr[1]
+    city_or_county  = location_arr[-4].strip()
+    state           = location_arr[-3].strip()
+    country         = location_arr[-1].strip()
+    full_address    = f'{address}, {city_or_county}, {state}, {country}'
 
-    if(country.lower() != 'united states' and 
-       country.lower() != 'usa' and
-       country.lower() != 'u.s.a.' and 
-       country.lower() != 'united states of america'):
-       return 'Address must be in the United States.', True
+    if (country.lower() != 'united states' and 
+        country.lower() != 'usa' and
+        country.lower() != 'u.s.a.' and 
+        country.lower() != 'united states of america'):
+        return (
+            'Address must be in the United States.', 
+            True, 
+            get_map_plot(shootings_df), 
+            get_state_plot(state_df), 
+            get_month_plot(month_df),
+            fields[0],
+            fields[1],
+            fields[2],
+            fields[3]
+        )
 
     injured_value = int(injured_value)
     killed_value = int(killed_value)
     total = injured_value + killed_value
 
-    date_value = pd.to_datetime(date_value).date()
+    # FORMATTING DATE
+    try:
+        date_value = pd.to_datetime(date_value).date()
+        month_value = calendar.month_name[date_value.month]
+        month_number_value = date_value.month
+    except Exception:
+        return (
+            'Invalid date format.', 
+            True, 
+            get_map_plot(shootings_df), 
+            get_state_plot(state_df), 
+            get_month_plot(month_df),
+            fields[0],
+            fields[1],
+            fields[2],
+            fields[3]
+        )
 
-    month_value = calendar.month_name[date_value.month]
-    month_number_value = date_value.month
 
     row = {
         'date': [date_value], 
@@ -437,15 +485,22 @@ def validate_form (n_clicks, date_value, address_value, injured_value, killed_va
     df = pd.concat([shootings_df, row], ignore_index=True)
     df.reset_index()
 
-    print(row)
-    print(file_path)
     df.to_parquet(file_path)
 
-    print(df.tail(2))
     state_df = get_shootings_by_state(df)
     month_df = get_shootings_by_month(df)
 
-    return '', False, get_map_plot(df), get_state_plot(state_df), get_month_plot(month_df)
+    return (
+        '', 
+        False, 
+        get_map_plot(df), 
+        get_state_plot(state_df), 
+        get_month_plot(month_df),
+        '',
+        '',
+        '',
+        ''
+    )
 
 if __name__ == '__main__':
     app.run_server(debug=True)
