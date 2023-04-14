@@ -34,6 +34,11 @@ Happy coding!
 
 Regular Expressions built using [Regex builder](https://pythex.org/)
 
+Regex to match last two words in a sentence - by StackOverflow user [harrymc](https://superuser.com/questions/1518208/regex-match-the-last-4-words-from-any-sentence-lines)
+
 [How to efficiently apply tuple to multiple columns in a pandas dataframe simultaneously](https://stackoverflow.com/questions/44269926/how-to-efficiently-apply-tuple-to-multiple-columns-in-a-pandas-dataframe-simulta)
 
 [Meet Plotly Mapbox. Best Choice for Geographic Data Visualization](https://towardsdatascience.com/meet-plotly-mapbox-best-choice-for-geographic-data-visualization-599b514bcd9a)
+
+Change dataset from wiki scrape to Gun Violence Archive
+Change source from wiki scrape to kaggle dataset
