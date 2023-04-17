@@ -5,19 +5,12 @@ from dash import html, dcc, Input, Output, State, dash_table
 
 import dash_bootstrap_components as dbc
 
-# Requests, time and regex
-import requests
-import time
+# Date time and calendar
 from datetime import date
-import re
 import calendar
 
-from pprint import pprint
-
-# Scraping and Data Structures
+# Data Manipulation
 import pandas as pd
-import numpy as np
-from bs4 import BeautifulSoup
 
 # Plotting
 import plotly.express as px
@@ -41,8 +34,6 @@ file_name = 'shootings.csv'
 file_path = os.path.join(dir_name, file_name)
 
 global shootings_df
-global state_df
-global month_df
 
 
 def get_population():
@@ -74,7 +65,7 @@ def get_location(search):
     try:
         location = geolocator.geocode(search)
     except Exception as e:
-        print(e)
+        pass
 
     geolocator.geocode(search)
     return location
@@ -108,7 +99,6 @@ def get_shootings():
     df['full_address'] = df['address'] + ', ' +\
         df['city_or_county'] + ', ' + df['state']
 
-    print(df.columns)
     # Save dataframe to file
     return df
 
@@ -195,7 +185,7 @@ def get_day_plot(df):
         range_color=[grouped_df['count'].min(), grouped_df['count'].max()],
         range_y=[0, grouped_df['count'].max() + 1],
         labels={
-            "date": "Date",
+            "date": "Days",
             "count": "Number of Shooting Incidents"
         },
         height=600)
@@ -331,7 +321,6 @@ def create_tab(components):
 
 
 def create_table(df):
-    print(df.columns)
     return dash_table.DataTable(
             df[::-1].to_dict('records'),
             [{"name": i, "id": i} for i in df.columns],
@@ -442,7 +431,12 @@ layout = dbc.Container([
                          className='card-title mb-4'),
                 tabs
             ])
-        ], className='card mt-3')
+        ], className='card mt-3'),
+        html.Footer([
+            dcc.Markdown('''
+                Powered by [Dash / Plotly](https://dash.plotly.com/).
+                ''')
+        ], className='d-flex justify-content-center m-5')
     ], fluid=True)
 
 app.layout = layout
@@ -472,9 +466,12 @@ def record_shooting(n_clicks,
     fields = [date_value, address_value, injured_value, killed_value]
 
     for field in fields:
-        if field is None:
+        if field is None or\
+           int(injured_value) < 0 or\
+           int(killed_value) < 0:
             return (
-                'All fields are required.',
+                'All fields are required and\
+                negative numbers are not allowed.',
                 True,
                 create_table(shootings_df)
             )
@@ -491,31 +488,32 @@ def record_shooting(n_clicks,
         full_address = f'{address}, {city_or_county}, {state}, {country}'
     except Exception as e:
         return (
-            'Address must be a valid Google Maps address in the United States.',
+            'Address must be a valid Google Maps\
+            address in the United States.',
             True,
             create_table(shootings_df)
         )
 
     if (country.lower() != 'united states' and
-        country.lower() != 'usa' and
-        country.lower() != 'u.s.a.' and
-        country.lower() != 'united states of america'):
+            country.lower() != 'usa' and
+            country.lower() != 'u.s.a.' and
+            country.lower() != 'united states of america'):
         return (
             'Address must be in the United States.',
             True,
             create_table(shootings_df)
         )
-    try:    
+    try:
         injured_value = int(injured_value)
         killed_value = int(killed_value)
         total = injured_value + killed_value
-    except ValueError: 
+    except ValueError:
         return (
-            'Injured and Killed are required and must be integers',
+            'Injured and Killed are required and\
+            must be non-negative integers.',
             True,
             create_table(shootings_df)
         )
-    
 
     # FORMATTING DATE
     try:
@@ -566,11 +564,6 @@ def record_shooting(n_clicks,
     Output(component_id='form-injured', component_property='value'),
     Output(component_id='form-killed',  component_property='value'),
 
-    Output(component_id='scatter-map', component_property='figure'),
-    Output(component_id='day-plot', component_property='figure'),
-    Output(component_id='month-plot', component_property='figure'),
-    Output(component_id='state-plot', component_property='figure'),
-
     Input('shootings-table', 'data'),
     prevent_initial_call=True
 )
@@ -588,17 +581,9 @@ def update_dateframe(table):
         today,
         '',
         '',
-        '',
-        get_map_plot(df),
-        get_state_plot(
-            get_shootings_by_state(df)
-        ),
-        get_month_plot(
-            get_shootings_by_month(df)
-        ),
-        get_day_plot(df)
+        ''
     )
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server()
