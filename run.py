@@ -26,11 +26,18 @@ from geopy.geocoders import Nominatim
 # Basic Settings
 pd.options.plotting.backend = "plotly"
 
-COLOR_SCALE = ['#e85d04', '#dc2f02','#d00000', '#9d0208', '#6a040f', '#370617']
+COLOR_SCALE = [
+    '#e85d04',
+    '#dc2f02',
+    '#d00000',
+    '#9d0208',
+    '#6a040f',
+    '#370617'
+]
 
 # File path to save scraped data to disk
 dir_name = './data'
-file_name = 'shootings.parquet'
+file_name = 'shootings.csv'
 file_path = os.path.join(dir_name, file_name)
 
 global shootings_df
@@ -40,66 +47,71 @@ global month_df
 
 def get_population():
     """
-    Returns a dataframe containing population data from latest US Census (2019) per State.
+    Returns a dataframe containing population
+    data from latest US Census (2019) per State.
     """
-    census = pd.read_excel('https://www2.census.gov/programs-surveys/popest/tables/2010-2019/state/totals/nst-est2019-01.xlsx')
+    census = pd.read_excel('https://www2.census.gov/programs-surveys/popest/\
+                            tables/2010-2019/state/totals/nst-est2019-01.xlsx')
     census = census[8:59]
     census = census.reset_index(drop=True)
-    census.columns=['State', 'a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'Population']
-    census = census.drop(['a', 'b', 'c', 'd', 'f', 'g', 'h', 'i', 'j', 'k', 'l'], axis=1)
+    census.columns = ['State', 'a', 'b', 'c', 'd', 'f',
+                      'g', 'h', 'i', 'j', 'k', 'l',
+                      'Population']
+    census = census.drop(['a', 'b', 'c', 'd', 'f', 'g',
+                          'h', 'i', 'j', 'k', 'l'], axis=1)
     census['State'] = census['State'].str.strip('.')
 
     return census
 
+
 def get_location(search):
     """
-    Returns a tuple containting the latitude and longitude of the searched address
+    Returns a tuple containting the
+    latitude and longitude of the searched address
     or returns a tuple (None, None) if no location is found.
     """
     geolocator = Nominatim(user_agent="shootings")
     try:
         location = geolocator.geocode(search)
     except Exception as e:
-        print(e)    
-    
+        print(e)
+
     geolocator.geocode(search)
     return location
 
 
 def get_shootings():
     """
-    Returns a pandas DataFrame containning mass shootings in the US. 
-    1. Loads data from 'data/mass_shootings.csv' file. 
-    2. Searches coordinates for locations of the incidents. 
+    Returns a pandas DataFrame containning mass shootings in the US.
+    1. Loads data from 'data/mass_shootings.csv' file.
+    2. Searches coordinates for locations of the incidents.
     3. Cleans up and prepares the data for analysis
     """
     if os.path.exists(file_path):
-        return pd.read_parquet(file_path)
-    
-    df = pd.read_csv('data/gun_violence.csv')
+        df = pd.read_csv(file_path)
+        df = remove_unnamed_column(df)
+    else:
+        df = pd.read_csv('data/gun_violence.csv')
+        df = df.query('n_killed + n_injured > 3')
+        df = df[['date', 'state', 'city_or_county', 'address',
+                'n_killed', 'n_injured', 'latitude', 'longitude']]
+        df = df.dropna()
+        df = df.reset_index(drop=True)
+        df.to_csv(file_path)
 
-    # Filter shootings with more than 3 victims, drop unnecessary columns and missing values.
-    df = df.query('n_killed + n_injured > 3')
-    df = df.drop(['incident_id', 'incident_url', 'source_url','incident_url_fields_missing',
-                  'congressional_district', 'gun_stolen','incident_characteristics',
-                  'notes', 'participant_name', 'participant_relationship', 'participant_status',
-                  'participant_type', 'sources', 'state_house_district', 'state_senate_district', 
-                  'location_description', 'participant_age', 'participant_age_group',
-                  'participant_gender', 'n_guns_involved', 'gun_type' ],
-                  axis=1)
-    df = df.dropna()
-    
     # Data cleanup and pre processing
     df['date'] = pd.to_datetime(df['date']).dt.date
     df = df.sort_values(by='date')
     df['total'] = df['n_killed'] + df['n_injured']
-    
-    # Clean address string and get latitude and longitude with geopy package
-    df['full_address'] = df['address'] + ', ' + df['city_or_county'] + ', ' + df['state']
 
+    # Clean address string and get latitude and longitude with geopy package
+    df['full_address'] = df['address'] + ', ' +\
+        df['city_or_county'] + ', ' + df['state']
+
+    print(df.columns)
     # Save dataframe to file
-    df.to_parquet(file_path)
     return df
+
 
 def get_shootings_by_state(df):
     """
@@ -109,29 +121,38 @@ def get_shootings_by_state(df):
     # result = result.sort_values(by=['Month_Number']).reset_index(drop=True)
     return result
 
+
 def get_shootings_by_month(df):
     """
-    Returns a DataFrame containing a count of shooting incidents grouped by month.
+    Returns a DataFrame containing a count
+    of shooting incidents grouped by month.
     """
-    
     df['month_name'] = df['date'].apply(lambda x: calendar.month_name[x.month])
     df['month_number'] = df['date'].apply(lambda x: x.month)
 
-    result = df.groupby(['month_name', 'month_number']).size().to_frame('shootings').reset_index()
+    result = df.groupby(['month_name', 'month_number']).size().\
+        to_frame('shootings').reset_index()
     result = result.sort_values(by=['month_number']).reset_index(drop=True)
-    
+
     return result
 
+
+def remove_unnamed_column(df):
+    if df.columns[0].find('Unnamed') >= 0:
+        df = df.iloc[:, 1:]
+    return df
+
+
 # PLOTS
-## MAP PLOT
+# MAP PLOT
 def get_map_plot(df):
     """
     Generates a map plot using the dataframe given.
     """
     plt = px.scatter_mapbox(
-        df, 
-        lat="latitude", 
-        lon="longitude", 
+        df,
+        lat="latitude",
+        lon="longitude",
         color="n_killed",
         color_continuous_scale=COLOR_SCALE,
         range_color=[df['n_killed'].min(), df['n_killed'].max()],
@@ -140,53 +161,56 @@ def get_map_plot(df):
             'latitude': False,
             'longitude': False,
             'n_killed': True,
-            'total': True 
+            'total': True
         },
         labels={
             'total': 'Total Victims',
             "n_killed": "Fatal Victims",
             "n_injured": "Non-Fatal Victims"
         },
-        zoom=3, 
-        mapbox_style='open-street-map', 
+        zoom=3,
+        mapbox_style='open-street-map',
         size="total",
-        height=500
+        height=600
     )
     plt.update_layout(mapbox_style="carto-darkmatter")
     plt.update(layout_coloraxis_showscale=False)
-    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
+    plt.update_layout(margin=dict(l=0, t=0, r=0, b=0))
     return plt
 
-## BAR PLOT BY STATE
-def get_state_plot(df):
-    """
-    Generates a bar plot by state using the dataframe given.
-    """
-    plt = px.bar(
-        df, 
-        x='shootings',
-        y='state',
-        hover_name='state',
-        color='shootings',
-        color_continuous_scale=COLOR_SCALE,
-        range_color=[df['shootings'].min(), df['shootings'].max()],
-        labels={
-            "shootings": "Shootings by State",
-        },
-        height=800
-    )
-    plt.update_layout(yaxis=dict(automargin=True))
-    plt.update(layout_coloraxis_showscale=False)
-    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
-    return plt    
 
-## BAR PLOT BY MONTH
+# LINE PLOT BY DAY
+def get_day_plot(df):
+    """
+    Generates a line plot by day using the dataframe given.
+    """
+    grouped_df = df.groupby('date')['date'].size()\
+        .reset_index(name='count')
+    plt = px.scatter(
+        grouped_df,
+        'date',
+        'count',
+        color='count',
+        color_continuous_scale=COLOR_SCALE,
+        range_color=[grouped_df['count'].min(), grouped_df['count'].max()],
+        range_y=[0, grouped_df['count'].max() + 1],
+        labels={
+            "date": "Date",
+            "count": "Number of Shooting Incidents"
+        },
+        height=600)
+    plt.update_layout(margin=dict(l=0, t=0, r=0, b=0))
+    plt.update(layout_coloraxis_showscale=False)
+    return plt
+
+
+# BAR PLOT BY MONTH
 def get_month_plot(df):
     """
     Generates a bar plot by month using the dataframe given.
     """
     plt = px.bar(
-        df[::-1], 
+        df[::-1],
         y='month_name',
         x='shootings',
         text_auto='.2s',
@@ -197,11 +221,36 @@ def get_month_plot(df):
         labels={
             "month_name": "Month",
             "shootings": " Number of Shooting Incidents"
-        }, 
+        },
         height=600
     )
     plt.update(layout_coloraxis_showscale=False)
-    plt.update_layout(margin=dict(l=10, t=10, r=10, b=10))
+    plt.update_layout(margin=dict(l=0, t=0, r=0, b=0))
+    return plt
+
+
+# BAR PLOT BY STATE
+def get_state_plot(df):
+    """
+    Generates a bar plot by state using the dataframe given.
+    """
+    plt = px.bar(
+        df,
+        x='shootings',
+        y='state',
+        hover_name='state',
+        color='shootings',
+        color_continuous_scale=COLOR_SCALE,
+        range_color=[df['shootings'].min(), df['shootings'].max()],
+        labels={
+            "shootings": "Shootings by State",
+            "state": "State",
+        },
+        height=800
+    )
+    plt.update_layout(yaxis=dict(automargin=True))
+    plt.update(layout_coloraxis_showscale=False)
+    plt.update_layout(margin=dict(l=0, t=0, r=0, b=0))
     return plt
 
 
@@ -210,18 +259,11 @@ shootings_df = get_shootings()
 state_df = get_shootings_by_state(shootings_df)
 month_df = get_shootings_by_month(shootings_df)
 
-
 # BUILD PLOTS
-state_plot = get_state_plot(state_df)
 scatter_map = get_map_plot(shootings_df)
+day_plot = get_day_plot(shootings_df)
 month_plot = get_month_plot(month_df)
-
-# plots = [scatter_map, state_plot, month_plot]
-
-# for plot in plots:
-#     plot.update(layout_coloraxis_showscale=False)
-#     plot.update_layout(margin=dict(l=10, t=10, r=10, b=10))
-
+state_plot = get_state_plot(state_df)
 # CREATES DASH APP
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.PULSE])
 server = app.server
@@ -240,74 +282,102 @@ date_picker = dcc.DatePickerSingle(
     display_format='DD/MM/YYYY',
     min_date_allowed=date(1900, 1, 1),
     max_date_allowed=date(
-        year, 
-        month, 
+        year,
+        month,
         day
     ),
     initial_visible_month=date(
-        year, 
-        month, 
-        day    
+        year,
+        month,
+        day
     )
 )
 
 input_address = dbc.FormFloating([
-    dbc.Input(id='form-address', type='text', placeholder='Address', required=True),
+    dbc.Input(id='form-address', type='text',
+              placeholder='Address', required=True),
     dbc.Label('Address'),
 ])
 
 input_injured = dbc.FormFloating([
-    dbc.Input(id='form-injured', type='number', placeholder='Injured', step='1', required=True),
+    dbc.Input(id='form-injured', type='number',
+              placeholder='Injured', step='1', required=True),
     dbc.Label('Injured'),
 ])
 
 input_killed = dbc.FormFloating([
-    dbc.Input(id='form-killed', type='number', placeholder='Killed', step='1', required=True),
+    dbc.Input(id='form-killed', type='number',
+              placeholder='Killed', step='1', required=True),
     dbc.Label('Killed')
 ])
 
-btn_save = dbc.Button('Save', color='danger', className='me-1 btn-lg', id='form-save')
+btn_save = dbc.Button('Save', color='danger',
+                      className='me-1 btn-lg', id='form-save')
+
 
 # DASHBOARD PAGE LAYOUT
+def create_tab(components):
+    """
+    Generates a Dash tab component with the
+    list of components passed as argument.
+    """
+    return (
+        dbc.Card([
+            dbc.CardBody([
+                html.Div(components)
+            ], className='card-body')
+        ], className='card')
+    )
+
+
+def create_table(df):
+    print(df.columns)
+    return dash_table.DataTable(
+            df[::-1].to_dict('records'),
+            [{"name": i, "id": i} for i in df.columns],
+            style_cell={
+                'overflow': 'hidden',
+                'textOverflow': 'ellipsis',
+                'maxWidth': 0
+            },
+            row_deletable=True,
+            id='shootings-table'
+        )
+
+
 # MAP TAB
-map_tab = dbc.Card([
-    dbc.CardBody([
-        html.Div([
-            html.H5('Shootings Map', className='card-title'),
-            dcc.Graph(id='scatter-map', figure=scatter_map)
-        ])
-    ], className='card-body')
-], className='card')
+map_tab = create_tab([
+    html.H5('Shooting Locations', className='card-title'),
+    dcc.Graph(id='scatter-map', figure=scatter_map)
+])
+
+# TIMELINE TAB
+day_tab = create_tab([
+    html.H5('By Day', className='card-title'),
+    dcc.Graph(id='day-plot', figure=day_plot)
+])
 
 # STATE TAB
-state_tab = dbc.Card([
-    dbc.CardBody([
-        html.Div([
-            html.H5('Number of Shootings by State', className='card-title'), 
-            dcc.Graph(id='state-plot', figure=state_plot)
-        ])
-    ], className='card-body')
-], className='card')
+state_tab = create_tab([
+    html.H5('Number of Shootings by State', className='card-title'),
+    dcc.Graph(id='state-plot', figure=state_plot)
+])
 
 # MONTH TAB
-month_tab = dbc.Card([
-    dbc.CardBody([
-        html.Div([
-            html.H5('Number of Shooting by Month', className='card-title'), 
-            dcc.Graph(id='month-plot', figure=month_plot)
-        ])
-    ], className='card-body')
-], className='card')
+month_tab = create_tab([
+    html.H5('Number of Shootings by Month', className='card-title'),
+    dcc.Graph(id='month-plot', figure=month_plot)
+])
 
 # RECORDS TAB
 records_tab = html.Div([
     dbc.Card([
         dbc.CardBody([
             html.H4("Add New Shooting", className="card-title"),
-            
+
             dbc.Row([
                 dbc.Col([
-                    date_picker   
+                    date_picker
                 ], className='col-12')
             ], className='mb-3 mt-3'),
 
@@ -317,21 +387,24 @@ records_tab = html.Div([
                 ], className='col-7'),
                 dbc.Col([
                     input_injured
-                ], className='d-flex align-items-center justify-content-center col-2'),
+                ], className='d-flex align-items-center \
+                              justify-content-center col-2'),
                 dbc.Col([
                     input_killed
-                ], className='d-flex align-items-center justify-content-center col-2'),
+                ], className='d-flex align-items-center \
+                              justify-content-center col-2'),
                 dbc.Col([
                     btn_save
-                ], className='d-flex align-items-center justify-content-end col-1')
+                ], className='d-flex align-items-center \
+                              justify-content-end col-1')
             ]),
 
             dbc.Alert(
-                children='', 
-                color='warning', 
-                id='form-alert', 
-                is_open=False, 
-                duration=4000, 
+                children='',
+                color='warning',
+                id='form-alert',
+                is_open=False,
+                duration=4000,
                 className='m-2'
             )
         ]),
@@ -339,35 +412,34 @@ records_tab = html.Div([
 
     dbc.Card([
         dbc.CardBody([
+            html.Div([dcc.Store(id='shootings_storage')]),
             html.H4("Shootings", className="card-title"),
-            dash_table.DataTable(
-                shootings_df.to_dict('records'), 
-                [{"name": i, "id": i} for i in shootings_df.columns],
-                style_cell={
-                    'overflow': 'hidden',
-                    'textOverflow': 'ellipsis',
-                    'maxWidth': 0
-                }
-            )
+            html.Div([
+                create_table(shootings_df)
+            ], id='table-container')
         ])
     ], className='card mt-3')
 ], className='m-3')
 
 tabs = dbc.Tabs(
     [
-        dbc.Tab(map_tab, label='Map', tab_id='map-tab', activeTabClassName='dark'),
-        dbc.Tab(state_tab, label='Shootings by State', tab_id='state-tab'),
-        dbc.Tab(month_tab, label='Shootings by Month', tab_id='month-tab'),
-        dbc.Tab(records_tab, label='Shootings List', tab_id='records-tab')
-    ], 
-    id='tabs', 
+        dbc.Tab(map_tab, label='Locations', tab_id='map-tab',
+                activeTabClassName='dark'),
+        dbc.Tab(day_tab, label='By Day', tab_id='day-tab'),
+        dbc.Tab(month_tab, label='By Month', tab_id='month-tab'),
+        dbc.Tab(state_tab, label='By State', tab_id='state-tab'),
+        dbc.Tab(records_tab, label='List', tab_id='records-tab')
+    ],
+    id='tabs',
     active_tab='map-tab'
 )
 
 layout = dbc.Container([
         dbc.Card([
             dbc.CardBody([
-                html.H1(f'Mass shootings in the US from {start_year} to {end_year}', className='card-title mb-4'),
+                html.H1(f'Mass shootings in the US from \
+                         {start_year} to {end_year}',
+                         className='card-title mb-4'),
                 tabs
             ])
         ], className='card mt-3')
@@ -375,19 +447,12 @@ layout = dbc.Container([
 
 app.layout = layout
 
-# USER INPUT HANDLER
+
+# NEW SHOOTING FORM HANDLER
 @app.callback(
     Output(component_id='form-alert', component_property='children'),
     Output(component_id='form-alert', component_property='is_open'),
-    
-    Output(component_id='scatter-map', component_property='figure'),
-    Output(component_id='state-plot',  component_property='figure'),
-    Output(component_id='month-plot',  component_property='figure'),
-
-    Output(component_id='form-address', component_property='value'),
-    Output(component_id='form-date',    component_property='date'),
-    Output(component_id='form-injured', component_property='value'),
-    Output(component_id='form-killed',  component_property='value'),
+    Output(component_id='table-container', component_property='children'),
 
     Input(component_id='form-save',     component_property='n_clicks'),
     [State(component_id='form-date',    component_property='date')],
@@ -396,7 +461,11 @@ app.layout = layout
     [State(component_id='form-killed',  component_property='value')],
     prevent_initial_call=True
 )
-def record_shooting (n_clicks, date_value, address_value, injured_value, killed_value):
+def record_shooting(n_clicks,
+                    date_value,
+                    address_value,
+                    injured_value,
+                    killed_value):
     """
     Validates user inpout, fetch geo coordinates and adds shooting to dataset.
     """
@@ -405,47 +474,48 @@ def record_shooting (n_clicks, date_value, address_value, injured_value, killed_
     for field in fields:
         if field is None:
             return (
-                'All fields are required.', 
-                True, 
-                get_map_plot(shootings_df), 
-                get_state_plot(state_df), 
-                get_month_plot(month_df),
-                fields[0],
-                fields[1],
-                fields[2],
-                fields[3]
+                'All fields are required.',
+                True,
+                create_table(shootings_df)
             )
 
-    
     # GET GEOCODE AND EXTRACT VALUES TO ADD TO DATASET
-    location = get_location(address_value)
-    location_arr = location[0].split(',')
-    
-    address         = location_arr[0] + location_arr[1]
-    city_or_county  = location_arr[-4].strip()
-    state           = location_arr[-3].strip()
-    country         = location_arr[-1].strip()
-    full_address    = f'{address}, {city_or_county}, {state}, {country}'
+    try:
+        location = get_location(address_value)
+        location_arr = location[0].split(',')
 
-    if (country.lower() != 'united states' and 
-        country.lower() != 'usa' and
-        country.lower() != 'u.s.a.' and 
-        country.lower() != 'united states of america'):
+        address = location_arr[0] + location_arr[1]
+        city_or_county = location_arr[-4].strip()
+        state = location_arr[-3].strip()
+        country = location_arr[-1].strip()
+        full_address = f'{address}, {city_or_county}, {state}, {country}'
+    except Exception as e:
         return (
-            'Address must be in the United States.', 
-            True, 
-            get_map_plot(shootings_df), 
-            get_state_plot(state_df), 
-            get_month_plot(month_df),
-            fields[0],
-            fields[1],
-            fields[2],
-            fields[3]
+            'Address must be a valid Google Maps address in the United States.',
+            True,
+            create_table(shootings_df)
         )
 
-    injured_value = int(injured_value)
-    killed_value = int(killed_value)
-    total = injured_value + killed_value
+    if (country.lower() != 'united states' and
+        country.lower() != 'usa' and
+        country.lower() != 'u.s.a.' and
+        country.lower() != 'united states of america'):
+        return (
+            'Address must be in the United States.',
+            True,
+            create_table(shootings_df)
+        )
+    try:    
+        injured_value = int(injured_value)
+        killed_value = int(killed_value)
+        total = injured_value + killed_value
+    except ValueError: 
+        return (
+            'Injured and Killed are required and must be integers',
+            True,
+            create_table(shootings_df)
+        )
+    
 
     # FORMATTING DATE
     try:
@@ -454,53 +524,81 @@ def record_shooting (n_clicks, date_value, address_value, injured_value, killed_
         month_number_value = date_value.month
     except Exception:
         return (
-            'Invalid date format.', 
-            True, 
-            get_map_plot(shootings_df), 
-            get_state_plot(state_df), 
-            get_month_plot(month_df),
-            fields[0],
-            fields[1],
-            fields[2],
-            fields[3]
+            'Invalid date format.',
+            True,
+            create_table(shootings_df)
         )
 
-
     row = {
-        'date': [date_value], 
-        'state': [state], 
-        'city_or_county': [city_or_county], 
-        'address': [address], 
-        'n_injured': [injured_value], 
+        'date': [date_value],
+        'state': [state],
+        'city_or_county': [city_or_county],
+        'address': [address],
+        'n_injured': [injured_value],
         'n_killed': [killed_value],
-        'latitude': [location.latitude], 
-        'longitude': [location.longitude], 
-        'total': [total], 
-        'full_address': [full_address], 
-        'month_name': [month_value], 
+        'latitude': [location.latitude],
+        'longitude': [location.longitude],
+        'total': [total],
+        'full_address': [full_address],
+        'month_name': [month_value],
         'month_number': [month_number_value]
     }
 
     row = pd.DataFrame(row)
     df = pd.concat([shootings_df, row], ignore_index=True)
-    df.reset_index()
+    df.reset_index(drop=True)
+    df = remove_unnamed_column(df)
 
-    df.to_parquet(file_path)
-
-    state_df = get_shootings_by_state(df)
-    month_df = get_shootings_by_month(df)
+    df.to_csv(file_path)
 
     return (
-        '', 
-        False, 
-        get_map_plot(df), 
-        get_state_plot(state_df), 
-        get_month_plot(month_df),
         '',
-        '',
-        '',
-        ''
+        False,
+        create_table(df)
     )
+
+
+# EDIT TABLE HANDLER
+@app.callback(
+    Output('shootings_storage', 'data'),
+    Output(component_id='form-date',    component_property='date'),
+    Output(component_id='form-address', component_property='value'),
+    Output(component_id='form-injured', component_property='value'),
+    Output(component_id='form-killed',  component_property='value'),
+
+    Output(component_id='scatter-map', component_property='figure'),
+    Output(component_id='day-plot', component_property='figure'),
+    Output(component_id='month-plot', component_property='figure'),
+    Output(component_id='state-plot', component_property='figure'),
+
+    Input('shootings-table', 'data'),
+    prevent_initial_call=True
+)
+def update_dateframe(table):
+
+    df = pd.DataFrame(table)
+    df = df.reset_index(drop=True)
+    df = df[::-1]
+
+    df['date'] = pd.to_datetime(df['date']).dt.date
+    df.to_csv(file_path)
+
+    return (
+        table,
+        today,
+        '',
+        '',
+        '',
+        get_map_plot(df),
+        get_state_plot(
+            get_shootings_by_state(df)
+        ),
+        get_month_plot(
+            get_shootings_by_month(df)
+        ),
+        get_day_plot(df)
+    )
+
 
 if __name__ == '__main__':
     app.run_server(debug=True)
