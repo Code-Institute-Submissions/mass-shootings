@@ -466,9 +466,7 @@ def record_shooting(n_clicks,
     fields = [date_value, address_value, injured_value, killed_value]
 
     for field in fields:
-        if field is None or\
-           int(injured_value) < 0 or\
-           int(killed_value) < 0:
+        if field is None :
             return (
                 'All fields are required and\
                 negative numbers are not allowed.',
@@ -586,4 +584,4 @@ def update_dateframe(table):
 
 
 if __name__ == '__main__':
-    app.run_server()
+    app.run_server(debug=True)

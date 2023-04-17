@@ -198,63 +198,78 @@ Actual: the app behaves as expected. There are no warnings or erros displayed in
 - HTML
   - No errors found when passing through the official [W3C Validator](https://validator.w3.org/).
   - One warning was issued for the "inputmode" attribute which is not supported by all browsers. This attribute was included to force mobile devices to display the numeric keypad when the Value text field is selected.
- ![W3C Validator](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/w3c-validator-index.png)
+ ![HTML Validation](https://alexandrearantes1.github.io/mass-shootings/assets/images/html_validation.png)
 
 - CSS
-  - No errors found when passing through the [Jigsaw Validator](https://jigsaw.w3.org/).
-    - style.css:
-    ![Jigsaw style.css](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jigsaw-style.png)
-    - toggle.css
-    ![Jigsaw toggle.css](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jigsaw-toggle.png)
-    - tooltip.css
-    ![Jigsaw tooltip.css](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jigsaw-tooltip.png)
- 
-- Javascript
-  - No warning or erros were found using the [JSHint Validator](https://jshint.com/) when you select the new ES6 features in the configurations. 
-    - app-controller.js
-    ![JSHint Validator](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jshint-app-controller.png)
-    - budget.js
-    ![JSHint Validator](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jshint-budget.png)
-    - transaction.js
-    ![JSHint Validator](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jshint-transaction.png)
-    - utils.js
-    ![JSHint Validator](https://alexandrearantes1.github.io/budget-planner/assets/images/readme/jshint-utils.png)
+  - bootstrap.min.css: 16 parse errors were found when passing through [Jigsaw Validator](https://jigsaw.w3.org/). These errors were all flagged at the bootstrap.min.css. It was not possible to establish the cause of these errors in time. 
+
+  - style.css:
+    ![Jigsaw style.css](https://alexandrearantes1.github.io/mass-shootings/assets/images/css_validation.png)
+
 
 ### Bugs Fixed
-- When clicking on the button to delete a transaction, there was a problem identifying which element was actually triggering the click event. This led to the app not finding the element which actually had the ID to be removed. 
-  The solution was to check which type of element was being clicked (```<img>``` or ```<a>```) and depending on the result, seek the immediate parent element or the parent of the parent element to retrieve the ID.
-  
-- There was a serious issue when using the app in very small screens 320x480. The list became completely covered by footer and the layout was not apropriate for the size.
-  The solution was to reduce the size of the footer icon and paddings, but it still was not enough so I decided to  
-  "unstick" the form, freeing up more space at the expense of not having the form always available.  
+- An unnamed column was being created everytime the shootings.csv file was read into a pandas dataframe. The column was also being generated when passing from pandas dataframe to the dash datatable. 
+A solution was to create a funciton to remove this column if present, and return the dataframe without it.
 
 ### Unfixed Bugs
-- If percentages have more than 4 digits before the decimal place, the space designated for the percentage box starts to blow up and can generate odd layout issues. It is unlikely to occur on a realistic scenario, but this issue will be addressed in a future release.
+- There form is losing the information when there is an invalid entry. This is being caused by one of the @app.callbacks(), however I could not find a solution for this yet. 
+
+- Map being resized to 400px by 300px when live update feature is enabled. Feature is disabled at the moment to prevent this undesirable behaviour. 
 
 ## Deployment
 
 ### Version Control
 
-The web app was created using Virtual Studio Code IDE and pushed to the remote repository 'budget-planner'. 
+The web app was created using Virtual Studio Code IDE and pushed to the remote repository 'mass-shootings'. 
 
 The following git commands were used throughout the development of the app:
 
-```git add <file>``` - This command was used to add the files to the staging area before they are committed.
+```git add .``` - This command was used to add all the files to the staging area before they are committed.
 
 ```git commit -m "commit message"``` - This command was used to commit changes to the local repository. 
 
 ```git push``` - This command was used to push the commits to the remote repository on GitHub. 
 
-```git pull``` - This command was used to update local files before pushing new commits, which was necessary because I was editing the README.md file directly on GitHub website. 
+```git push heroku main``` - This command was used push changes to the Heroku platform and build the application online. 
 
-### Deployment to GitHub Pages
-  - The site was deployed to GitHub Pages using the steps as follows:
-    - In the GitHub repository, navigate to the Settings tab.
-    - From the menu on left select 'Pages'.
-    - From the source section drop-down menu, select the Branch: main.
-    - Click 'Save'.
-    - A live link will be displayed in a green banner when published successfully.
-  - The live web app can be found here: [Budget Planner](https://alexandrearantes1.github.io/budget-planner/)
+### Deployment to Heroku
+  - The site was deployed to Heroku using the steps as follows:
+    - A new application was created using heroku portal (heroku account is required).
+    - The heroku command line was installed locally using the command ```brew tap heroku/brew && brew install heroku```
+    - From the menu on left select 'New > Create New App'.
+    - Type a name for the app. 
+    - Click 'Create app'.
+    - Go to Settings
+    - Add a Config Var as follows:
+     - Key: PORT
+     - Value: 8000
+    - Click on "Deploy".
+    - Select "Heroku GIT" and follow the instruction on screen. 
+    - A few changes on local files were needed in order to install the libraries and run the application correctly:
+     - ```Procfile``` was changed to contain the following:
+      ```web: gunicorn run:server```
+      
+     - a virtual environment was created using the commands:
+     ```
+        python3 -m pip install --user virtualenv
+        python3 -m venv env
+        source env/bin/activate
+     ```
+
+     - With the virtual environment activated, the next step is to install all the necessary libraries using pip. 
+
+     ```pip install pandas dash dash_bootstrap_components plotly geopy gunicorn numpy pyarrow```
+     - After all libraries are installed, we update our requirements.txt file using the command:
+     ```pip freeze > requirements.txt```
+
+     - To create the Heroku app: via command line
+     ```
+        heroku create -a mass-shootings-us
+        git remote -v
+     ```
+
+     - To deploy the app, run the command
+     ```git push heroku main```
 
 ### Clone the Repository Code Locally
 1. Navigate to the [Budget Planner Repository](https://github.com/alexandrearantes1/budget-planner).

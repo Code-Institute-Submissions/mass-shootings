@@ -11,9 +11,9 @@
 2023,2013-01-23,Maryland,Baltimore,1500 block of W. Fayette St.,1,6,39.2899,-76.6412,7,"1500 block of W. Fayette St., Baltimore, Maryland",January,1
 2022,2013-01-23,Tennessee,Chattanooga,1501 Dodds Ave,1,3,35.0221,-85.2697,4,"1501 Dodds Ave, Chattanooga, Tennessee",January,1
 2021,2013-01-25,Missouri,Saint Louis,W Florissant Ave and Riverview Blvd,1,3,38.7067,-90.2494,4,"W Florissant Ave and Riverview Blvd, Saint Louis, Missouri",January,1
-2020,2013-01-26,Louisiana,Charenton,1000 block of Flat Town Road,2,3,29.8816,-91.5251,5,"1000 block of Flat Town Road, Charenton, Louisiana",January,1
-2019,2013-01-26,District of Columbia,Washington,2403 Benning Road Northeast,0,5,38.8978,-76.9717,5,"2403 Benning Road Northeast, Washington, District of Columbia",January,1
-2018,2013-01-26,Ohio,Springfield,601 West Main Street,1,3,39.9252,-83.8218,4,"601 West Main Street, Springfield, Ohio",January,1
+2020,2013-01-26,District of Columbia,Washington,2403 Benning Road Northeast,0,5,38.8978,-76.9717,5,"2403 Benning Road Northeast, Washington, District of Columbia",January,1
+2019,2013-01-26,Ohio,Springfield,601 West Main Street,1,3,39.9252,-83.8218,4,"601 West Main Street, Springfield, Ohio",January,1
+2018,2013-01-26,Louisiana,Charenton,1000 block of Flat Town Road,2,3,29.8816,-91.5251,5,"1000 block of Flat Town Road, Charenton, Louisiana",January,1
 2017,2013-02-02,Tennessee,Memphis,2514 Mount Moriah,0,5,35.0803,-89.8871,5,"2514 Mount Moriah, Memphis, Tennessee",February,2
 2016,2013-02-03,California,Yuba (county),5800 block of Poplar Avenue,1,3,39.1236,-121.583,4,"5800 block of Poplar Avenue, Yuba (county), California",February,2
 2015,2013-02-07,Illinois,Chicago,2500 block of East 75th Street,0,4,41.7592,-87.5628,4,"2500 block of East 75th Street, Chicago, Illinois",February,2
@@ -59,9 +59,9 @@
 1975,2013-04-24,Illinois,Manchester,East Street,6,1,39.5417,-90.3301,7,"East Street, Manchester, Illinois",April,4
 1974,2013-04-25,Ohio,Oberlin,500 block of West College Street,0,4,41.2927,-82.2347,4,"500 block of West College Street, Oberlin, Ohio",April,4
 1973,2013-04-27,Florida,Williston,County Road 318,1,3,29.4035,-82.3647,4,"County Road 318, Williston, Florida",April,4
-1972,2013-04-28,North Carolina,Charlotte,William Reynolds Drive,0,5,35.2479,-80.726,5,"William Reynolds Drive, Charlotte, North Carolina",April,4
-1971,2013-04-28,Pennsylvania,Chester,Rose and Upland Street,1,3,39.8564,-75.3587,4,"Rose and Upland Street, Chester, Pennsylvania",April,4
-1970,2013-04-28,Tennessee,Jackson,438 East Main Street,2,2,35.6141,-88.815,4,"438 East Main Street, Jackson, Tennessee",April,4
+1972,2013-04-28,Pennsylvania,Chester,Rose and Upland Street,1,3,39.8564,-75.3587,4,"Rose and Upland Street, Chester, Pennsylvania",April,4
+1971,2013-04-28,Tennessee,Jackson,438 East Main Street,2,2,35.6141,-88.815,4,"438 East Main Street, Jackson, Tennessee",April,4
+1970,2013-04-28,North Carolina,Charlotte,William Reynolds Drive,0,5,35.2479,-80.726,5,"William Reynolds Drive, Charlotte, North Carolina",April,4
 1969,2013-05-02,New Jersey,Newark,804 S. 16th St,0,5,40.7268,-74.2116,5,"804 S. 16th St, Newark, New Jersey",May,5
 1968,2013-05-04,North Carolina,Smithfield,150 South Equity Drive,0,4,35.5076,-78.3221,4,"150 South Equity Drive, Smithfield, North Carolina",May,5
 1967,2013-05-05,California,Palo Alto,Bay Road and University Avenue,0,5,37.4717,-122.14,5,"Bay Road and University Avenue, Palo Alto, California",May,5
@@ -91,8 +91,8 @@
 1943,2013-06-02,Georgia,Lagrange,Union Street,0,7,33.0354,-85.0244,7,"Union Street, Lagrange, Georgia",June,6
 1942,2013-06-07,California,Santa Monica,2036 Yorkshire Ave,6,1,34.026,-118.461,7,"2036 Yorkshire Ave, Santa Monica, California",June,6
 1941,2013-06-09,Pennsylvania,York,600 block of West Princess Street,0,4,39.955,-76.7412,4,"600 block of West Princess Street, York, Pennsylvania",June,6
-1940,2013-06-10,Illinois,Chicago,5700 block of South Sangamon Street,1,4,41.7904,-87.649,5,"5700 block of South Sangamon Street, Chicago, Illinois",June,6
-1939,2013-06-10,Missouri,Saint Louis,4700 block of Highland Ave,0,6,38.6647,-90.2506,6,"4700 block of Highland Ave, Saint Louis, Missouri",June,6
+1940,2013-06-10,Missouri,Saint Louis,4700 block of Highland Ave,0,6,38.6647,-90.2506,6,"4700 block of Highland Ave, Saint Louis, Missouri",June,6
+1939,2013-06-10,Illinois,Chicago,5700 block of South Sangamon Street,1,4,41.7904,-87.649,5,"5700 block of South Sangamon Street, Chicago, Illinois",June,6
 1938,2013-06-14,North Carolina,High Point,2201 Little Avenue,0,5,35.9689,-79.9787,5,"2201 Little Avenue, High Point, North Carolina",June,6
 1937,2013-06-15,Rhode Island,Providence,256 Hartford Ave,1,3,41.8173,-71.4516,4,"256 Hartford Ave, Providence, Rhode Island",June,6
 1936,2013-06-15,Tennessee,Nashville,135 Brinkhaven Ave,0,4,36.1646,-86.7771,4,"135 Brinkhaven Ave, Nashville, Tennessee",June,6
@@ -103,11 +103,11 @@
 1931,2013-06-21,North Carolina,Greenville,205 Greenville Blvd SW,0,5,35.5744,-77.3873,5,"205 Greenville Blvd SW, Greenville, North Carolina",June,6
 1930,2013-06-22,Maryland,Baltimore,700 block of N. Kenwood Avenue,1,4,39.2991,-76.5783,5,"700 block of N. Kenwood Avenue, Baltimore, Maryland",June,6
 1929,2013-06-22,Rhode Island,Providence,55 Curtis,0,4,41.8217,-71.4496,4,"55 Curtis, Providence, Rhode Island",June,6
-1928,2013-06-23,Louisiana,New Orleans,5700 block of Wickfield Drive,0,4,30.0165,-90.0689,4,"5700 block of Wickfield Drive, New Orleans, Louisiana",June,6
-1927,2013-06-23,California,Sacramento,Sea Drift Way,1,3,38.4655,-121.459,4,"Sea Drift Way, Sacramento, California",June,6
-1926,2013-06-23,Missouri,Kansas City,1917 Prospect Ave,1,8,39.0891,-94.5518,9,"1917 Prospect Ave, Kansas City, Missouri",June,6
-1925,2013-06-23,Tennessee,Chattanooga,1501 Dodds Ave,1,4,35.0221,-85.2697,5,"1501 Dodds Ave, Chattanooga, Tennessee",June,6
-1924,2013-06-23,Virginia,Virginia Beach,4600 block of Columbus Street,1,4,36.841,-76.1371,5,"4600 block of Columbus Street, Virginia Beach, Virginia",June,6
+1928,2013-06-23,Tennessee,Chattanooga,1501 Dodds Ave,1,4,35.0221,-85.2697,5,"1501 Dodds Ave, Chattanooga, Tennessee",June,6
+1927,2013-06-23,Virginia,Virginia Beach,4600 block of Columbus Street,1,4,36.841,-76.1371,5,"4600 block of Columbus Street, Virginia Beach, Virginia",June,6
+1926,2013-06-23,California,Sacramento,Sea Drift Way,1,3,38.4655,-121.459,4,"Sea Drift Way, Sacramento, California",June,6
+1925,2013-06-23,Louisiana,New Orleans,5700 block of Wickfield Drive,0,4,30.0165,-90.0689,4,"5700 block of Wickfield Drive, New Orleans, Louisiana",June,6
+1924,2013-06-23,Missouri,Kansas City,1917 Prospect Ave,1,8,39.0891,-94.5518,9,"1917 Prospect Ave, Kansas City, Missouri",June,6
 1923,2013-06-24,Missouri,Kansas City,1711 Kansas Avenue,1,3,39.0914,-94.5484,4,"1711 Kansas Avenue, Kansas City, Missouri",June,6
 1922,2013-06-25,Illinois,Chicago,73rd Street and King Drive,1,4,41.7621,-87.6152,5,"73rd Street and King Drive, Chicago, Illinois",June,6
 1921,2013-06-27,California,Three Rivers,39553-39833 Sierra Dr,2,2,36.4144,-118.925,4,"39553-39833 Sierra Dr, Three Rivers, California",June,6
@@ -118,14 +118,14 @@
 1916,2013-07-01,Texas,Fort Worth,2900 block of Pate Drive,4,0,32.7157,-97.2597,4,"2900 block of Pate Drive, Fort Worth, Texas",July,7
 1915,2013-07-04,Illinois,Chicago,6000 block of South Cottage Grove Avenue,0,4,41.7858,-87.6061,4,"6000 block of South Cottage Grove Avenue, Chicago, Illinois",July,7
 1914,2013-07-04,Michigan,Pontiac,441 N Perry St,1,6,42.6482,-83.2871,7,"441 N Perry St, Pontiac, Michigan",July,7
-1913,2013-07-06,Alabama,Florence,West Mobile Street,0,4,34.7982,-87.6854,4,"West Mobile Street, Florence, Alabama",July,7
-1912,2013-07-06,New York,Brooklyn,472 Marcy Avenue,1,3,40.6987,-73.95,4,"472 Marcy Avenue, Brooklyn, New York",July,7
-1911,2013-07-07,California,Stockton,2600 block of Connecticut Avenue,1,4,37.9218,-121.298,5,"2600 block of Connecticut Avenue, Stockton, California",July,7
-1910,2013-07-07,Florida,Pompano Beach,1600 block of Northwest 7th Lane,1,3,26.2489,-80.1352,4,"1600 block of Northwest 7th Lane, Pompano Beach, Florida",July,7
-1909,2013-07-07,Illinois,Chicago,11300 block of South Forest Avenue,0,5,41.689,-87.6157,5,"11300 block of South Forest Avenue, Chicago, Illinois",July,7
-1908,2013-07-07,Mississippi,Meridian,2500 block of 5th Street,0,4,32.3625,-88.7022,4,"2500 block of 5th Street, Meridian, Mississippi",July,7
-1907,2013-07-09,Illinois,Rockford,600 block of Woodlawn Avenue,2,2,42.2783,-89.0953,4,"600 block of Woodlawn Avenue, Rockford, Illinois",July,7
-1906,2013-07-09,Maryland,Baltimore,600 block of N. Carrollton Ave,0,4,39.2956,-76.6374,4,"600 block of N. Carrollton Ave, Baltimore, Maryland",July,7
+1913,2013-07-06,New York,Brooklyn,472 Marcy Avenue,1,3,40.6987,-73.95,4,"472 Marcy Avenue, Brooklyn, New York",July,7
+1912,2013-07-06,Alabama,Florence,West Mobile Street,0,4,34.7982,-87.6854,4,"West Mobile Street, Florence, Alabama",July,7
+1911,2013-07-07,Illinois,Chicago,11300 block of South Forest Avenue,0,5,41.689,-87.6157,5,"11300 block of South Forest Avenue, Chicago, Illinois",July,7
+1910,2013-07-07,Mississippi,Meridian,2500 block of 5th Street,0,4,32.3625,-88.7022,4,"2500 block of 5th Street, Meridian, Mississippi",July,7
+1909,2013-07-07,California,Stockton,2600 block of Connecticut Avenue,1,4,37.9218,-121.298,5,"2600 block of Connecticut Avenue, Stockton, California",July,7
+1908,2013-07-07,Florida,Pompano Beach,1600 block of Northwest 7th Lane,1,3,26.2489,-80.1352,4,"1600 block of Northwest 7th Lane, Pompano Beach, Florida",July,7
+1907,2013-07-09,Maryland,Baltimore,600 block of N. Carrollton Ave,0,4,39.2956,-76.6374,4,"600 block of N. Carrollton Ave, Baltimore, Maryland",July,7
+1906,2013-07-09,Illinois,Rockford,600 block of Woodlawn Avenue,2,2,42.2783,-89.0953,4,"600 block of Woodlawn Avenue, Rockford, Illinois",July,7
 1905,2013-07-11,North Carolina,Charlotte,6300 block of Reagan Drive,2,2,35.2837,-80.7742,4,"6300 block of Reagan Drive, Charlotte, North Carolina",July,7
 1904,2013-07-12,California,San Francisco,3192 16th St,1,3,37.7649,-122.423,4,"3192 16th St, San Francisco, California",July,7
 1903,2013-07-12,Kentucky,Greensburg,194 C Mays Rd,2,2,37.1948,-85.5219,4,"194 C Mays Rd, Greensburg, Kentucky",July,7
@@ -219,8 +219,8 @@
 1815,2013-10-27,California,Vallejo,200 block of Princeton Avenue,1,6,38.1517,-122.25,7,"200 block of Princeton Avenue, Vallejo, California",October,10
 1814,2013-10-29,South Carolina,Bradley (Callison),Callison Highway,5,0,33.9881,-82.2888,5,"Callison Highway, Bradley (Callison), South Carolina",October,10
 1813,2013-11-02,Kentucky,Radcliff,355 Shelby Avenue,1,3,37.8133,-85.9224,4,"355 Shelby Avenue, Radcliff, Kentucky",November,11
-1812,2013-11-03,California,Los Angeles,1 World Way,1,3,33.9454,-118.399,4,"1 World Way, Los Angeles, California",November,11
-1811,2013-11-03,California,Perris,2900 block of Perris Boulevard,0,5,33.8249,-117.227,5,"2900 block of Perris Boulevard, Perris, California",November,11
+1812,2013-11-03,California,Perris,2900 block of Perris Boulevard,0,5,33.8249,-117.227,5,"2900 block of Perris Boulevard, Perris, California",November,11
+1811,2013-11-03,California,Los Angeles,1 World Way,1,3,33.9454,-118.399,4,"1 World Way, Los Angeles, California",November,11
 1810,2013-11-05,District of Columbia,Washington,3900 block of Minnesota Ave,0,4,38.8934,-76.9508,4,"3900 block of Minnesota Ave, Washington, District of Columbia",November,11
 1809,2013-11-05,Florida,Jacksonville,1100 block of Randolph,4,0,30.3068,-81.7298,4,"1100 block of Randolph, Jacksonville, Florida",November,11
 1808,2013-11-07,Michigan,Detroit,Conley and 7 Mile,3,7,42.4334,-83.0523,10,"Conley and 7 Mile, Detroit, Michigan",November,11
@@ -235,8 +235,8 @@
 1799,2013-11-25,California,Oakland,96th Avenue and Olive Street,0,7,37.7488,-122.165,7,"96th Avenue and Olive Street, Oakland, California",November,11
 1798,2013-11-25,Minnesota,Minneapolis,1611 E Lake St,1,3,44.9481,-93.2505,4,"1611 E Lake St, Minneapolis, Minnesota",November,11
 1797,2013-11-28,New York,Rochester,St. Paul Boulevard and Andrews Street,0,4,43.1595,-77.61,4,"St. Paul Boulevard and Andrews Street, Rochester, New York",November,11
-1796,2013-11-29,California,Fresno,Oleander and Modoc,0,4,36.7297,-119.81,4,"Oleander and Modoc, Fresno, California",November,11
-1795,2013-11-29,Indiana,Indianapolis,3400 block of East 34th Street,0,4,39.8182,-86.1082,4,"3400 block of East 34th Street, Indianapolis, Indiana",November,11
+1796,2013-11-29,Indiana,Indianapolis,3400 block of East 34th Street,0,4,39.8182,-86.1082,4,"3400 block of East 34th Street, Indianapolis, Indiana",November,11
+1795,2013-11-29,California,Fresno,Oleander and Modoc,0,4,36.7297,-119.81,4,"Oleander and Modoc, Fresno, California",November,11
 1794,2013-11-30,Georgia,Valdosta,Gordon Street and North Ashley Street,0,4,30.8405,-83.2801,4,"Gordon Street and North Ashley Street, Valdosta, Georgia",November,11
 1793,2013-12-01,Florida,Miami,NW 64th Street and 12th Avenue,2,2,25.8336,-80.2167,4,"NW 64th Street and 12th Avenue, Miami, Florida",December,12
 1792,2013-12-01,Kansas,Topeka,1629 SW Central Park,4,0,39.0379,-95.6905,4,"1629 SW Central Park, Topeka, Kansas",December,12
@@ -297,12 +297,12 @@
 1737,2014-02-12,Indiana,Gary,2220 block of Broadway,0,5,41.5781,-87.3371,5,"2220 block of Broadway, Gary, Indiana",February,2
 1736,2014-02-15,Florida,Fort Lauderdale,3033 Northeast 32 Avenue,0,6,26.1661,-80.1036,6,"3033 Northeast 32 Avenue, Fort Lauderdale, Florida",February,2
 1735,2014-02-15,Nevada,Las Vegas,Sahara and Maryland ,0,5,36.1442,-115.137,5,"Sahara and Maryland , Las Vegas, Nevada",February,2
-1734,2014-02-16,Florida,Jacksonville,1187 S. Edgewood Ave.,1,4,30.3085,-81.7133,5,"1187 S. Edgewood Ave., Jacksonville, Florida",February,2
-1733,2014-02-16,Texas,Fort Worth, 115 NW 25th St.,1,4,32.7898,-97.3493,5," 115 NW 25th St., Fort Worth, Texas",February,2
-1732,2014-02-16,Indiana,Fort Wayne,Lafayette Street and East Tillman Road,0,5,41.0173,-85.1191,5,"Lafayette Street and East Tillman Road, Fort Wayne, Indiana",February,2
-1731,2014-02-16,Florida,Orange County,4500 block of Riviera Shores ,1,6,28.5979,-81.2734,7,"4500 block of Riviera Shores , Orange County, Florida",February,2
-1730,2014-02-16,Michigan,Saginaw,Federal Av,0,4,43.4306,-83.9316,4,"Federal Av, Saginaw, Michigan",February,2
-1729,2014-02-16,Texas,Dallas,2600 block of South Harwood Street,1,7,32.7673,-96.779,8,"2600 block of South Harwood Street, Dallas, Texas",February,2
+1734,2014-02-16,Texas,Dallas,2600 block of South Harwood Street,1,7,32.7673,-96.779,8,"2600 block of South Harwood Street, Dallas, Texas",February,2
+1733,2014-02-16,Michigan,Saginaw,Federal Av,0,4,43.4306,-83.9316,4,"Federal Av, Saginaw, Michigan",February,2
+1732,2014-02-16,Florida,Orange County,4500 block of Riviera Shores ,1,6,28.5979,-81.2734,7,"4500 block of Riviera Shores , Orange County, Florida",February,2
+1731,2014-02-16,Indiana,Fort Wayne,Lafayette Street and East Tillman Road,0,5,41.0173,-85.1191,5,"Lafayette Street and East Tillman Road, Fort Wayne, Indiana",February,2
+1730,2014-02-16,Texas,Fort Worth, 115 NW 25th St.,1,4,32.7898,-97.3493,5," 115 NW 25th St., Fort Worth, Texas",February,2
+1729,2014-02-16,Florida,Jacksonville,1187 S. Edgewood Ave.,1,4,30.3085,-81.7133,5,"1187 S. Edgewood Ave., Jacksonville, Florida",February,2
 1728,2014-02-20,Indiana,Indianapolis,3400 block of South Parker,4,0,39.717,-86.1136,4,"3400 block of South Parker, Indianapolis, Indiana",February,2
 1727,2014-02-20,California,Alturas,300 W 1st St,4,2,41.4838,-120.545,6,"300 W 1st St, Alturas, California",February,2
 1726,2014-02-22,Tennessee,Memphis,4464 Stage Road,0,4,35.2062,-89.9146,4,"4464 Stage Road, Memphis, Tennessee",February,2
@@ -314,8 +314,8 @@
 1720,2014-03-01,Michigan,Detroit,7800 Gratiot Av.,0,4,42.3781,-83.0151,4,"7800 Gratiot Av., Detroit, Michigan",March,3
 1719,2014-03-01,Pennsylvania,Pittsburgh,Hamilton Avenue,1,4,40.4558,-79.9028,5,"Hamilton Avenue, Pittsburgh, Pennsylvania",March,3
 1718,2014-03-02,Tennessee,Jackson,1963 US 45 Bypass,0,4,35.6614,-88.8551,4,"1963 US 45 Bypass, Jackson, Tennessee",March,3
-1717,2014-03-05,South Carolina,Pelzer,Law Street,3,2,34.6391,-82.4525,5,"Law Street, Pelzer, South Carolina",March,3
-1716,2014-03-05,Indiana,Indianapolis,South State Ave,1,4,39.7276,-86.1308,5,"South State Ave, Indianapolis, Indiana",March,3
+1717,2014-03-05,Indiana,Indianapolis,South State Ave,1,4,39.7276,-86.1308,5,"South State Ave, Indianapolis, Indiana",March,3
+1716,2014-03-05,South Carolina,Pelzer,Law Street,3,2,34.6391,-82.4525,5,"Law Street, Pelzer, South Carolina",March,3
 1715,2014-03-08,New Jersey,Trenton,"900 block of Martin Luther King, Jr. Boulevard",1,3,40.2334,-74.7593,4,"900 block of Martin Luther King, Jr. Boulevard, Trenton, New Jersey",March,3
 1714,2014-03-08,California,Richmond,1600 block of First Street,1,3,37.9563,-122.368,4,"1600 block of First Street, Richmond, California",March,3
 1713,2014-03-08,Illinois,Chicago,4900 West Race Ave,0,6,41.8907,-87.7483,6,"4900 West Race Ave, Chicago, Illinois",March,3
@@ -329,9 +329,9 @@
 1705,2014-03-16,Georgia,Waynesboro,4960 Highway 80 West ,0,4,33.2098,-81.8474,4,"4960 Highway 80 West , Waynesboro, Georgia",March,3
 1704,2014-03-16,Texas,Beaumont,S 4th St,3,1,30.0588,-94.1156,4,"S 4th St, Beaumont, Texas",March,3
 1703,2014-03-17,New York,Brooklyn,South 2nd St. ,0,4,40.7122,-73.9591,4,"South 2nd St. , Brooklyn, New York",March,3
-1702,2014-03-21,North Carolina,Wilmington,3800 Prices Lane,0,4,34.2465,-77.8987,4,"3800 Prices Lane, Wilmington, North Carolina",March,3
-1701,2014-03-21,South Carolina,North Charleston,7550 Dorchester Road,0,4,32.9033,-80.0788,4,"7550 Dorchester Road, North Charleston, South Carolina",March,3
-1700,2014-03-21,Ohio,Cincinnati,600 William Howard Taft Road,1,3,39.1282,-84.4982,4,"600 William Howard Taft Road, Cincinnati, Ohio",March,3
+1702,2014-03-21,South Carolina,North Charleston,7550 Dorchester Road,0,4,32.9033,-80.0788,4,"7550 Dorchester Road, North Charleston, South Carolina",March,3
+1701,2014-03-21,Ohio,Cincinnati,600 William Howard Taft Road,1,3,39.1282,-84.4982,4,"600 William Howard Taft Road, Cincinnati, Ohio",March,3
+1700,2014-03-21,North Carolina,Wilmington,3800 Prices Lane,0,4,34.2465,-77.8987,4,"3800 Prices Lane, Wilmington, North Carolina",March,3
 1699,2014-03-22,Florida,Lauderhill,N State Road 7,0,4,26.142,-80.2013,4,"N State Road 7, Lauderhill, Florida",March,3
 1698,2014-03-22,Missouri,Sikeston,1637 E. Malone,0,4,36.8841,-89.562,4,"1637 E. Malone, Sikeston, Missouri",March,3
 1697,2014-03-23,Texas,Arlington,2700 Majesty Drive,1,3,32.7548,-97.0607,4,"2700 Majesty Drive, Arlington, Texas",March,3
@@ -346,9 +346,9 @@
 1688,2014-03-30,South Carolina,Bamberg County,Voorhees Rd,1,3,33.2779,-81.113,4,"Voorhees Rd, Bamberg County, South Carolina",March,3
 1687,2014-04-02,Texas,Fort Hood,Motor Pool Road and Tank Destroyer Boulevard,4,16,31.133,-97.7944,20,"Motor Pool Road and Tank Destroyer Boulevard, Fort Hood, Texas",April,4
 1686,2014-04-04,Michigan,Detroit,12000 Gratiot,0,4,42.4136,-82.9917,4,"12000 Gratiot, Detroit, Michigan",April,4
-1685,2014-04-05,California,Fairfield,Orchid Street ,0,4,38.2787,-122.037,4,"Orchid Street , Fairfield, California",April,4
-1684,2014-04-05,Arizona,Phoenix,West Palm Lane near 54th Avenue,1,3,33.4642,-112.178,4,"West Palm Lane near 54th Avenue, Phoenix, Arizona",April,4
-1683,2014-04-05,Illinois,Chicago,4300 W Wilcox Street,1,5,41.8789,-87.7338,6,"4300 W Wilcox Street, Chicago, Illinois",April,4
+1685,2014-04-05,Illinois,Chicago,4300 W Wilcox Street,1,5,41.8789,-87.7338,6,"4300 W Wilcox Street, Chicago, Illinois",April,4
+1684,2014-04-05,California,Fairfield,Orchid Street ,0,4,38.2787,-122.037,4,"Orchid Street , Fairfield, California",April,4
+1683,2014-04-05,Arizona,Phoenix,West Palm Lane near 54th Avenue,1,3,33.4642,-112.178,4,"West Palm Lane near 54th Avenue, Phoenix, Arizona",April,4
 1682,2014-04-06,Massachusetts,Springfield,90 Worthington St.,0,4,42.1031,-72.5937,4,"90 Worthington St., Springfield, Massachusetts",April,4
 1681,2014-04-06,Oklahoma,Oklahoma City,Northwest 29th Street and Portland Avenue,0,4,35.4325,-97.5833,4,"Northwest 29th Street and Portland Avenue, Oklahoma City, Oklahoma",April,4
 1680,2014-04-07,Louisiana,New Orleans,500 block of South Alexander Street,0,4,29.9734,-90.1072,4,"500 block of South Alexander Street, New Orleans, Louisiana",April,4
@@ -359,11 +359,11 @@
 1675,2014-04-12,Louisiana,New Orleans,2100 block of Pauger Street,1,3,29.9716,-90.0609,4,"2100 block of Pauger Street, New Orleans, Louisiana",April,4
 1674,2014-04-14,District of Columbia,Washington,1500 block of 19th Street,0,4,38.9412,-76.9783,4,"1500 block of 19th Street, Washington, District of Columbia",April,4
 1673,2014-04-14,New Jersey,Vineland,800 block of Montrose Street,2,2,39.4834,-75.0311,4,"800 block of Montrose Street, Vineland, New Jersey",April,4
-1672,2014-04-20,Illinois,Chicago,6600 South Michigan Ave,0,5,41.7748,-87.6231,5,"6600 South Michigan Ave, Chicago, Illinois",April,4
-1671,2014-04-20,Florida,Tampa,2902 N. 32nd St.,2,2,27.9704,-82.4249,4,"2902 N. 32nd St., Tampa, Florida",April,4
+1672,2014-04-20,Minnesota,Mankato,200 E. Chestnut St,1,3,44.1815,-93.9926,4,"200 E. Chestnut St, Mankato, Minnesota",April,4
+1671,2014-04-20,Minnesota,Mankato,200 Chestnut St,1,3,44.1815,-93.9926,4,"200 Chestnut St, Mankato, Minnesota",April,4
 1670,2014-04-20,Illinois,Montgomery,1300 block of Jackson St,0,6,41.7289,-88.3104,6,"1300 block of Jackson St, Montgomery, Illinois",April,4
-1669,2014-04-20,Minnesota,Mankato,200 E. Chestnut St,1,3,44.1815,-93.9926,4,"200 E. Chestnut St, Mankato, Minnesota",April,4
-1668,2014-04-20,Minnesota,Mankato,200 Chestnut St,1,3,44.1815,-93.9926,4,"200 Chestnut St, Mankato, Minnesota",April,4
+1669,2014-04-20,Florida,Tampa,2902 N. 32nd St.,2,2,27.9704,-82.4249,4,"2902 N. 32nd St., Tampa, Florida",April,4
+1668,2014-04-20,Illinois,Chicago,6600 South Michigan Ave,0,5,41.7748,-87.6231,5,"6600 South Michigan Ave, Chicago, Illinois",April,4
 1667,2014-04-22,California,Los Angeles,6419 Brynhurst Avenue,1,3,33.9811,-118.334,4,"6419 Brynhurst Avenue, Los Angeles, California",April,4
 1666,2014-04-24,Texas,Houston,9357 Richmond Avenue,1,3,29.7289,-95.5291,4,"9357 Richmond Avenue, Houston, Texas",April,4
 1665,2014-04-25,Tennessee,Memphis,2000 Chelsea Avenue,2,3,35.1735,-89.9907,5,"2000 Chelsea Avenue, Memphis, Tennessee",April,4
@@ -393,8 +393,8 @@
 1641,2014-05-15,Georgia,Atlanta,Boulderwalk Lane ,1,3,33.7023,-84.329,4,"Boulderwalk Lane , Atlanta, Georgia",May,5
 1640,2014-05-17,District of Columbia,Washington,2200 block of Adams Place NE,0,5,38.9192,-76.9749,5,"2200 block of Adams Place NE, Washington, District of Columbia",May,5
 1639,2014-05-17,California,Coachella,84000 block of Pedro Drive,1,3,33.6849,-116.188,4,"84000 block of Pedro Drive, Coachella, California",May,5
-1638,2014-05-18,Georgia,Austell,2063 Cardell Road ,2,2,33.7982,-84.6154,4,"2063 Cardell Road , Austell, Georgia",May,5
-1637,2014-05-18,Ohio,Sandusky,1643 Cleveland Rd,0,7,41.4425,-82.6854,7,"1643 Cleveland Rd, Sandusky, Ohio",May,5
+1638,2014-05-18,Ohio,Sandusky,1643 Cleveland Rd,0,7,41.4425,-82.6854,7,"1643 Cleveland Rd, Sandusky, Ohio",May,5
+1637,2014-05-18,Georgia,Austell,2063 Cardell Road ,2,2,33.7982,-84.6154,4,"2063 Cardell Road , Austell, Georgia",May,5
 1636,2014-05-19,Indiana,Indianapolis,5232 Lakemanor Drive,3,1,39.8471,-86.2682,4,"5232 Lakemanor Drive, Indianapolis, Indiana",May,5
 1635,2014-05-21,Indiana,Indianapolis,3900 East New York Street,1,3,39.7721,-86.0998,4,"3900 East New York Street, Indianapolis, Indiana",May,5
 1634,2014-05-21,Texas,Dallas,4500 block of Village Fair Drive,1,3,32.6941,-96.8268,4,"4500 block of Village Fair Drive, Dallas, Texas",May,5
@@ -408,10 +408,10 @@
 1626,2014-05-25,Ohio,Toledo,2100 block of Joffre Avenue,1,3,41.6617,-83.5864,4,"2100 block of Joffre Avenue, Toledo, Ohio",May,5
 1625,2014-05-26,California,Bakersfield,East 4th and Whitlock ,0,4,35.3611,-118.995,4,"East 4th and Whitlock , Bakersfield, California",May,5
 1624,2014-05-26,California,Mission Viejo,25600 block of Pacific Hills Drive,4,0,33.5904,-117.656,4,"25600 block of Pacific Hills Drive, Mission Viejo, California",May,5
-1623,2014-05-30,Virginia,Norfolk,7400 Wellington Road,3,1,36.9102,-76.2571,4,"7400 Wellington Road, Norfolk, Virginia",May,5
-1622,2014-05-30,Indiana,Indianapolis,2600 North Dearborn Street,3,1,39.8047,-86.112,4,"2600 North Dearborn Street, Indianapolis, Indiana",May,5
-1621,2014-06-01,Illinois,Chicago,West Ferdinand Street and North Lavergne Avenue ,1,5,41.8895,-87.7505,6,"West Ferdinand Street and North Lavergne Avenue , Chicago, Illinois",June,6
-1620,2014-06-01,California,Sacramento,6500 46th Street,0,4,38.5081,-121.452,4,"6500 46th Street, Sacramento, California",June,6
+1623,2014-05-30,Indiana,Indianapolis,2600 North Dearborn Street,3,1,39.8047,-86.112,4,"2600 North Dearborn Street, Indianapolis, Indiana",May,5
+1622,2014-05-30,Virginia,Norfolk,7400 Wellington Road,3,1,36.9102,-76.2571,4,"7400 Wellington Road, Norfolk, Virginia",May,5
+1621,2014-06-01,California,Sacramento,6500 46th Street,0,4,38.5081,-121.452,4,"6500 46th Street, Sacramento, California",June,6
+1620,2014-06-01,Illinois,Chicago,West Ferdinand Street and North Lavergne Avenue ,1,5,41.8895,-87.7505,6,"West Ferdinand Street and North Lavergne Avenue , Chicago, Illinois",June,6
 1619,2014-06-02,Illinois,Chicago,2660 E. 79th St,0,7,41.7519,-87.559,7,"2660 E. 79th St, Chicago, Illinois",June,6
 1618,2014-06-03,Georgia,Atlanta,Auburn Avenue,1,4,33.7555,-84.3771,5,"Auburn Avenue, Atlanta, Georgia",June,6
 1617,2014-06-04,Illinois,Chicago,4900 West West End Avenue,1,3,41.8056,-87.5864,4,"4900 West West End Avenue, Chicago, Illinois",June,6
@@ -426,9 +426,9 @@
 1608,2014-06-09,Illinois,Chicago,3500 West 79th Place,3,1,41.7488,-87.7097,4,"3500 West 79th Place, Chicago, Illinois",June,6
 1607,2014-06-09,New Jersey,Paterson,Rosa Parks Boulevard and Godwin Avenue,0,6,40.9207,-74.1591,6,"Rosa Parks Boulevard and Godwin Avenue, Paterson, New Jersey",June,6
 1606,2014-06-12,Tennessee,Jackson,101 East End St.,0,4,35.6105,-88.7909,4,"101 East End St., Jackson, Tennessee",June,6
-1605,2014-06-13,California,Los Angeles,8600 block of South Figueroa Street,3,1,33.96,-118.283,4,"8600 block of South Figueroa Street, Los Angeles, California",June,6
-1604,2014-06-13,Tennessee,Memphis,1310 South Bellevue,0,4,35.1115,-90.0216,4,"1310 South Bellevue, Memphis, Tennessee",June,6
-1603,2014-06-13,North Carolina,Rocky Mount,700 Branch Street,1,3,35.9336,-77.7924,4,"700 Branch Street, Rocky Mount, North Carolina",June,6
+1605,2014-06-13,North Carolina,Rocky Mount,700 Branch Street,1,3,35.9336,-77.7924,4,"700 Branch Street, Rocky Mount, North Carolina",June,6
+1604,2014-06-13,California,Los Angeles,8600 block of South Figueroa Street,3,1,33.96,-118.283,4,"8600 block of South Figueroa Street, Los Angeles, California",June,6
+1603,2014-06-13,Tennessee,Memphis,1310 South Bellevue,0,4,35.1115,-90.0216,4,"1310 South Bellevue, Memphis, Tennessee",June,6
 1602,2014-06-14,Illinois,Chicago,3300 West Beach Street,0,4,41.9074,-87.7102,4,"3300 West Beach Street, Chicago, Illinois",June,6
 1601,2014-06-14,Illinois,Dwight,200 W. North St,3,1,41.0975,-88.4347,4,"200 W. North St, Dwight, Illinois",June,6
 1600,2014-06-14,Wisconsin,Milwaukee,28th and Center,0,4,43.0679,-87.9486,4,"28th and Center, Milwaukee, Wisconsin",June,6
@@ -441,8 +441,8 @@
 1593,2014-06-21,District of Columbia,Washington,Florida Avenue and U Street NW,0,4,38.9079,-77.0023,4,"Florida Avenue and U Street NW, Washington, District of Columbia",June,6
 1592,2014-06-21,Tennessee,Memphis,2119 East Alcy Road,0,5,35.0782,-89.9923,5,"2119 East Alcy Road, Memphis, Tennessee",June,6
 1591,2014-06-22,California,Windsor,Windsor Avenue,1,3,38.5482,-122.819,4,"Windsor Avenue, Windsor, California",June,6
-1590,2014-06-24,Florida,Miami,Northwest 12th Avenue and 65th Street,2,7,25.8343,-80.2167,9,"Northwest 12th Avenue and 65th Street, Miami, Florida",June,6
-1589,2014-06-24,Texas,Houston,West Little York and Fairbanks N,0,4,29.8656,-95.5244,4,"West Little York and Fairbanks N, Houston, Texas",June,6
+1590,2014-06-24,Texas,Houston,West Little York and Fairbanks N,0,4,29.8656,-95.5244,4,"West Little York and Fairbanks N, Houston, Texas",June,6
+1589,2014-06-24,Florida,Miami,Northwest 12th Avenue and 65th Street,2,7,25.8343,-80.2167,9,"Northwest 12th Avenue and 65th Street, Miami, Florida",June,6
 1588,2014-06-25,Massachusetts,Lowell,Midland Street,0,5,42.6235,-71.3269,5,"Midland Street, Lowell, Massachusetts",June,6
 1587,2014-06-26,Wisconsin,Milwaukee,24th and Locust,0,5,43.0715,-87.9424,5,"24th and Locust, Milwaukee, Wisconsin",June,6
 1586,2014-06-26,Michigan,Detroit,Grand St,2,2,42.3936,-83.1258,4,"Grand St, Detroit, Michigan",June,6
@@ -489,9 +489,9 @@
 1545,2014-07-21,New Jersey,Irvington,36 Welland Avenue,0,6,40.7172,-74.2289,6,"36 Welland Avenue, Irvington, New Jersey",July,7
 1544,2014-07-23,Pennsylvania,Braddock,700 block of Hickory St,0,4,40.4059,-79.8612,4,"700 block of Hickory St, Braddock, Pennsylvania",July,7
 1543,2014-07-25,Illinois,Chicago,700 South California Avenue,1,6,41.8727,-87.6963,7,"700 South California Avenue, Chicago, Illinois",July,7
-1542,2014-07-26,Georgia,Sylvester,Royal Street,0,8,31.531,-83.8221,8,"Royal Street, Sylvester, Georgia",July,7
-1541,2014-07-26,Tennessee,Knoxville,1915 Cumberland Avenue,1,4,35.9552,-83.9363,5,"1915 Cumberland Avenue, Knoxville, Tennessee",July,7
-1540,2014-07-26,Maine,Saco,35 Water Street,5,0,43.4981,-70.449,5,"35 Water Street, Saco, Maine",July,7
+1542,2014-07-26,Maine,Saco,35 Water Street,5,0,43.4981,-70.449,5,"35 Water Street, Saco, Maine",July,7
+1541,2014-07-26,Georgia,Sylvester,Royal Street,0,8,31.531,-83.8221,8,"Royal Street, Sylvester, Georgia",July,7
+1540,2014-07-26,Tennessee,Knoxville,1915 Cumberland Avenue,1,4,35.9552,-83.9363,5,"1915 Cumberland Avenue, Knoxville, Tennessee",July,7
 1539,2014-07-27,Missouri,Saint Louis,2000 block of East John Avenue,0,5,38.6717,-90.2098,5,"2000 block of East John Avenue, Saint Louis, Missouri",July,7
 1538,2014-07-27,Michigan,Kalamazoo,700 S Howard St,0,4,42.2851,-85.6234,4,"700 S Howard St, Kalamazoo, Michigan",July,7
 1537,2014-07-28,New York,Manhattan,177 West 4th Street,1,3,40.7321,-74.0013,4,"177 West 4th Street, Manhattan, New York",July,7
@@ -503,11 +503,11 @@
 1531,2014-08-02,Wisconsin,Beloit,1218 Henry Ave,1,3,42.5226,-89.0227,4,"1218 Henry Ave, Beloit, Wisconsin",August,8
 1530,2014-08-02,New Jersey,Salem,32 Walnut St.,0,4,39.569,-75.4666,4,"32 Walnut St., Salem, New Jersey",August,8
 1529,2014-08-02,Massachusetts,New Bedford,Acushnet Avenue,0,7,41.6872,-70.9263,7,"Acushnet Avenue, New Bedford, Massachusetts",August,8
-1528,2014-08-03,Virginia,Culpeper,4400 block of Rixeyville Road,5,0,38.5631,-77.9829,5,"4400 block of Rixeyville Road, Culpeper, Virginia",August,8
-1527,2014-08-03,Minnesota,Saint Paul,West Minnehaha Avenue and North Arundel Street,1,3,44.963,-93.1187,4,"West Minnehaha Avenue and North Arundel Street, Saint Paul, Minnesota",August,8
-1526,2014-08-03,Tennessee,Columbia,East 9th Street and Bridge Street,0,5,35.6117,-87.0298,5,"East 9th Street and Bridge Street, Columbia, Tennessee",August,8
-1525,2014-08-03,Missouri,Saint Louis,5200 block of Thekla ,0,5,38.6904,-90.2434,5,"5200 block of Thekla , Saint Louis, Missouri",August,8
-1524,2014-08-03,Texas,Humble,3403 FM 1960,0,7,30.0195,-95.3757,7,"3403 FM 1960, Humble, Texas",August,8
+1528,2014-08-03,Texas,Humble,3403 FM 1960,0,7,30.0195,-95.3757,7,"3403 FM 1960, Humble, Texas",August,8
+1527,2014-08-03,Tennessee,Columbia,East 9th Street and Bridge Street,0,5,35.6117,-87.0298,5,"East 9th Street and Bridge Street, Columbia, Tennessee",August,8
+1526,2014-08-03,Missouri,Saint Louis,5200 block of Thekla ,0,5,38.6904,-90.2434,5,"5200 block of Thekla , Saint Louis, Missouri",August,8
+1525,2014-08-03,Minnesota,Saint Paul,West Minnehaha Avenue and North Arundel Street,1,3,44.963,-93.1187,4,"West Minnehaha Avenue and North Arundel Street, Saint Paul, Minnesota",August,8
+1524,2014-08-03,Virginia,Culpeper,4400 block of Rixeyville Road,5,0,38.5631,-77.9829,5,"4400 block of Rixeyville Road, Culpeper, Virginia",August,8
 1523,2014-08-04,Georgia,Atlanta,1100 block of Joseph E. Boone Boulevard NW,0,5,33.7635,-84.4235,5,"1100 block of Joseph E. Boone Boulevard NW, Atlanta, Georgia",August,8
 1522,2014-08-05,North Carolina,Fayetteville,6700 block of Winthrop Drive,3,1,35.1556,-78.9183,4,"6700 block of Winthrop Drive, Fayetteville, North Carolina",August,8
 1521,2014-08-06,California,Bakersfield,1700 block of Quincy Street ,3,1,35.3815,-118.974,4,"1700 block of Quincy Street , Bakersfield, California",August,8
@@ -519,9 +519,9 @@
 1515,2014-08-08,District of Columbia,Washington,Second Street and Todd Place NE,0,4,38.9163,-77.0035,4,"Second Street and Todd Place NE, Washington, District of Columbia",August,8
 1514,2014-08-09,Pennsylvania,Philadelphia,Wyoming and Whitaker Avenues,0,4,40.0203,-75.1141,4,"Wyoming and Whitaker Avenues, Philadelphia, Pennsylvania",August,8
 1513,2014-08-09,Minnesota,Minneapolis,400 3rd Ave N,1,8,44.9827,-93.2757,9,"400 3rd Ave N, Minneapolis, Minnesota",August,8
-1512,2014-08-10,California,Moreno Valley,16300 block of Heather Glen Road ,0,7,33.8836,-117.222,7,"16300 block of Heather Glen Road , Moreno Valley, California",August,8
-1511,2014-08-10,District of Columbia,Washington,N Street SW,0,6,38.8745,-77.0174,6,"N Street SW, Washington, District of Columbia",August,8
-1510,2014-08-10,Louisiana,New Orleans,5400 block of Burgundy St,2,5,29.9594,-90.0192,7,"5400 block of Burgundy St, New Orleans, Louisiana",August,8
+1512,2014-08-10,District of Columbia,Washington,N Street SW,0,6,38.8745,-77.0174,6,"N Street SW, Washington, District of Columbia",August,8
+1511,2014-08-10,Louisiana,New Orleans,5400 block of Burgundy St,2,5,29.9594,-90.0192,7,"5400 block of Burgundy St, New Orleans, Louisiana",August,8
+1510,2014-08-10,California,Moreno Valley,16300 block of Heather Glen Road ,0,7,33.8836,-117.222,7,"16300 block of Heather Glen Road , Moreno Valley, California",August,8
 1509,2014-08-12,New York,Buffalo,Oakmont Avenue,1,3,42.9324,-78.8079,4,"Oakmont Avenue, Buffalo, New York",August,8
 1508,2014-08-12,Georgia,Bartow County,Brent Circle,2,3,34.1744,-84.8861,5,"Brent Circle, Bartow County, Georgia",August,8
 1507,2014-08-13,Tennessee,Clarksville,Treeland Drive,0,4,36.5896,-87.3101,4,"Treeland Drive, Clarksville, Tennessee",August,8
@@ -531,14 +531,14 @@
 1503,2014-08-15,Tennessee,Knoxville,5206 Inskip Road,2,2,36.0239,-83.9542,4,"5206 Inskip Road, Knoxville, Tennessee",August,8
 1502,2014-08-16,Utah,Salt Lake City,122 Pierpont Avenue,0,6,40.764,-111.895,6,"122 Pierpont Avenue, Salt Lake City, Utah",August,8
 1501,2014-08-16,New Jersey,Plainfield,West 3rd Street and Monroe Avenue,1,3,40.6042,-74.4382,4,"West 3rd Street and Monroe Avenue, Plainfield, New Jersey",August,8
-1500,2014-08-17,Nevada,Las Vegas,Owens Avenue and H Street,0,4,36.1884,-115.152,4,"Owens Avenue and H Street, Las Vegas, Nevada",August,8
-1499,2014-08-17,California,East Palo Alto,Purdue Street and Georgetown Avenue,1,3,37.479,-122.138,4,"Purdue Street and Georgetown Avenue, East Palo Alto, California",August,8
-1498,2014-08-17,North Carolina,Enfield,Verna Road,1,3,36.181,-77.6666,4,"Verna Road, Enfield, North Carolina",August,8
-1497,2014-08-17,Illinois,Chicago,7900 block of South Merrill Avenue,0,4,41.7516,-87.5723,4,"7900 block of South Merrill Avenue, Chicago, Illinois",August,8
-1496,2014-08-17,Massachusetts,Boston,Edinboro Street,0,4,42.3518,-71.0597,4,"Edinboro Street, Boston, Massachusetts",August,8
-1495,2014-08-17,New York,Queens,153-38 118th Ave,0,4,40.6809,-73.7885,4,"153-38 118th Ave, Queens, New York",August,8
-1494,2014-08-18,Louisiana,Saint Martinville,Main and Hyacinth streets,0,4,30.1173,-91.8317,4,"Main and Hyacinth streets, Saint Martinville, Louisiana",August,8
-1493,2014-08-18,Rhode Island,North Providence,9 Eliot Ave,1,3,41.8625,-71.4539,4,"9 Eliot Ave, North Providence, Rhode Island",August,8
+1500,2014-08-17,Massachusetts,Boston,Edinboro Street,0,4,42.3518,-71.0597,4,"Edinboro Street, Boston, Massachusetts",August,8
+1499,2014-08-17,Illinois,Chicago,7900 block of South Merrill Avenue,0,4,41.7516,-87.5723,4,"7900 block of South Merrill Avenue, Chicago, Illinois",August,8
+1498,2014-08-17,New York,Queens,153-38 118th Ave,0,4,40.6809,-73.7885,4,"153-38 118th Ave, Queens, New York",August,8
+1497,2014-08-17,California,East Palo Alto,Purdue Street and Georgetown Avenue,1,3,37.479,-122.138,4,"Purdue Street and Georgetown Avenue, East Palo Alto, California",August,8
+1496,2014-08-17,Nevada,Las Vegas,Owens Avenue and H Street,0,4,36.1884,-115.152,4,"Owens Avenue and H Street, Las Vegas, Nevada",August,8
+1495,2014-08-17,North Carolina,Enfield,Verna Road,1,3,36.181,-77.6666,4,"Verna Road, Enfield, North Carolina",August,8
+1494,2014-08-18,Rhode Island,North Providence,9 Eliot Ave,1,3,41.8625,-71.4539,4,"9 Eliot Ave, North Providence, Rhode Island",August,8
+1493,2014-08-18,Louisiana,Saint Martinville,Main and Hyacinth streets,0,4,30.1173,-91.8317,4,"Main and Hyacinth streets, Saint Martinville, Louisiana",August,8
 1492,2014-08-20,Tennessee,Memphis,1400 block of Briarcrest Lane,0,5,35.1062,-89.859,5,"1400 block of Briarcrest Lane, Memphis, Tennessee",August,8
 1491,2014-08-22,South Carolina,Darlington,2429 Zackview Dr,1,3,34.3532,-79.7658,4,"2429 Zackview Dr, Darlington, South Carolina",August,8
 1490,2014-08-24,Georgia,Augusta,1013 Carrie Street,1,3,33.4667,-81.9741,4,"1013 Carrie Street, Augusta, Georgia",August,8
@@ -552,9 +552,9 @@
 1482,2014-08-31,California,Livermore,200 block of South Q Street ,0,5,37.6769,-121.779,5,"200 block of South Q Street , Livermore, California",August,8
 1481,2014-08-31,Illinois,Elmhurst,600 block of Chatham,4,0,41.8815,-87.9329,4,"600 block of Chatham, Elmhurst, Illinois",August,8
 1480,2014-09-01,North Carolina,Greensboro,Hewitt Street ,2,2,36.0574,-79.8625,4,"Hewitt Street , Greensboro, North Carolina",September,9
-1479,2014-09-02,Mississippi,Jackson,3622 Medgar Evers Boulevard,2,3,32.365,-90.2419,5,"3622 Medgar Evers Boulevard, Jackson, Mississippi",September,9
+1479,2014-09-02,Oklahoma,Tulsa,2100 block of South 109th East Avenue,4,0,36.1329,-95.8553,4,"2100 block of South 109th East Avenue, Tulsa, Oklahoma",September,9
 1478,2014-09-02,California,Highland,25000 block of Fifth Street ,0,5,34.1085,-117.233,5,"25000 block of Fifth Street , Highland, California",September,9
-1477,2014-09-02,Oklahoma,Tulsa,2100 block of South 109th East Avenue,4,0,36.1329,-95.8553,4,"2100 block of South 109th East Avenue, Tulsa, Oklahoma",September,9
+1477,2014-09-02,Mississippi,Jackson,3622 Medgar Evers Boulevard,2,3,32.365,-90.2419,5,"3622 Medgar Evers Boulevard, Jackson, Mississippi",September,9
 1476,2014-09-03,New York,Rochester,955 Hudson Street,1,3,43.1826,-77.5994,4,"955 Hudson Street, Rochester, New York",September,9
 1475,2014-09-03,California,Los Angeles,East 27th and Stanford ,0,6,34.0199,-118.26,6,"East 27th and Stanford , Los Angeles, California",September,9
 1474,2014-09-04,Florida,Middleburg,2530 Blanding Blvd,0,4,30.0688,-81.8662,4,"2530 Blanding Blvd, Middleburg, Florida",September,9
@@ -581,27 +581,27 @@
 1453,2014-09-29,California,Fresno,2300 block of West Fountain Way ,0,4,36.7814,-119.838,4,"2300 block of West Fountain Way , Fresno, California",September,9
 1452,2014-09-30,Michigan,Detroit,3000 block of Annabelle,0,5,42.2653,-83.1585,5,"3000 block of Annabelle, Detroit, Michigan",September,9
 1451,2014-10-03,Mississippi,Aberdeen,20230 Coontail Road,2,2,33.8691,-88.5554,4,"20230 Coontail Road, Aberdeen, Mississippi",October,10
-1450,2014-10-04,California,Pomona,1925 West Holt Avenue ,0,4,34.0621,-117.784,4,"1925 West Holt Avenue , Pomona, California",October,10
-1449,2014-10-04,Illinois,Chicago,4400 block of West Van Buren,1,3,41.8751,-87.7353,4,"4400 block of West Van Buren, Chicago, Illinois",October,10
-1448,2014-10-04,Tennessee,Memphis,1400 block of Gherald Street,2,2,35.1698,-89.9208,4,"1400 block of Gherald Street, Memphis, Tennessee",October,10
-1447,2014-10-04,North Carolina,Kinston,400 block of Sherman Street,0,4,35.2608,-77.5492,4,"400 block of Sherman Street, Kinston, North Carolina",October,10
+1450,2014-10-04,Tennessee,Memphis,1400 block of Gherald Street,2,2,35.1698,-89.9208,4,"1400 block of Gherald Street, Memphis, Tennessee",October,10
+1449,2014-10-04,North Carolina,Kinston,400 block of Sherman Street,0,4,35.2608,-77.5492,4,"400 block of Sherman Street, Kinston, North Carolina",October,10
+1448,2014-10-04,California,Pomona,1925 West Holt Avenue ,0,4,34.0621,-117.784,4,"1925 West Holt Avenue , Pomona, California",October,10
+1447,2014-10-04,Illinois,Chicago,4400 block of West Van Buren,1,3,41.8751,-87.7353,4,"4400 block of West Van Buren, Chicago, Illinois",October,10
 1446,2014-10-05,Florida,Jacksonville,7300 block of Linda Drive,3,1,30.3871,-81.6722,4,"7300 block of Linda Drive, Jacksonville, Florida",October,10
 1445,2014-10-05,Michigan,Detroit,East 7 Mile Road and Sherwood Street,1,5,42.4338,-83.034,6,"East 7 Mile Road and Sherwood Street, Detroit, Michigan",October,10
 1444,2014-10-08,Georgia,Atlanta,Auburn Avenue and Edgewood Avenue,0,4,33.7545,-84.3862,4,"Auburn Avenue and Edgewood Avenue, Atlanta, Georgia",October,10
 1443,2014-10-08,Virginia,Richmond,100 block of East Roanoke Street,4,0,37.509,-77.4748,4,"100 block of East Roanoke Street, Richmond, Virginia",October,10
 1442,2014-10-08,New York,Guilderland,1846 Western Ave,4,0,42.6914,-73.8712,4,"1846 Western Ave, Guilderland, New York",October,10
 1441,2014-10-08,Oklahoma,Oklahoma City,3200 S Prospect Avenue,1,4,35.4349,-97.4858,5,"3200 S Prospect Avenue, Oklahoma City, Oklahoma",October,10
-1440,2014-10-11,New York,Utica,222 Bleecker Street,0,5,43.1015,-75.2285,5,"222 Bleecker Street, Utica, New York",October,10
-1439,2014-10-11,Illinois,Chicago,4400 block of West Madison,1,3,41.881,-87.7358,4,"4400 block of West Madison, Chicago, Illinois",October,10
+1440,2014-10-11,Illinois,Chicago,4400 block of West Madison,1,3,41.881,-87.7358,4,"4400 block of West Madison, Chicago, Illinois",October,10
+1439,2014-10-11,New York,Utica,222 Bleecker Street,0,5,43.1015,-75.2285,5,"222 Bleecker Street, Utica, New York",October,10
 1438,2014-10-12,California,Stockton,1100 block of East March Lane,3,1,38.0014,-121.293,4,"1100 block of East March Lane, Stockton, California",October,10
 1437,2014-10-12,Georgia,Atlanta,Arthur Langford Jr Place,1,3,33.6981,-84.4488,4,"Arthur Langford Jr Place, Atlanta, Georgia",October,10
 1436,2014-10-13,Georgia,Atlanta,85 Mount Zion Road,0,4,33.6729,-84.3919,4,"85 Mount Zion Road, Atlanta, Georgia",October,10
 1435,2014-10-14,Georgia,Peachtree Corners,6505 Bannor Lane,3,2,33.9505,-84.2511,5,"6505 Bannor Lane, Peachtree Corners, Georgia",October,10
 1434,2014-10-16,Michigan,Detroit,Mogul Street,1,3,42.4167,-82.9622,4,"Mogul Street, Detroit, Michigan",October,10
 1433,2014-10-17,Florida,Port Orange,1900 block of Jackson Lane,3,1,29.0813,-81.0649,4,"1900 block of Jackson Lane, Port Orange, Florida",October,10
-1432,2014-10-18,South Carolina,Graniteville,192 Breezy Hill Road,1,3,33.5664,-81.8427,4,"192 Breezy Hill Road, Graniteville, South Carolina",October,10
+1432,2014-10-18,New York,Queens,33-02 Queens Blvd,0,4,40.7445,-73.9317,4,"33-02 Queens Blvd, Queens, New York",October,10
 1431,2014-10-18,New York,Brooklyn,Lenox Road,0,4,40.6549,-73.9385,4,"Lenox Road, Brooklyn, New York",October,10
-1430,2014-10-18,New York,Queens,33-02 Queens Blvd,0,4,40.7445,-73.9317,4,"33-02 Queens Blvd, Queens, New York",October,10
+1430,2014-10-18,South Carolina,Graniteville,192 Breezy Hill Road,1,3,33.5664,-81.8427,4,"192 Breezy Hill Road, Graniteville, South Carolina",October,10
 1429,2014-10-20,North Carolina,Lumberton,100 block of Yedda Road,1,3,34.6116,-78.9526,4,"100 block of Yedda Road, Lumberton, North Carolina",October,10
 1428,2014-10-21,Michigan,Ecorse,Jefferson at Union,0,4,42.2565,-83.139,4,"Jefferson at Union, Ecorse, Michigan",October,10
 1427,2014-10-24,California,Sacramento,2030 Arden Way,2,3,38.5956,-121.419,5,"2030 Arden Way, Sacramento, California",October,10
@@ -648,9 +648,9 @@
 1386,2014-12-12,Oregon,Portland,717 North Killingsworth Court,0,4,45.562,-122.674,4,"717 North Killingsworth Court, Portland, Oregon",December,12
 1385,2014-12-13,Florida,Tampa,810 E. Skagway Ave.,0,5,28.0323,-82.4531,5,"810 E. Skagway Ave., Tampa, Florida",December,12
 1384,2014-12-14,Florida,Miami,1311 Northwest 2nd Avenue,1,4,25.7874,-80.1991,5,"1311 Northwest 2nd Avenue, Miami, Florida",December,12
-1383,2014-12-15,Pennsylvania,Lansdale,100 block of West 5th St,7,0,40.2459,-75.282,7,"100 block of West 5th St, Lansdale, Pennsylvania",December,12
-1382,2014-12-15,Illinois,Chicago,5700 block of South Michigan Avenue,0,4,41.7908,-87.6228,4,"5700 block of South Michigan Avenue, Chicago, Illinois",December,12
-1381,2014-12-15,Pennsylvania,Glenolden,600 block of Glenfield Avenue,1,3,39.9017,-75.3045,4,"600 block of Glenfield Avenue, Glenolden, Pennsylvania",December,12
+1383,2014-12-15,Pennsylvania,Glenolden,600 block of Glenfield Avenue,1,3,39.9017,-75.3045,4,"600 block of Glenfield Avenue, Glenolden, Pennsylvania",December,12
+1382,2014-12-15,Pennsylvania,Lansdale,100 block of West 5th St,7,0,40.2459,-75.282,7,"100 block of West 5th St, Lansdale, Pennsylvania",December,12
+1381,2014-12-15,Illinois,Chicago,5700 block of South Michigan Avenue,0,4,41.7908,-87.6228,4,"5700 block of South Michigan Avenue, Chicago, Illinois",December,12
 1380,2014-12-16,New Jersey,Elizabeth,Anna Street,0,4,40.6684,-74.2032,4,"Anna Street, Elizabeth, New Jersey",December,12
 1379,2014-12-20,Illinois,Rockford,3200 block of Montrose Avenue,4,0,42.2938,-89.1072,4,"3200 block of Montrose Avenue, Rockford, Illinois",December,12
 1378,2014-12-21,Mississippi,Waynesboro,Central Avenue,1,4,31.6782,-88.6584,5,"Central Avenue, Waynesboro, Mississippi",December,12
@@ -678,8 +678,8 @@
 1356,2015-01-06,Florida,Miami,1300 block of NW 62nd Street,1,3,25.8315,-80.2188,4,"1300 block of NW 62nd Street, Miami, Florida",January,1
 1355,2015-01-07,Tennessee,Chattanooga,773 West Main Street,1,3,35.0403,-85.3182,4,"773 West Main Street, Chattanooga, Tennessee",January,1
 1354,2015-01-08,Massachusetts,Boston,104 Harrishof Street,1,3,42.3169,-71.0897,4,"104 Harrishof Street, Boston, Massachusetts",January,1
-1353,2015-01-09,Kansas,Shawnee,5725 Nieman Rd,1,3,39.0251,-94.7145,4,"5725 Nieman Rd, Shawnee, Kansas",January,1
-1352,2015-01-09,California,San Francisco,Laguna and Page streets,4,0,37.7737,-122.426,4,"Laguna and Page streets, San Francisco, California",January,1
+1353,2015-01-09,California,San Francisco,Laguna and Page streets,4,0,37.7737,-122.426,4,"Laguna and Page streets, San Francisco, California",January,1
+1352,2015-01-09,Kansas,Shawnee,5725 Nieman Rd,1,3,39.0251,-94.7145,4,"5725 Nieman Rd, Shawnee, Kansas",January,1
 1351,2015-01-10,Kansas,Wichita,4859 E Harry Street,2,2,37.6646,-97.2797,4,"4859 E Harry Street, Wichita, Kansas",January,1
 1350,2015-01-10,Idaho,Moscow,400 block of Veatch Street,3,1,46.7251,-116.997,4,"400 block of Veatch Street, Moscow, Idaho",January,1
 1349,2015-01-11,Florida,Lakeland,7665 Chase Road,1,3,28.1425,-81.982,4,"7665 Chase Road, Lakeland, Florida",January,1
@@ -709,9 +709,9 @@
 1325,2015-02-15,California,Long Beach,200 block of W. 14th Street,0,5,33.7837,-118.194,5,"200 block of W. 14th Street, Long Beach, California",February,2
 1324,2015-02-17,Arkansas,Little Rock,7900 Scott Hamilton,1,3,34.677,-92.3196,4,"7900 Scott Hamilton, Little Rock, Arkansas",February,2
 1323,2015-02-20,California,Sacramento,1417 R Street,0,4,38.57,-121.491,4,"1417 R Street, Sacramento, California",February,2
-1322,2015-02-22,Texas,Killeen,1706 Godman St.,4,1,31.1199,-97.6832,5,"1706 Godman St., Killeen, Texas",February,2
+1322,2015-02-22,Georgia,Clarkesville,281 Lower Pond Court,3,2,34.6357,-83.5978,5,"281 Lower Pond Court, Clarkesville, Georgia",February,2
 1321,2015-02-22,South Carolina,Charleston,4224 Dorchester Road,0,4,32.8542,-80.0058,4,"4224 Dorchester Road, Charleston, South Carolina",February,2
-1320,2015-02-22,Georgia,Clarkesville,281 Lower Pond Court,3,2,34.6357,-83.5978,5,"281 Lower Pond Court, Clarkesville, Georgia",February,2
+1320,2015-02-22,Texas,Killeen,1706 Godman St.,4,1,31.1199,-97.6832,5,"1706 Godman St., Killeen, Texas",February,2
 1319,2015-02-23,Florida,Daytona Beach,Sheridan Road,0,4,29.2083,-81.046,4,"Sheridan Road, Daytona Beach, Florida",February,2
 1318,2015-02-25,Texas,Houston,5022 Mallow St,3,1,29.6599,-95.3556,4,"5022 Mallow St, Houston, Texas",February,2
 1317,2015-02-26,Missouri,Tyrone,18279 Highway H,8,1,37.1956,-91.9012,9,"18279 Highway H, Tyrone, Missouri",February,2
@@ -725,8 +725,8 @@
 1309,2015-03-08,South Carolina,Seneca,Wells Highway,1,3,34.664,-82.9271,4,"Wells Highway, Seneca, South Carolina",March,3
 1308,2015-03-09,Illinois,Chicago,200 block of West 105th,1,3,41.7018,-87.6549,4,"200 block of West 105th, Chicago, Illinois",March,3
 1307,2015-03-10,Georgia,Columbus,3023 Victory Drive,0,5,32.4375,-84.9598,5,"3023 Victory Drive, Columbus, Georgia",March,3
-1306,2015-03-11,Illinois,Aurora,900 block of Pennsylvania Avenue,0,4,41.7744,-88.3213,4,"900 block of Pennsylvania Avenue, Aurora, Illinois",March,3
-1305,2015-03-11,South Carolina,Anderson,West Franklin Street,0,4,34.4962,-82.6588,4,"West Franklin Street, Anderson, South Carolina",March,3
+1306,2015-03-11,South Carolina,Anderson,West Franklin Street,0,4,34.4962,-82.6588,4,"West Franklin Street, Anderson, South Carolina",March,3
+1305,2015-03-11,Illinois,Aurora,900 block of Pennsylvania Avenue,0,4,41.7744,-88.3213,4,"900 block of Pennsylvania Avenue, Aurora, Illinois",March,3
 1304,2015-03-13,Mississippi,Brookhaven,1097 South First St.,2,3,31.561,-90.4451,5,"1097 South First St., Brookhaven, Mississippi",March,3
 1303,2015-03-14,Georgia,Atlanta,2900 block of Delmar Lane,0,5,33.755,-84.482,5,"2900 block of Delmar Lane, Atlanta, Georgia",March,3
 1302,2015-03-14,California,Coachella,84000 block of Bagdad Avenue,0,4,33.6747,-116.18,4,"84000 block of Bagdad Avenue, Coachella, California",March,3
@@ -741,8 +741,8 @@
 1293,2015-03-20,Texas,Lancaster,1500 block of Reynolds Street,1,5,32.6116,-96.7888,6,"1500 block of Reynolds Street, Lancaster, Texas",March,3
 1292,2015-03-20,Oklahoma,Oklahoma City,1300 block of North Stiles Avenue,0,4,35.4819,-97.5057,4,"1300 block of North Stiles Avenue, Oklahoma City, Oklahoma",March,3
 1291,2015-03-21,Florida,Tampa,1802 Seventh Ave,0,4,27.9604,-82.439,4,"1802 Seventh Ave, Tampa, Florida",March,3
-1290,2015-03-22,New Mexico,Albuquerque,10140 Lomas NE,1,6,35.0873,-106.535,7,"10140 Lomas NE, Albuquerque, New Mexico",March,3
-1289,2015-03-22,Alaska,Kenai,Alpine Drive and Borgen Avenue,4,0,60.589,-151.316,4,"Alpine Drive and Borgen Avenue, Kenai, Alaska",March,3
+1290,2015-03-22,Alaska,Kenai,Alpine Drive and Borgen Avenue,4,0,60.589,-151.316,4,"Alpine Drive and Borgen Avenue, Kenai, Alaska",March,3
+1289,2015-03-22,New Mexico,Albuquerque,10140 Lomas NE,1,6,35.0873,-106.535,7,"10140 Lomas NE, Albuquerque, New Mexico",March,3
 1288,2015-03-23,Tennessee,Clarksville,900 block of Carpenter Street,1,4,36.5367,-87.3488,5,"900 block of Carpenter Street, Clarksville, Tennessee",March,3
 1287,2015-03-24,Indiana,Indianapolis,3100 block of North Harding Street,4,0,39.811,-86.1871,4,"3100 block of North Harding Street, Indianapolis, Indiana",March,3
 1286,2015-03-26,Texas,Amarillo,3100 block of Redwood,0,4,35.2446,-101.824,4,"3100 block of Redwood, Amarillo, Texas",March,3
@@ -759,11 +759,11 @@
 1275,2015-04-07,Georgia,Rome,20 Copeland Street,1,3,34.2652,-85.1587,4,"20 Copeland Street, Rome, Georgia",April,4
 1274,2015-04-16,Arizona,Phoenix,4300 block of East Anderson Drive,5,0,33.6417,-111.989,5,"4300 block of East Anderson Drive, Phoenix, Arizona",April,4
 1273,2015-04-17,New York,Wheatfield,6871 Errick Road,1,3,43.0917,-78.881,4,"6871 Errick Road, Wheatfield, New York",April,4
-1272,2015-04-18,New Jersey,Paterson,Rosa Parks Blvd and Godwin Ave,1,3,40.9207,-74.1591,4,"Rosa Parks Blvd and Godwin Ave, Paterson, New Jersey",April,4
-1271,2015-04-18,North Carolina,Charlotte,Bost Street,0,4,35.2257,-80.9011,4,"Bost Street, Charlotte, North Carolina",April,4
-1270,2015-04-18,Pennsylvania,Williamsport,321 Pine St,0,5,41.2409,-77.0031,5,"321 Pine St, Williamsport, Pennsylvania",April,4
-1269,2015-04-18,Alabama,Montgomery,1800 block of Gibbs Court,0,5,32.3573,-86.3358,5,"1800 block of Gibbs Court, Montgomery, Alabama",April,4
-1268,2015-04-18,North Carolina,Lumberton,Martin Luther King Drive,1,3,34.5993,-79.0342,4,"Martin Luther King Drive, Lumberton, North Carolina",April,4
+1272,2015-04-18,North Carolina,Lumberton,Martin Luther King Drive,1,3,34.5993,-79.0342,4,"Martin Luther King Drive, Lumberton, North Carolina",April,4
+1271,2015-04-18,Alabama,Montgomery,1800 block of Gibbs Court,0,5,32.3573,-86.3358,5,"1800 block of Gibbs Court, Montgomery, Alabama",April,4
+1270,2015-04-18,New Jersey,Paterson,Rosa Parks Blvd and Godwin Ave,1,3,40.9207,-74.1591,4,"Rosa Parks Blvd and Godwin Ave, Paterson, New Jersey",April,4
+1269,2015-04-18,North Carolina,Charlotte,Bost Street,0,4,35.2257,-80.9011,4,"Bost Street, Charlotte, North Carolina",April,4
+1268,2015-04-18,Pennsylvania,Williamsport,321 Pine St,0,5,41.2409,-77.0031,5,"321 Pine St, Williamsport, Pennsylvania",April,4
 1267,2015-04-19,Virginia,Richmond,200 block of West Hill Street,0,4,37.5547,-77.4366,4,"200 block of West Hill Street, Richmond, Virginia",April,4
 1266,2015-04-20,Georgia,Americus,1100 block of North Jackson Street,3,1,32.0847,-84.2343,4,"1100 block of North Jackson Street, Americus, Georgia",April,4
 1265,2015-04-25,New Jersey,Trenton,Wood Street,0,4,40.2218,-74.7606,4,"Wood Street, Trenton, New Jersey",April,4
@@ -777,8 +777,8 @@
 1257,2015-05-03,New York,Bronx,University Avenue,0,4,40.8447,-73.9228,4,"University Avenue, Bronx, New York",May,5
 1256,2015-05-03,Wisconsin,Menasha,Friendship Trail,4,1,44.2029,-88.4656,5,"Friendship Trail, Menasha, Wisconsin",May,5
 1255,2015-05-04,New York,Buffalo,100 block of Roosevelt Avenue,1,3,42.934,-78.8098,4,"100 block of Roosevelt Avenue, Buffalo, New York",May,5
-1254,2015-05-07,Ohio,Cincinnati,2300 block of Baltimore Avenue,0,4,39.1497,-84.5615,4,"2300 block of Baltimore Avenue, Cincinnati, Ohio",May,5
-1253,2015-05-07,Michigan,Detroit,16000 block of Cathedral Street,0,4,42.3615,-83.2032,4,"16000 block of Cathedral Street, Detroit, Michigan",May,5
+1254,2015-05-07,Michigan,Detroit,16000 block of Cathedral Street,0,4,42.3615,-83.2032,4,"16000 block of Cathedral Street, Detroit, Michigan",May,5
+1253,2015-05-07,Ohio,Cincinnati,2300 block of Baltimore Avenue,0,4,39.1497,-84.5615,4,"2300 block of Baltimore Avenue, Cincinnati, Ohio",May,5
 1252,2015-05-10,Ohio,Cleveland,3600 block of Bosworth Rd,1,4,41.4544,-81.7649,5,"3600 block of Bosworth Rd, Cleveland, Ohio",May,5
 1251,2015-05-10,New Jersey,Jersey City,Bostwick Avenue,0,4,40.7075,-74.0808,4,"Bostwick Avenue, Jersey City, New Jersey",May,5
 1250,2015-05-10,New Jersey,Newark,19th Avenue and South 16th Street,1,3,40.7314,-74.2099,4,"19th Avenue and South 16th Street, Newark, New Jersey",May,5
@@ -792,8 +792,8 @@
 1242,2015-05-16,Illinois,Rockford,Furman Street and Arthur Avenue,0,6,42.2864,-89.1118,6,"Furman Street and Arthur Avenue, Rockford, Illinois",May,5
 1241,2015-05-16,Wisconsin,Milwaukee,28th Street and Auer Avenue,0,5,43.077,-87.9485,5,"28th Street and Auer Avenue, Milwaukee, Wisconsin",May,5
 1240,2015-05-17,Texas,Waco,4671 S Jack Kultgen Fwy,9,18,31.5039,-97.129,27,"4671 S Jack Kultgen Fwy, Waco, Texas",May,5
-1239,2015-05-18,Missouri,Kinloch,8000 block of School Way,0,4,38.7449,-90.3191,4,"8000 block of School Way, Kinloch, Missouri",May,5
-1238,2015-05-18,Florida,Miami,Northwest 75th Street and Northwest 16th Avenue,1,4,25.8429,-80.2243,5,"Northwest 75th Street and Northwest 16th Avenue, Miami, Florida",May,5
+1239,2015-05-18,Florida,Miami,Northwest 75th Street and Northwest 16th Avenue,1,4,25.8429,-80.2243,5,"Northwest 75th Street and Northwest 16th Avenue, Miami, Florida",May,5
+1238,2015-05-18,Missouri,Kinloch,8000 block of School Way,0,4,38.7449,-90.3191,4,"8000 block of School Way, Kinloch, Missouri",May,5
 1237,2015-05-20,Maryland,Baltimore,800 block of Linwood Avenue,1,3,39.3753,-76.5414,4,"800 block of Linwood Avenue, Baltimore, Maryland",May,5
 1236,2015-05-23,California,Fresno,2400 block of South 9th Street,2,2,36.7142,-119.759,4,"2400 block of South 9th Street, Fresno, California",May,5
 1235,2015-05-24,Alabama,Montgomery,Smiley Court,1,3,32.3344,-86.3523,4,"Smiley Court, Montgomery, Alabama",May,5
@@ -822,8 +822,8 @@
 1212,2015-06-09,Missouri,Saint Louis,North Market Street and North Spring Avenue,1,3,38.652,-90.2256,4,"North Market Street and North Spring Avenue, Saint Louis, Missouri",June,6
 1211,2015-06-10,California,Los Angeles,South Vermont Avenue and West 88th Street,1,3,33.9579,-118.292,4,"South Vermont Avenue and West 88th Street, Los Angeles, California",June,6
 1210,2015-06-10,Ohio,Cincinnati,1800 block of Hewitt Avenue,1,3,39.1374,-84.472,4,"1800 block of Hewitt Avenue, Cincinnati, Ohio",June,6
-1209,2015-06-11,Texas,Houston,3400 block of Burkett,1,3,29.7282,-95.3578,4,"3400 block of Burkett, Houston, Texas",June,6
-1208,2015-06-11,Connecticut,Bridgeport,468 Trumbull Avenue,1,8,41.2212,-73.1964,9,"468 Trumbull Avenue, Bridgeport, Connecticut",June,6
+1209,2015-06-11,Connecticut,Bridgeport,468 Trumbull Avenue,1,8,41.2212,-73.1964,9,"468 Trumbull Avenue, Bridgeport, Connecticut",June,6
+1208,2015-06-11,Texas,Houston,3400 block of Burkett,1,3,29.7282,-95.3578,4,"3400 block of Burkett, Houston, Texas",June,6
 1207,2015-06-12,Florida,Allapattah,24th Avenue and 36th Street,0,4,25.8092,-80.2361,4,"24th Avenue and 36th Street, Allapattah, Florida",June,6
 1206,2015-06-13,Georgia,Milledgeville,451 North Flynn Street,1,3,33.0838,-83.2449,4,"451 North Flynn Street, Milledgeville, Georgia",June,6
 1205,2015-06-13,New York,Bronx,2409 Creston Avenue,0,5,40.8607,-73.8996,5,"2409 Creston Avenue, Bronx, New York",June,6
@@ -838,8 +838,8 @@
 1196,2015-06-16,Florida,Miami Gardens,600 block of Northwest 177th Street,0,4,25.9367,-80.2109,4,"600 block of Northwest 177th Street, Miami Gardens, Florida",June,6
 1195,2015-06-17,South Carolina,Charleston,110 Calhoun Street,9,0,32.7876,-79.9332,9,"110 Calhoun Street, Charleston, South Carolina",June,6
 1194,2015-06-19,Rhode Island,Woonsocket,80 River Street,0,4,42.0004,-71.5177,4,"80 River Street, Woonsocket, Rhode Island",June,6
-1193,2015-06-20,Pennsylvania,Philadelphia,4100 block of Ogden Street,0,11,39.9692,-75.2059,11,"4100 block of Ogden Street, Philadelphia, Pennsylvania",June,6
-1192,2015-06-20,Michigan,Detroit,Dexter and Webb,1,11,42.3797,-83.1241,12,"Dexter and Webb, Detroit, Michigan",June,6
+1193,2015-06-20,Michigan,Detroit,Dexter and Webb,1,11,42.3797,-83.1241,12,"Dexter and Webb, Detroit, Michigan",June,6
+1192,2015-06-20,Pennsylvania,Philadelphia,4100 block of Ogden Street,0,11,39.9692,-75.2059,11,"4100 block of Ogden Street, Philadelphia, Pennsylvania",June,6
 1191,2015-06-21,Utah,Roy,2106 W. 4750 South,4,0,41.1774,-112.031,4,"2106 W. 4750 South, Roy, Utah",June,6
 1190,2015-06-21,Kentucky,Lexington,726 Georgetown St,1,4,38.0686,-84.5023,5,"726 Georgetown St, Lexington, Kentucky",June,6
 1189,2015-06-21,Pennsylvania,Pittsburgh (Wilkinsburg),Rebecca and East Swissvale Avenue,0,4,40.4382,-79.8796,4,"Rebecca and East Swissvale Avenue, Pittsburgh (Wilkinsburg), Pennsylvania",June,6
@@ -853,8 +853,8 @@
 1181,2015-06-27,Connecticut,Hartford,260 Holcomb Street,1,3,41.7962,-72.7007,4,"260 Holcomb Street, Hartford, Connecticut",June,6
 1180,2015-06-27,Florida,Greenacres,4661 Chariot Circle,4,0,26.6089,-80.1176,4,"4661 Chariot Circle, Greenacres, Florida",June,6
 1179,2015-06-27,Massachusetts,Taunton,Weir Street,1,3,41.8948,-71.091,4,"Weir Street, Taunton, Massachusetts",June,6
-1178,2015-06-28,Delaware,Harrington,100 block of East St,0,6,38.921,-75.5748,6,"100 block of East St, Harrington, Delaware",June,6
-1177,2015-06-28,Michigan,Detroit,Gratiot and Loretto,0,5,42.416,-82.9902,5,"Gratiot and Loretto, Detroit, Michigan",June,6
+1178,2015-06-28,Michigan,Detroit,Gratiot and Loretto,0,5,42.416,-82.9902,5,"Gratiot and Loretto, Detroit, Michigan",June,6
+1177,2015-06-28,Delaware,Harrington,100 block of East St,0,6,38.921,-75.5748,6,"100 block of East St, Harrington, Delaware",June,6
 1176,2015-06-29,Florida,Opa Locka,13450 NW 30th Ave,0,4,25.8967,-80.2477,4,"13450 NW 30th Ave, Opa Locka, Florida",June,6
 1175,2015-07-03,Pennsylvania,Philadelphia,Clarissa and Juniata Streets,2,2,40.0167,-75.1582,4,"Clarissa and Juniata Streets, Philadelphia, Pennsylvania",July,7
 1174,2015-07-04,District of Columbia,Washington,2600 Douglas Place SE,1,3,38.8519,-76.9775,4,"2600 Douglas Place SE, Washington, District of Columbia",July,7
@@ -869,9 +869,9 @@
 1165,2015-07-05,South Carolina,Rock Hill,985 Dunlap Roddey Road,4,0,34.8779,-81.0499,4,"985 Dunlap Roddey Road, Rock Hill, South Carolina",July,7
 1164,2015-07-07,Maryland,Baltimore,900 block of West Fayette Street,3,1,39.2901,-76.6324,4,"900 block of West Fayette Street, Baltimore, Maryland",July,7
 1163,2015-07-07,Ohio,Cleveland,East 162nd Street and Miles Avenue,1,3,41.4411,-81.5684,4,"East 162nd Street and Miles Avenue, Cleveland, Ohio",July,7
-1162,2015-07-12,Louisiana,Baton Rouge,1000 block of North Donmoor Avenue,3,1,30.4592,-91.1187,4,"1000 block of North Donmoor Avenue, Baton Rouge, Louisiana",July,7
-1161,2015-07-12,New Jersey,Jersey City,Sip and Van Wagenen avenues,0,4,40.732,-74.0707,4,"Sip and Van Wagenen avenues, Jersey City, New Jersey",July,7
-1160,2015-07-12,Illinois,River Forest,116 Lathrop Avenue,2,3,41.8819,-87.815,5,"116 Lathrop Avenue, River Forest, Illinois",July,7
+1162,2015-07-12,Illinois,River Forest,116 Lathrop Avenue,2,3,41.8819,-87.815,5,"116 Lathrop Avenue, River Forest, Illinois",July,7
+1161,2015-07-12,Louisiana,Baton Rouge,1000 block of North Donmoor Avenue,3,1,30.4592,-91.1187,4,"1000 block of North Donmoor Avenue, Baton Rouge, Louisiana",July,7
+1160,2015-07-12,New Jersey,Jersey City,Sip and Van Wagenen avenues,0,4,40.732,-74.0707,4,"Sip and Van Wagenen avenues, Jersey City, New Jersey",July,7
 1159,2015-07-13,California,Stockton,400 block of McCloud Avenue,1,4,37.9709,-121.291,5,"400 block of McCloud Avenue, Stockton, California",July,7
 1158,2015-07-13,California,Norwalk,11959 162nd Street,0,4,33.8844,-118.078,4,"11959 162nd Street, Norwalk, California",July,7
 1157,2015-07-14,Missouri,Saint Louis,1100 block of Riverview,0,4,38.7227,-90.2361,4,"1100 block of Riverview, Saint Louis, Missouri",July,7
@@ -884,10 +884,10 @@
 1150,2015-07-16,Texas,Dallas,Singleton and Hampton,0,5,32.7788,-96.8565,5,"Singleton and Hampton, Dallas, Texas",July,7
 1149,2015-07-17,Ohio,Cincinnati (Westwood),3100 block of Sunshine Avenue,0,4,39.1436,-84.5789,4,"3100 block of Sunshine Avenue, Cincinnati (Westwood), Ohio",July,7
 1148,2015-07-17,Illinois,Chicago,4400 block of W. Maypole,0,5,41.8848,-87.7359,5,"4400 block of W. Maypole, Chicago, Illinois",July,7
-1147,2015-07-18,California,San Diego,200 block of South Bancroft Street,0,4,32.7043,-117.124,4,"200 block of South Bancroft Street, San Diego, California",July,7
-1146,2015-07-18,California,Santa Paula,Ojai-Santa Paula Street,0,5,34.4009,-119.08,5,"Ojai-Santa Paula Street, Santa Paula, California",July,7
-1145,2015-07-18,Oregon,Salem,1550 Weston Ct NE,1,4,44.9489,-122.991,5,"1550 Weston Ct NE, Salem, Oregon",July,7
-1144,2015-07-18,Louisiana,Baton Rouge,300 block of Brice Street,2,2,30.4457,-91.171,4,"300 block of Brice Street, Baton Rouge, Louisiana",July,7
+1147,2015-07-18,Louisiana,Baton Rouge,300 block of Brice Street,2,2,30.4457,-91.171,4,"300 block of Brice Street, Baton Rouge, Louisiana",July,7
+1146,2015-07-18,Oregon,Salem,1550 Weston Ct NE,1,4,44.9489,-122.991,5,"1550 Weston Ct NE, Salem, Oregon",July,7
+1145,2015-07-18,California,San Diego,200 block of South Bancroft Street,0,4,32.7043,-117.124,4,"200 block of South Bancroft Street, San Diego, California",July,7
+1144,2015-07-18,California,Santa Paula,Ojai-Santa Paula Street,0,5,34.4009,-119.08,5,"Ojai-Santa Paula Street, Santa Paula, California",July,7
 1143,2015-07-19,North Carolina,Rocky Mount,Interstate 64 and Raliegh Street,0,4,35.9457,-77.7581,4,"Interstate 64 and Raliegh Street, Rocky Mount, North Carolina",July,7
 1142,2015-07-19,Virginia,Suffolk,100 block of North Capitol Street,0,4,36.7257,-76.5677,4,"100 block of North Capitol Street, Suffolk, Virginia",July,7
 1141,2015-07-19,Kentucky,Louisville,2928 W Kentucky St,0,6,38.2436,-85.8024,6,"2928 W Kentucky St, Louisville, Kentucky",July,7
@@ -914,9 +914,9 @@
 1120,2015-08-04,Missouri,Saint Louis,2500 block of Semple,1,4,38.672,-90.2691,5,"2500 block of Semple, Saint Louis, Missouri",August,8
 1119,2015-08-06,South Carolina,Columbia,1505 Garden Plaza,0,4,34.0124,-81.0111,4,"1505 Garden Plaza, Columbia, South Carolina",August,8
 1118,2015-08-07,Vermont,Barre (Berlin),3182 Airport Rd,4,0,44.1984,-72.5351,4,"3182 Airport Rd, Barre (Berlin), Vermont",August,8
-1117,2015-08-08,Arkansas,Blytheville,833 Anderson Street,1,11,35.9194,-89.8967,12,"833 Anderson Street, Blytheville, Arkansas",August,8
-1116,2015-08-08,North Carolina,Gastonia,4908 Greenwood Drive,2,3,35.1922,-81.2406,5,"4908 Greenwood Drive, Gastonia, North Carolina",August,8
-1115,2015-08-08,Texas,Houston,2211 Falling Oaks,8,0,29.9199,-95.452,8,"2211 Falling Oaks, Houston, Texas",August,8
+1117,2015-08-08,North Carolina,Gastonia,4908 Greenwood Drive,2,3,35.1922,-81.2406,5,"4908 Greenwood Drive, Gastonia, North Carolina",August,8
+1116,2015-08-08,Texas,Houston,2211 Falling Oaks,8,0,29.9199,-95.452,8,"2211 Falling Oaks, Houston, Texas",August,8
+1115,2015-08-08,Arkansas,Blytheville,833 Anderson Street,1,11,35.9194,-89.8967,12,"833 Anderson Street, Blytheville, Arkansas",August,8
 1114,2015-08-09,Mississippi,Forest,Poplar Street,1,3,32.3708,-89.4567,4,"Poplar Street, Forest, Mississippi",August,8
 1113,2015-08-09,Missouri,Kansas City,40th Street and Pennsylvania Avenue,0,4,39.0551,-94.5931,4,"40th Street and Pennsylvania Avenue, Kansas City, Missouri",August,8
 1112,2015-08-09,Michigan,Detroit,15200 block of Hazelridge,1,3,42.4248,-82.965,4,"15200 block of Hazelridge, Detroit, Michigan",August,8
@@ -931,8 +931,8 @@
 1103,2015-08-20,Texas,Grulla (La Grulla),FM 2360,2,2,26.2787,-98.6457,4,"FM 2360, Grulla (La Grulla), Texas",August,8
 1102,2015-08-21,Ohio,Cincinnati,Mathis and Prentice,2,5,39.1595,-84.3908,7,"Mathis and Prentice, Cincinnati, Ohio",August,8
 1101,2015-08-21,North Carolina,Durham,2700 block of Hinson Drive,0,8,36.0297,-78.8777,8,"2700 block of Hinson Drive, Durham, North Carolina",August,8
-1100,2015-08-22,Florida,Orlando (Pine Hills),State Road 408,0,4,28.5382,-81.3481,4,"State Road 408, Orlando (Pine Hills), Florida",August,8
-1099,2015-08-22,New Mexico,Roswell,302 East Reed Street,3,1,33.3814,-104.518,4,"302 East Reed Street, Roswell, New Mexico",August,8
+1100,2015-08-22,New Mexico,Roswell,302 East Reed Street,3,1,33.3814,-104.518,4,"302 East Reed Street, Roswell, New Mexico",August,8
+1099,2015-08-22,Florida,Orlando (Pine Hills),State Road 408,0,4,28.5382,-81.3481,4,"State Road 408, Orlando (Pine Hills), Florida",August,8
 1098,2015-08-23,California,Modesto,1100 block of Kansas Avenue,1,7,37.6454,-121.023,8,"1100 block of Kansas Avenue, Modesto, California",August,8
 1097,2015-08-25,Louisiana,New Orleans,Fern Street and Olive Street,1,3,29.9618,-90.1112,4,"Fern Street and Olive Street, New Orleans, Louisiana",August,8
 1096,2015-08-26,Illinois,Chicago,3025 W. Van Buren Ave,2,2,41.8757,-87.702,4,"3025 W. Van Buren Ave, Chicago, Illinois",August,8
@@ -946,10 +946,10 @@
 1088,2015-08-29,Texas,Tyler,638 ENE Loop 323,1,3,32.3899,-95.2897,4,"638 ENE Loop 323, Tyler, Texas",August,8
 1087,2015-08-30,Tennessee,Memphis,3300 block of Sobota Circle,1,4,35.1495,-90.049,5,"3300 block of Sobota Circle, Memphis, Tennessee",August,8
 1086,2015-09-01,New Jersey,Long Branch,245 Joline Avenue,4,0,40.3111,-73.9904,4,"245 Joline Avenue, Long Branch, New Jersey",September,9
-1085,2015-09-05,Nevada,Las Vegas,5000 block of Hollywood Boulevard,1,3,36.0924,-115.029,4,"5000 block of Hollywood Boulevard, Las Vegas, Nevada",September,9
-1084,2015-09-05,Missouri,Columbia,1509 Ashley Street,0,4,38.9673,-92.3187,4,"1509 Ashley Street, Columbia, Missouri",September,9
-1083,2015-09-05,Florida,Daytona Beach,300 block of Pearl Street,0,4,29.2131,-81.0295,4,"300 block of Pearl Street, Daytona Beach, Florida",September,9
-1082,2015-09-05,North Carolina,Charlotte,6800 block of Fieldvale Place,1,3,35.1607,-80.9106,4,"6800 block of Fieldvale Place, Charlotte, North Carolina",September,9
+1085,2015-09-05,North Carolina,Charlotte,6800 block of Fieldvale Place,1,3,35.1607,-80.9106,4,"6800 block of Fieldvale Place, Charlotte, North Carolina",September,9
+1084,2015-09-05,Florida,Daytona Beach,300 block of Pearl Street,0,4,29.2131,-81.0295,4,"300 block of Pearl Street, Daytona Beach, Florida",September,9
+1083,2015-09-05,Nevada,Las Vegas,5000 block of Hollywood Boulevard,1,3,36.0924,-115.029,4,"5000 block of Hollywood Boulevard, Las Vegas, Nevada",September,9
+1082,2015-09-05,Missouri,Columbia,1509 Ashley Street,0,4,38.9673,-92.3187,4,"1509 Ashley Street, Columbia, Missouri",September,9
 1081,2015-09-07,Indiana,Gary,9300 block of Sunrise,2,4,41.5971,-87.2256,6,"9300 block of Sunrise, Gary, Indiana",September,9
 1080,2015-09-07,Colorado,Denver,1909 Blake Street,0,4,39.7538,-104.995,4,"1909 Blake Street, Denver, Colorado",September,9
 1079,2015-09-08,Washington,Manson,1000 block of Ivan Morse Road,4,0,47.9018,-120.132,4,"1000 block of Ivan Morse Road, Manson, Washington",September,9
@@ -960,10 +960,10 @@
 1074,2015-09-12,New York,Rochester,36 Woodward Street,2,4,43.1643,-77.5993,6,"36 Woodward Street, Rochester, New York",September,9
 1073,2015-09-12,Minnesota,Minneapolis,1st Ave. and N. 5th St.,0,6,44.9804,-93.2738,6,"1st Ave. and N. 5th St., Minneapolis, Minnesota",September,9
 1072,2015-09-12,Minnesota,Minneapolis,1200 block of 22nd Ave. N.,1,3,45.0015,-93.2957,4,"1200 block of 22nd Ave. N., Minneapolis, Minnesota",September,9
-1071,2015-09-13,Florida,Ocala,1910 South Pine Avenue,1,5,29.1685,-82.1384,6,"1910 South Pine Avenue, Ocala, Florida",September,9
-1070,2015-09-13,Louisiana,Baton Rouge (Central),12700 block of Talmadge Crumholt Road,4,0,30.5576,-91.0835,4,"12700 block of Talmadge Crumholt Road, Baton Rouge (Central), Louisiana",September,9
-1069,2015-09-13,New Mexico,Los Lunas,4493 NM-314,2,2,34.7552,-106.747,4,"4493 NM-314, Los Lunas, New Mexico",September,9
-1068,2015-09-13,Louisiana,Baker,12700 block of Talmadge Crumholt Road,4,0,30.5576,-91.0835,4,"12700 block of Talmadge Crumholt Road, Baker, Louisiana",September,9
+1071,2015-09-13,Louisiana,Baker,12700 block of Talmadge Crumholt Road,4,0,30.5576,-91.0835,4,"12700 block of Talmadge Crumholt Road, Baker, Louisiana",September,9
+1070,2015-09-13,New Mexico,Los Lunas,4493 NM-314,2,2,34.7552,-106.747,4,"4493 NM-314, Los Lunas, New Mexico",September,9
+1069,2015-09-13,Florida,Ocala,1910 South Pine Avenue,1,5,29.1685,-82.1384,6,"1910 South Pine Avenue, Ocala, Florida",September,9
+1068,2015-09-13,Louisiana,Baton Rouge (Central),12700 block of Talmadge Crumholt Road,4,0,30.5576,-91.0835,4,"12700 block of Talmadge Crumholt Road, Baton Rouge (Central), Louisiana",September,9
 1067,2015-09-15,New Jersey,Newark,Irvine Turner Boulevard and West Kinney Street,0,4,40.7321,-74.1893,4,"Irvine Turner Boulevard and West Kinney Street, Newark, New Jersey",September,9
 1066,2015-09-17,Michigan,Albion,500 block of W. Broadwell Street,0,4,42.2569,-84.7601,4,"500 block of W. Broadwell Street, Albion, Michigan",September,9
 1065,2015-09-17,South Dakota,Geddes,36705 379th Street,6,0,43.3153,-98.6045,6,"36705 379th Street, Geddes, South Dakota",September,9
@@ -977,9 +977,9 @@
 1057,2015-09-23,Florida,Fort Myers,Dale Street and Veronica S. Shoemaker Boulevard,0,4,26.6471,-81.8401,4,"Dale Street and Veronica S. Shoemaker Boulevard, Fort Myers, Florida",September,9
 1056,2015-09-24,Illinois,Chicago,5100 block of South Morgan Street,0,5,41.8015,-87.6502,5,"5100 block of South Morgan Street, Chicago, Illinois",September,9
 1055,2015-09-25,Illinois,Danville,1300 block of May Street,0,4,40.1402,-87.6022,4,"1300 block of May Street, Danville, Illinois",September,9
-1054,2015-09-27,Missouri,Kansas City,1700 E. 18th St.,0,4,39.0913,-94.562,4,"1700 E. 18th St., Kansas City, Missouri",September,9
-1053,2015-09-27,Illinois,Chicago,5200 block of South Justine,0,4,41.7994,-87.6638,4,"5200 block of South Justine, Chicago, Illinois",September,9
-1052,2015-09-27,Georgia,Greenville,1140 Hill Haven Road,0,10,33.0312,-84.7298,10,"1140 Hill Haven Road, Greenville, Georgia",September,9
+1054,2015-09-27,Illinois,Chicago,5200 block of South Justine,0,4,41.7994,-87.6638,4,"5200 block of South Justine, Chicago, Illinois",September,9
+1053,2015-09-27,Georgia,Greenville,1140 Hill Haven Road,0,10,33.0312,-84.7298,10,"1140 Hill Haven Road, Greenville, Georgia",September,9
+1052,2015-09-27,Missouri,Kansas City,1700 E. 18th St.,0,4,39.0913,-94.562,4,"1700 E. 18th St., Kansas City, Missouri",September,9
 1051,2015-09-28,Illinois,Chicago,5300 block of South Aberdeen Street,2,3,41.7977,-87.6529,5,"5300 block of South Aberdeen Street, Chicago, Illinois",September,9
 1050,2015-09-28,Ohio,Dayton,1921 Oakridge,0,4,39.7583,-84.2354,4,"1921 Oakridge, Dayton, Ohio",September,9
 1049,2015-09-28,Illinois,Chicago,300 block of West 42nd Street,3,2,41.8184,-87.6338,5,"300 block of West 42nd Street, Chicago, Illinois",September,9
@@ -995,8 +995,8 @@
 1039,2015-10-10,Tennessee,Memphis,6135 Mount Moriah Road,0,6,35.0697,-89.8568,6,"6135 Mount Moriah Road, Memphis, Tennessee",October,10
 1038,2015-10-12,Georgia,Decatur,4731 Glenwood Road,0,4,33.7369,-84.2243,4,"4731 Glenwood Road, Decatur, Georgia",October,10
 1037,2015-10-16,Hawaii,Honolulu,1600 block of Piikoi St,0,5,21.3063,-157.84,5,"1600 block of Piikoi St, Honolulu, Hawaii",October,10
-1036,2015-10-17,Florida,Fort Myers,2224 First St,1,4,26.6439,-81.8705,5,"2224 First St, Fort Myers, Florida",October,10
-1035,2015-10-17,Indiana,Elkhart,160 Easy Shopping Place,0,4,41.6901,-85.9667,4,"160 Easy Shopping Place, Elkhart, Indiana",October,10
+1036,2015-10-17,Indiana,Elkhart,160 Easy Shopping Place,0,4,41.6901,-85.9667,4,"160 Easy Shopping Place, Elkhart, Indiana",October,10
+1035,2015-10-17,Florida,Fort Myers,2224 First St,1,4,26.6439,-81.8705,5,"2224 First St, Fort Myers, Florida",October,10
 1034,2015-10-18,Louisiana,New Orleans,2600 block of Caffin Avenue,0,4,29.9772,-90.0112,4,"2600 block of Caffin Avenue, New Orleans, Louisiana",October,10
 1033,2015-10-19,Illinois,Calumet City,300 Campbell Avenue,0,6,41.6294,-87.5509,6,"300 Campbell Avenue, Calumet City, Illinois",October,10
 1032,2015-10-22,Tennessee,Nashville,3500 John A. Merritt Blvd,1,3,36.167,-86.8286,4,"3500 John A. Merritt Blvd, Nashville, Tennessee",October,10
@@ -1014,8 +1014,8 @@
 1020,2015-10-31,Colorado,Colorado Springs,230 North Prospect Street,4,0,38.8363,-104.811,4,"230 North Prospect Street, Colorado Springs, Colorado",October,10
 1019,2015-11-02,South Carolina,Pendleton,2217 Refuge Road,4,0,34.6474,-82.748,4,"2217 Refuge Road, Pendleton, South Carolina",November,11
 1018,2015-11-03,Florida,Jacksonville,Ella Street and Kings Road,2,3,30.3475,-81.6927,5,"Ella Street and Kings Road, Jacksonville, Florida",November,11
-1017,2015-11-04,Maine,Oakland,42 Belgrade Road,4,0,44.5413,-69.7247,4,"42 Belgrade Road, Oakland, Maine",November,11
-1016,2015-11-04,Texas,Cypress,20300 block of Silverwood Trail,2,2,30.0071,-95.7375,4,"20300 block of Silverwood Trail, Cypress, Texas",November,11
+1017,2015-11-04,Texas,Cypress,20300 block of Silverwood Trail,2,2,30.0071,-95.7375,4,"20300 block of Silverwood Trail, Cypress, Texas",November,11
+1016,2015-11-04,Maine,Oakland,42 Belgrade Road,4,0,44.5413,-69.7247,4,"42 Belgrade Road, Oakland, Maine",November,11
 1015,2015-11-06,California,Bakersfield,1000 block of Feliz Drive,0,4,35.3506,-118.99,4,"1000 block of Feliz Drive, Bakersfield, California",November,11
 1014,2015-11-07,Colorado,Denver,Bayaud and Bannock,1,3,39.7148,-104.99,4,"Bayaud and Bannock, Denver, Colorado",November,11
 1013,2015-11-08,Michigan,Warren,13859 8 Mile Road,0,4,42.4494,-82.9825,4,"13859 8 Mile Road, Warren, Michigan",November,11
@@ -1029,12 +1029,12 @@
 1005,2015-11-18,California,Fresno,California Avenue and Martin Luther King Jr. Boulevard,0,5,36.7214,-119.8,5,"California Avenue and Martin Luther King Jr. Boulevard, Fresno, California",November,11
 1004,2015-11-20,Pennsylvania,Pittsburgh,Prospect Drive,1,3,40.4314,-79.9356,4,"Prospect Drive, Pittsburgh, Pennsylvania",November,11
 1003,2015-11-21,Maryland,Baltimore,Stricker and School,1,3,39.3058,-76.6419,4,"Stricker and School, Baltimore, Maryland",November,11
-1002,2015-11-22,Texas,Brownsville,1800 block of FM 802,0,4,25.9248,-97.4317,4,"1800 block of FM 802, Brownsville, Texas",November,11
-1001,2015-11-22,Washington,Seattle,Broadway and Pike,0,4,47.6141,-122.321,4,"Broadway and Pike, Seattle, Washington",November,11
-1000,2015-11-22,Louisiana,New Orleans,1900 block of Gallier Street,0,17,29.9748,-90.0372,17,"1900 block of Gallier Street, New Orleans, Louisiana",November,11
-999,2015-11-22,Illinois,Chicago,4100 block of West Roosevelt,0,4,41.8666,-87.6902,4,"4100 block of West Roosevelt, Chicago, Illinois",November,11
-998,2015-11-22,South Carolina,North Charleston,Park Circle,1,3,32.8805,-79.9861,4,"Park Circle, North Charleston, South Carolina",November,11
-997,2015-11-22,New York,Newburgh,203 Broadway,0,5,41.5004,-74.0187,5,"203 Broadway, Newburgh, New York",November,11
+1002,2015-11-22,New York,Newburgh,203 Broadway,0,5,41.5004,-74.0187,5,"203 Broadway, Newburgh, New York",November,11
+1001,2015-11-22,South Carolina,North Charleston,Park Circle,1,3,32.8805,-79.9861,4,"Park Circle, North Charleston, South Carolina",November,11
+1000,2015-11-22,Illinois,Chicago,4100 block of West Roosevelt,0,4,41.8666,-87.6902,4,"4100 block of West Roosevelt, Chicago, Illinois",November,11
+999,2015-11-22,Texas,Brownsville,1800 block of FM 802,0,4,25.9248,-97.4317,4,"1800 block of FM 802, Brownsville, Texas",November,11
+998,2015-11-22,Washington,Seattle,Broadway and Pike,0,4,47.6141,-122.321,4,"Broadway and Pike, Seattle, Washington",November,11
+997,2015-11-22,Louisiana,New Orleans,1900 block of Gallier Street,0,17,29.9748,-90.0372,17,"1900 block of Gallier Street, New Orleans, Louisiana",November,11
 996,2015-11-23,Texas,Houston,5959 Bissonnet,1,3,29.6985,-95.4857,4,"5959 Bissonnet, Houston, Texas",November,11
 995,2015-11-23,Ohio,Columbus,90 block of S. Terrace Avenue,4,1,39.9533,-83.0662,5,"90 block of S. Terrace Avenue, Columbus, Ohio",November,11
 994,2015-11-23,Minnesota,Minneapolis,Morgan Avenue North,0,5,44.9861,-93.3045,5,"Morgan Avenue North, Minneapolis, Minnesota",November,11
@@ -1044,8 +1044,8 @@
 990,2015-11-27,Colorado,Colorado Springs,3480 Centennial Blvd,3,9,38.8767,-104.847,12,"3480 Centennial Blvd, Colorado Springs, Colorado",November,11
 989,2015-11-29,Illinois,Kankakee,648 E. Court St,0,5,41.1193,-87.8576,5,"648 E. Court St, Kankakee, Illinois",November,11
 988,2015-11-30,Oklahoma,Lawton,1600 block of S.W. E Avenue,0,4,34.6029,-98.412,4,"1600 block of S.W. E Avenue, Lawton, Oklahoma",November,11
-987,2015-12-02,California,San Bernardino,1365 South Waterman Avenue,16,19,34.0758,-117.277,35,"1365 South Waterman Avenue, San Bernardino, California",December,12
-986,2015-12-02,Georgia,Savannah,100 block of West 33rd Street,1,3,32.0607,-81.1,4,"100 block of West 33rd Street, Savannah, Georgia",December,12
+987,2015-12-02,Georgia,Savannah,100 block of West 33rd Street,1,3,32.0607,-81.1,4,"100 block of West 33rd Street, Savannah, Georgia",December,12
+986,2015-12-02,California,San Bernardino,1365 South Waterman Avenue,16,19,34.0758,-117.277,35,"1365 South Waterman Avenue, San Bernardino, California",December,12
 985,2015-12-06,Nebraska,Omaha,North 108th Street and Military Road,2,3,41.3138,-96.0814,5,"North 108th Street and Military Road, Omaha, Nebraska",December,12
 984,2015-12-06,Louisiana,Raceland,Market Street,1,3,29.7193,-90.6093,4,"Market Street, Raceland, Louisiana",December,12
 983,2015-12-08,Ohio,Cincinnati (Fairmount),2300 block of Baltimore Avenue,1,3,39.1497,-84.5615,4,"2300 block of Baltimore Avenue, Cincinnati (Fairmount), Ohio",December,12
@@ -1057,9 +1057,9 @@
 977,2015-12-13,California,Los Angeles,5550 S. Flower Street,1,3,33.9879,-118.282,4,"5550 S. Flower Street, Los Angeles, California",December,12
 976,2015-12-13,California,Huntington Beach,17000 block of Keelson Lane,0,4,33.7116,-117.991,4,"17000 block of Keelson Lane, Huntington Beach, California",December,12
 975,2015-12-15,Oregon,Veneta,Jeans Road,3,1,44.0661,-123.324,4,"Jeans Road, Veneta, Oregon",December,12
-974,2015-12-20,Florida,Miami-dade (county),Northeast Seventh Avenue and Northeast 166th Street,0,4,25.9278,-80.1862,4,"Northeast Seventh Avenue and Northeast 166th Street, Miami-dade (county), Florida",December,12
-973,2015-12-20,Florida,Miami (Goulds),21630 Southwest 120th Avenue,1,4,25.5658,-80.3866,5,"21630 Southwest 120th Avenue, Miami (Goulds), Florida",December,12
-972,2015-12-20,North Carolina,Wilmington,11th and Castle Street,1,4,34.2289,-77.9346,5,"11th and Castle Street, Wilmington, North Carolina",December,12
+974,2015-12-20,North Carolina,Wilmington,11th and Castle Street,1,4,34.2289,-77.9346,5,"11th and Castle Street, Wilmington, North Carolina",December,12
+973,2015-12-20,Florida,Miami-dade (county),Northeast Seventh Avenue and Northeast 166th Street,0,4,25.9278,-80.1862,4,"Northeast Seventh Avenue and Northeast 166th Street, Miami-dade (county), Florida",December,12
+972,2015-12-20,Florida,Miami (Goulds),21630 Southwest 120th Avenue,1,4,25.5658,-80.3866,5,"21630 Southwest 120th Avenue, Miami (Goulds), Florida",December,12
 971,2015-12-21,California,San Leandro,14600 block of East 14th Street,0,4,37.7096,-122.135,4,"14600 block of East 14th Street, San Leandro, California",December,12
 970,2015-12-25,Florida,Jacksonville,Franklin and Odessa,0,4,30.3329,-81.6394,4,"Franklin and Odessa, Jacksonville, Florida",December,12
 969,2015-12-25,Alabama,Mobile,785 Schillinger Rd S,0,4,30.6714,-88.2254,4,"785 Schillinger Rd S, Mobile, Alabama",December,12
@@ -1075,9 +1075,9 @@
 959,2016-01-13,Georgia,Decatur,2800 block of Eastwood Drive,2,2,33.7408,-84.2756,4,"2800 block of Eastwood Drive, Decatur, Georgia",January,1
 958,2016-01-17,Virginia,Ware Neck (Gloucester Courthouse),Ditchley Road and Gill Lane,1,3,37.4001,-76.4373,4,"Ditchley Road and Gill Lane, Ware Neck (Gloucester Courthouse), Virginia",January,1
 957,2016-01-21,Oklahoma,Eufaula,102 N Main Street,2,2,35.2875,-95.5888,4,"102 N Main Street, Eufaula, Oklahoma",January,1
-956,2016-01-23,Mississippi,Carriere (Henleyfield),5374 HWY 43 NORTH,2,2,30.6745,-89.7644,4,"5374 HWY 43 NORTH, Carriere (Henleyfield), Mississippi",January,1
-955,2016-01-23,California,Los Angeles,8105 Avalon Blvd,2,2,33.9655,-118.265,4,"8105 Avalon Blvd, Los Angeles, California",January,1
-954,2016-01-23,Florida,Crestview,179 Peoria Boulevard,3,1,30.7068,-86.5821,4,"179 Peoria Boulevard, Crestview, Florida",January,1
+956,2016-01-23,California,Los Angeles,8105 Avalon Blvd,2,2,33.9655,-118.265,4,"8105 Avalon Blvd, Los Angeles, California",January,1
+955,2016-01-23,Florida,Crestview,179 Peoria Boulevard,3,1,30.7068,-86.5821,4,"179 Peoria Boulevard, Crestview, Florida",January,1
+954,2016-01-23,Mississippi,Carriere (Henleyfield),5374 HWY 43 NORTH,2,2,30.6745,-89.7644,4,"5374 HWY 43 NORTH, Carriere (Henleyfield), Mississippi",January,1
 953,2016-01-25,California,Perris,140 S. D Street,1,4,33.7849,-117.229,5,"140 S. D Street, Perris, California",January,1
 952,2016-01-26,Washington,Seattle,Airport Way S. and S. Atlantic St.,2,3,47.5903,-122.323,5,"Airport Way S. and S. Atlantic St., Seattle, Washington",January,1
 951,2016-01-27,Virginia,Chesapeake,1401 N. George Washington Hwy,6,0,36.7921,-76.3293,6,"1401 N. George Washington Hwy, Chesapeake, Virginia",January,1
@@ -1090,10 +1090,10 @@
 944,2016-02-06,Texas,Uvalde,County Road 369,4,0,29.1582,-99.7357,4,"County Road 369, Uvalde, Texas",February,2
 943,2016-02-06,Florida,Tampa,8123 N Nebraska Ave,2,6,28.0216,-82.4512,8,"8123 N Nebraska Ave, Tampa, Florida",February,2
 942,2016-02-06,Florida,Apopka,10th Street,0,4,28.6658,-81.5031,4,"10th Street, Apopka, Florida",February,2
-941,2016-02-07,Florida,Orlando,7432 Universal Blvd,2,10,28.4541,-81.4646,12,"7432 Universal Blvd, Orlando, Florida",February,2
-940,2016-02-07,Mississippi,Pass Christian,Davis Avenue,2,4,30.3226,-89.2447,6,"Davis Avenue, Pass Christian, Mississippi",February,2
-939,2016-02-07,Illinois,Chicago (Englewood),6500 block of South Green Street,0,4,41.776,-87.6462,4,"6500 block of South Green Street, Chicago (Englewood), Illinois",February,2
-938,2016-02-07,New York,Rochester,547 State St,1,7,43.1634,-77.622,8,"547 State St, Rochester, New York",February,2
+941,2016-02-07,Mississippi,Pass Christian,Davis Avenue,2,4,30.3226,-89.2447,6,"Davis Avenue, Pass Christian, Mississippi",February,2
+940,2016-02-07,New York,Rochester,547 State St,1,7,43.1634,-77.622,8,"547 State St, Rochester, New York",February,2
+939,2016-02-07,Florida,Orlando,7432 Universal Blvd,2,10,28.4541,-81.4646,12,"7432 Universal Blvd, Orlando, Florida",February,2
+938,2016-02-07,Illinois,Chicago (Englewood),6500 block of South Green Street,0,4,41.776,-87.6462,4,"6500 block of South Green Street, Chicago (Englewood), Illinois",February,2
 937,2016-02-09,Michigan,Muskegon (Muskegon Heights),2441 Sanford Street,0,4,43.208,-86.2459,4,"2441 Sanford Street, Muskegon (Muskegon Heights), Michigan",February,2
 936,2016-02-11,Georgia,Cordele,I-75 and GA 300,1,3,31.9702,-83.7827,4,"I-75 and GA 300, Cordele, Georgia",February,2
 935,2016-02-12,Minnesota,Minneapolis (Plymouth),Rockford Road and Northwest Boulevard,2,2,45.0378,-93.4463,4,"Rockford Road and Northwest Boulevard, Minneapolis (Plymouth), Minnesota",February,2
@@ -1104,11 +1104,11 @@
 930,2016-02-18,Utah,Salt Lake City (South Salt Lake),325 E. Park Creek Lane,3,1,40.7046,-111.881,4,"325 E. Park Creek Lane, Salt Lake City (South Salt Lake), Utah",February,2
 929,2016-02-19,California,Vallejo,509 Porter Street,1,3,38.0883,-122.245,4,"509 Porter Street, Vallejo, California",February,2
 928,2016-02-19,Missouri,Edgerton,4100 block of Buena Vista Road,4,0,39.4922,-94.6372,4,"4100 block of Buena Vista Road, Edgerton, Missouri",February,2
-927,2016-02-20,Florida,Orlando,446 S Parramore Ave,0,4,28.537,-81.389,4,"446 S Parramore Ave, Orlando, Florida",February,2
-926,2016-02-20,Florida,Tampa,2810 E. Bearss Ave,1,3,28.0805,-82.4283,4,"2810 E. Bearss Ave, Tampa, Florida",February,2
-925,2016-02-20,Mississippi,Iuka,231 Co Rd 201,2,3,34.7543,-88.1406,5,"231 Co Rd 201, Iuka, Mississippi",February,2
-924,2016-02-20,Michigan,Kalamazoo,5581 Cracker Barrel Blvd,6,2,42.2354,-85.676,8,"5581 Cracker Barrel Blvd, Kalamazoo, Michigan",February,2
-923,2016-02-20,Alabama,Bessemer,200 block of Elm Street,1,3,33.3731,-86.9759,4,"200 block of Elm Street, Bessemer, Alabama",February,2
+927,2016-02-20,Alabama,Bessemer,200 block of Elm Street,1,3,33.3731,-86.9759,4,"200 block of Elm Street, Bessemer, Alabama",February,2
+926,2016-02-20,Mississippi,Iuka,231 Co Rd 201,2,3,34.7543,-88.1406,5,"231 Co Rd 201, Iuka, Mississippi",February,2
+925,2016-02-20,Michigan,Kalamazoo,5581 Cracker Barrel Blvd,6,2,42.2354,-85.676,8,"5581 Cracker Barrel Blvd, Kalamazoo, Michigan",February,2
+924,2016-02-20,Florida,Orlando,446 S Parramore Ave,0,4,28.537,-81.389,4,"446 S Parramore Ave, Orlando, Florida",February,2
+923,2016-02-20,Florida,Tampa,2810 E. Bearss Ave,1,3,28.0805,-82.4283,4,"2810 E. Bearss Ave, Tampa, Florida",February,2
 922,2016-02-21,Missouri,Hazelwood,Interstate Highway 270 and North Lindbergh Boulevard,1,3,38.7736,-90.3626,4,"Interstate Highway 270 and North Lindbergh Boulevard, Hazelwood, Missouri",February,2
 921,2016-02-21,Texas,Houston,5100 block of Idaho Street,0,5,29.6872,-95.3438,5,"5100 block of Idaho Street, Houston, Texas",February,2
 920,2016-02-23,Arizona,Glendale,4812 West Sunnyside Ave,5,0,33.5927,-112.163,5,"4812 West Sunnyside Ave, Glendale, Arizona",February,2
@@ -1140,8 +1140,8 @@
 894,2016-03-14,Illinois,Chicago,3700 block of West Polk Street,1,3,41.871,-87.7181,4,"3700 block of West Polk Street, Chicago, Illinois",March,3
 893,2016-03-15,Georgia,Atlanta,Donald Lee Hollowell Drive,0,5,33.7766,-84.4565,5,"Donald Lee Hollowell Drive, Atlanta, Georgia",March,3
 892,2016-03-17,Florida,Fort Myers,3440 Fowler Street,0,4,26.6144,-81.862,4,"3440 Fowler Street, Fort Myers, Florida",March,3
-891,2016-03-19,Alabama,Wetumpka,South Shelby Street,2,2,32.5382,-86.214,4,"South Shelby Street, Wetumpka, Alabama",March,3
-890,2016-03-19,Florida,Plantation,12050 NW 4th Court,1,4,26.125,-80.3096,5,"12050 NW 4th Court, Plantation, Florida",March,3
+891,2016-03-19,Florida,Plantation,12050 NW 4th Court,1,4,26.125,-80.3096,5,"12050 NW 4th Court, Plantation, Florida",March,3
+890,2016-03-19,Alabama,Wetumpka,South Shelby Street,2,2,32.5382,-86.214,4,"South Shelby Street, Wetumpka, Alabama",March,3
 889,2016-03-20,Kentucky,Louisville,13120 Saratoga Springs Place,4,0,38.1746,-85.5286,4,"13120 Saratoga Springs Place, Louisville, Kentucky",March,3
 888,2016-03-21,Illinois,Chicago,5700 block of West Washington Boulevard,0,4,41.8824,-87.7687,4,"5700 block of West Washington Boulevard, Chicago, Illinois",March,3
 887,2016-03-21,Texas,Sherman,2600 block of Rivercrest Drive,4,0,33.6619,-96.6358,4,"2600 block of Rivercrest Drive, Sherman, Texas",March,3
@@ -1168,10 +1168,10 @@
 866,2016-04-17,Pennsylvania,Philadelphia,600 block of Westmoreland Street,3,1,40.0016,-75.1402,4,"600 block of Westmoreland Street, Philadelphia, Pennsylvania",April,4
 865,2016-04-18,California,Long Beach,1200 block of E. 17th Street,1,3,33.7879,-118.176,4,"1200 block of E. 17th Street, Long Beach, California",April,4
 864,2016-04-18,Michigan,Detroit,Grand River Avenue and West Grand Boulevard,1,4,42.3569,-83.1095,5,"Grand River Avenue and West Grand Boulevard, Detroit, Michigan",April,4
-863,2016-04-19,Alabama,Blountsville,81551 Us Highway 278,1,4,34.1597,-86.4686,5,"81551 Us Highway 278, Blountsville, Alabama",April,4
-862,2016-04-19,Texas,Katy,1318 Longdraw Drive,4,0,29.7542,-95.8313,4,"1318 Longdraw Drive, Katy, Texas",April,4
-861,2016-04-19,Illinois,Chicago,1400 block of West 84th Street,1,4,41.7414,-87.6584,5,"1400 block of West 84th Street, Chicago, Illinois",April,4
-860,2016-04-19,Illinois,Chicago,2700 block of West 53rd Street,1,3,41.7974,-87.6915,4,"2700 block of West 53rd Street, Chicago, Illinois",April,4
+863,2016-04-19,Illinois,Chicago,1400 block of West 84th Street,1,4,41.7414,-87.6584,5,"1400 block of West 84th Street, Chicago, Illinois",April,4
+862,2016-04-19,Illinois,Chicago,2700 block of West 53rd Street,1,3,41.7974,-87.6915,4,"2700 block of West 53rd Street, Chicago, Illinois",April,4
+861,2016-04-19,Alabama,Blountsville,81551 Us Highway 278,1,4,34.1597,-86.4686,5,"81551 Us Highway 278, Blountsville, Alabama",April,4
+860,2016-04-19,Texas,Katy,1318 Longdraw Drive,4,0,29.7542,-95.8313,4,"1318 Longdraw Drive, Katy, Texas",April,4
 859,2016-04-21,Maryland,Baltimore,4800 block of Frankford Avenue,0,4,39.3325,-76.545,4,"4800 block of Frankford Avenue, Baltimore, Maryland",April,4
 858,2016-04-22,Georgia,Appling,3162 Johnson Drive,6,0,33.5989,-82.2244,6,"3162 Johnson Drive, Appling, Georgia",April,4
 857,2016-04-22,Ohio,Piketon,4077 Union Hill Road,8,0,39.0201,-83.275,8,"4077 Union Hill Road, Piketon, Ohio",April,4
@@ -1183,10 +1183,10 @@
 851,2016-04-24,Illinois,Chicago (Englewood),2000 block of West 68th Place,2,3,41.7696,-87.6739,5,"2000 block of West 68th Place, Chicago (Englewood), Illinois",April,4
 850,2016-04-24,Virginia,Halifax,1055 L P Bailey Memorial Hwy,0,5,36.7755,-78.9208,5,"1055 L P Bailey Memorial Hwy, Halifax, Virginia",April,4
 849,2016-04-24,Colorado,Denver,1400 block of 14th Street,0,4,39.748,-105.001,4,"1400 block of 14th Street, Denver, Colorado",April,4
-848,2016-04-25,Tennessee,Nashville,400 Charlotte Avenue,0,4,36.1664,-86.7807,4,"400 Charlotte Avenue, Nashville, Tennessee",April,4
-847,2016-04-25,Tennessee,Goodlettsville,500 block of Cunniff Pkwy,0,4,36.2839,-86.735,4,"500 block of Cunniff Pkwy, Goodlettsville, Tennessee",April,4
-846,2016-04-25,Florida,Miami,1506 Northwest 70th Street,0,5,25.8383,-80.2242,5,"1506 Northwest 70th Street, Miami, Florida",April,4
-845,2016-04-25,Nevada,Las Vegas,4700 block of Sphinx Way,1,3,36.2249,-115.07,4,"4700 block of Sphinx Way, Las Vegas, Nevada",April,4
+848,2016-04-25,Florida,Miami,1506 Northwest 70th Street,0,5,25.8383,-80.2242,5,"1506 Northwest 70th Street, Miami, Florida",April,4
+847,2016-04-25,Nevada,Las Vegas,4700 block of Sphinx Way,1,3,36.2249,-115.07,4,"4700 block of Sphinx Way, Las Vegas, Nevada",April,4
+846,2016-04-25,Tennessee,Nashville,400 Charlotte Avenue,0,4,36.1664,-86.7807,4,"400 Charlotte Avenue, Nashville, Tennessee",April,4
+845,2016-04-25,Tennessee,Goodlettsville,500 block of Cunniff Pkwy,0,4,36.2839,-86.735,4,"500 block of Cunniff Pkwy, Goodlettsville, Tennessee",April,4
 844,2016-04-26,Maryland,District Heights (Forestville),6500 block of Hil-Mar Drive,1,4,38.8432,-76.8954,5,"6500 block of Hil-Mar Drive, District Heights (Forestville), Maryland",April,4
 843,2016-04-27,Louisiana,Baton Rouge,4300 Block of Kerrit Dr,2,2,30.4903,-91.0872,4,"4300 Block of Kerrit Dr, Baton Rouge, Louisiana",April,4
 842,2016-04-27,Mississippi,Kilmichael,Pecan Drive,3,1,33.435,-89.5726,4,"Pecan Drive, Kilmichael, Mississippi",April,4
@@ -1202,9 +1202,9 @@
 832,2016-05-06,Alabama,Montgomery,1300 block of Clay Street,1,3,32.3757,-86.3333,4,"1300 block of Clay Street, Montgomery, Alabama",May,5
 831,2016-05-06,Maryland,Bethesda,7101 Democracy Blvd,3,3,39.0224,-77.1485,6,"7101 Democracy Blvd, Bethesda, Maryland",May,5
 830,2016-05-08,Texas,Austin,8600 block of North Lamar,1,3,30.3546,-97.7047,4,"8600 block of North Lamar, Austin, Texas",May,5
-829,2016-05-11,Illinois,Chicago (Englewood),1500 block of West 71st Street,4,0,41.7652,-87.6616,4,"1500 block of West 71st Street, Chicago (Englewood), Illinois",May,5
+829,2016-05-11,Illinois,Chicago,7100 block of South State Street,0,5,41.7639,-87.6249,5,"7100 block of South State Street, Chicago, Illinois",May,5
 828,2016-05-11,Alabama,Birmingham,1400 block of 21st Street N,1,4,33.5313,-86.8143,5,"1400 block of 21st Street N, Birmingham, Alabama",May,5
-827,2016-05-11,Illinois,Chicago,7100 block of South State Street,0,5,41.7639,-87.6249,5,"7100 block of South State Street, Chicago, Illinois",May,5
+827,2016-05-11,Illinois,Chicago (Englewood),1500 block of West 71st Street,4,0,41.7652,-87.6616,4,"1500 block of West 71st Street, Chicago (Englewood), Illinois",May,5
 826,2016-05-14,Georgia,Atlanta,Cordova and Peoples Street,0,5,33.749,-84.388,5,"Cordova and Peoples Street, Atlanta, Georgia",May,5
 825,2016-05-14,West Virginia,Charleston,2337 Washington St W,1,3,38.3767,-81.6749,4,"2337 Washington St W, Charleston, West Virginia",May,5
 824,2016-05-15,Georgia,Moultrie,Rossman Dairy Road,5,0,31.2124,-83.8518,5,"Rossman Dairy Road, Moultrie, Georgia",May,5
@@ -1249,10 +1249,10 @@
 785,2016-06-13,Georgia,Atlanta (College Park),2200 block of Sullivan Road,3,1,33.6276,-84.4401,4,"2200 block of Sullivan Road, Atlanta (College Park), Georgia",June,6
 784,2016-06-14,California,Oakland,1301 Franklin Street,1,3,37.8033,-122.27,4,"1301 Franklin Street, Oakland, California",June,6
 783,2016-06-14,Delaware,Wilmington,South Van Buren and Elm streets,0,4,39.7408,-75.5646,4,"South Van Buren and Elm streets, Wilmington, Delaware",June,6
-782,2016-06-18,Georgia,Waycross,2625 Arnold Ct,2,2,31.2201,-82.3634,4,"2625 Arnold Ct, Waycross, Georgia",June,6
-781,2016-06-18,Illinois,Chicago,East 79th Street and South Escanaba Avenue,0,4,41.7519,-87.554,4,"East 79th Street and South Escanaba Avenue, Chicago, Illinois",June,6
-780,2016-06-18,Ohio,Warren,Highland Avenue,2,4,41.173,-80.8293,6,"Highland Avenue, Warren, Ohio",June,6
-779,2016-06-18,Virginia,Exmore,Fredrick Douglas Road,1,3,37.5318,-75.823,4,"Fredrick Douglas Road, Exmore, Virginia",June,6
+782,2016-06-18,Virginia,Exmore,Fredrick Douglas Road,1,3,37.5318,-75.823,4,"Fredrick Douglas Road, Exmore, Virginia",June,6
+781,2016-06-18,Ohio,Warren,Highland Avenue,2,4,41.173,-80.8293,6,"Highland Avenue, Warren, Ohio",June,6
+780,2016-06-18,Illinois,Chicago,East 79th Street and South Escanaba Avenue,0,4,41.7519,-87.554,4,"East 79th Street and South Escanaba Avenue, Chicago, Illinois",June,6
+779,2016-06-18,Georgia,Waycross,2625 Arnold Ct,2,2,31.2201,-82.3634,4,"2625 Arnold Ct, Waycross, Georgia",June,6
 778,2016-06-19,Virginia,Roanoke,2328 Melrose Avenue,0,4,37.2858,-79.9747,4,"2328 Melrose Avenue, Roanoke, Virginia",June,6
 777,2016-06-21,New Jersey,Willingboro,Mosshill Lane,0,4,40.031,-74.8924,4,"Mosshill Lane, Willingboro, New Jersey",June,6
 776,2016-06-21,Kentucky,Louisville,2802 Rodman Street,2,2,38.2091,-85.77,4,"2802 Rodman Street, Louisville, Kentucky",June,6
@@ -1266,12 +1266,12 @@
 768,2016-06-25,Virginia,Norfolk,700 block of Craig Street,0,4,36.8282,-76.2786,4,"700 block of Craig Street, Norfolk, Virginia",June,6
 767,2016-06-25,Illinois,Chicago,1400 block of W. 114th Place,0,4,41.686,-87.6569,4,"1400 block of W. 114th Place, Chicago, Illinois",June,6
 766,2016-06-25,Illinois,Chicago (Englewood),700 block of West 66th Street,1,3,41.7743,-87.6427,4,"700 block of West 66th Street, Chicago (Englewood), Illinois",June,6
-765,2016-06-26,Texas,Corpus Christi,Baldwin Blvd and Lamar,0,4,27.7741,-97.4214,4,"Baldwin Blvd and Lamar, Corpus Christi, Texas",June,6
-764,2016-06-26,Texas,Houston,6000 block of Elm Street,1,3,29.7128,-95.487,4,"6000 block of Elm Street, Houston, Texas",June,6
-763,2016-06-26,North Carolina,Charlotte,2240 Camp Greene St.,0,5,35.2253,-80.8848,5,"2240 Camp Greene St., Charlotte, North Carolina",June,6
-762,2016-06-26,South Carolina,Wellford,105 Little Mountain Rd,0,4,34.9957,-82.1121,4,"105 Little Mountain Rd, Wellford, South Carolina",June,6
-761,2016-06-26,Georgia,Atlanta,1500 block of Moreland Avenue SE,1,4,33.7112,-84.3495,5,"1500 block of Moreland Avenue SE, Atlanta, Georgia",June,6
-760,2016-06-26,South Carolina,Bennettsville,Highway 38 N,0,4,34.5849,-79.6713,4,"Highway 38 N, Bennettsville, South Carolina",June,6
+765,2016-06-26,Georgia,Atlanta,1500 block of Moreland Avenue SE,1,4,33.7112,-84.3495,5,"1500 block of Moreland Avenue SE, Atlanta, Georgia",June,6
+764,2016-06-26,South Carolina,Bennettsville,Highway 38 N,0,4,34.5849,-79.6713,4,"Highway 38 N, Bennettsville, South Carolina",June,6
+763,2016-06-26,South Carolina,Wellford,105 Little Mountain Rd,0,4,34.9957,-82.1121,4,"105 Little Mountain Rd, Wellford, South Carolina",June,6
+762,2016-06-26,North Carolina,Charlotte,2240 Camp Greene St.,0,5,35.2253,-80.8848,5,"2240 Camp Greene St., Charlotte, North Carolina",June,6
+761,2016-06-26,Texas,Houston,6000 block of Elm Street,1,3,29.7128,-95.487,4,"6000 block of Elm Street, Houston, Texas",June,6
+760,2016-06-26,Texas,Corpus Christi,Baldwin Blvd and Lamar,0,4,27.7741,-97.4214,4,"Baldwin Blvd and Lamar, Corpus Christi, Texas",June,6
 759,2016-06-27,Oregon,Woodburn,13436 Killiam Loop NE,3,1,45.1457,-122.785,4,"13436 Killiam Loop NE, Woodburn, Oregon",June,6
 758,2016-06-28,Illinois,Chicago,1600 block of South Christiana,0,4,41.8567,-87.709,4,"1600 block of South Christiana, Chicago, Illinois",June,6
 757,2016-06-28,California,Los Angeles,13800 block of S Avalon Boulevard,1,3,33.9064,-118.265,4,"13800 block of S Avalon Boulevard, Los Angeles, California",June,6
@@ -1285,8 +1285,8 @@
 749,2016-07-04,Arizona,Phoenix,4000 block of West Southern Avenue,2,6,33.3921,-112.146,8,"4000 block of West Southern Avenue, Phoenix, Arizona",July,7
 748,2016-07-04,Illinois,Chicago (Englewood),5500 block of South Hermitage Avenue,0,4,41.7936,-87.6682,4,"5500 block of South Hermitage Avenue, Chicago (Englewood), Illinois",July,7
 747,2016-07-04,Pennsylvania,Pittsburgh,Seventh Ave and Liberty Ave,0,4,40.4431,-79.9974,4,"Seventh Ave and Liberty Ave, Pittsburgh, Pennsylvania",July,7
-746,2016-07-05,Georgia,Hiram,65 Pine Valley Drive,2,2,33.834,-84.8276,4,"65 Pine Valley Drive, Hiram, Georgia",July,7
-745,2016-07-05,California,Los Angeles,56th Street and Naomi Avenue,0,4,33.9921,-118.255,4,"56th Street and Naomi Avenue, Los Angeles, California",July,7
+746,2016-07-05,California,Los Angeles,56th Street and Naomi Avenue,0,4,33.9921,-118.255,4,"56th Street and Naomi Avenue, Los Angeles, California",July,7
+745,2016-07-05,Georgia,Hiram,65 Pine Valley Drive,2,2,33.834,-84.8276,4,"65 Pine Valley Drive, Hiram, Georgia",July,7
 744,2016-07-07,Texas,Dallas,800 Main St,5,9,32.7793,-96.8052,14,"800 Main St, Dallas, Texas",July,7
 743,2016-07-07,Louisiana,Baton Rouge,2136 North Lobdell Avenue,0,4,30.4663,-91.1189,4,"2136 North Lobdell Avenue, Baton Rouge, Louisiana",July,7
 742,2016-07-07,Tennessee,Bristol,536 Volunteer Parkway,1,4,36.5877,-82.186,5,"536 Volunteer Parkway, Bristol, Tennessee",July,7
@@ -1301,11 +1301,11 @@
 733,2016-07-14,California,Oakland,1600 block of 7th Street,0,4,37.8063,-122.298,4,"1600 block of 7th Street, Oakland, California",July,7
 732,2016-07-14,Ohio,Akron,900 block of Moeller Avenue,1,3,41.0692,-81.5449,4,"900 block of Moeller Avenue, Akron, Ohio",July,7
 731,2016-07-15,Washington,Woodland,4006 NW 417th Street,3,1,45.9199,-122.728,4,"4006 NW 417th Street, Woodland, Washington",July,7
-730,2016-07-16,Ohio,Cleveland,5000 block of Euclid Avenue,0,5,41.5036,-81.6538,5,"5000 block of Euclid Avenue, Cleveland, Ohio",July,7
-729,2016-07-16,California,San Bernardino,1200 block of West 25th Street,0,4,34.1389,-117.31,4,"1200 block of West 25th Street, San Bernardino, California",July,7
-728,2016-07-16,Texas,Dallas,6300 block of Benavides Drive,0,5,32.7154,-96.7141,5,"6300 block of Benavides Drive, Dallas, Texas",July,7
-727,2016-07-16,California,Bakersfield,621 Stephens Drive,1,14,35.3481,-119.036,15,"621 Stephens Drive, Bakersfield, California",July,7
-726,2016-07-16,Tennessee,Clarksville,1348 College Street,0,6,36.5377,-87.3377,6,"1348 College Street, Clarksville, Tennessee",July,7
+730,2016-07-16,Tennessee,Clarksville,1348 College Street,0,6,36.5377,-87.3377,6,"1348 College Street, Clarksville, Tennessee",July,7
+729,2016-07-16,California,Bakersfield,621 Stephens Drive,1,14,35.3481,-119.036,15,"621 Stephens Drive, Bakersfield, California",July,7
+728,2016-07-16,Ohio,Cleveland,5000 block of Euclid Avenue,0,5,41.5036,-81.6538,5,"5000 block of Euclid Avenue, Cleveland, Ohio",July,7
+727,2016-07-16,California,San Bernardino,1200 block of West 25th Street,0,4,34.1389,-117.31,4,"1200 block of West 25th Street, San Bernardino, California",July,7
+726,2016-07-16,Texas,Dallas,6300 block of Benavides Drive,0,5,32.7154,-96.7141,5,"6300 block of Benavides Drive, Dallas, Texas",July,7
 725,2016-07-17,Michigan,Detroit,Grand River and McGraw avenue,0,4,42.3534,-83.1009,4,"Grand River and McGraw avenue, Detroit, Michigan",July,7
 724,2016-07-17,Texas,Houston,6610 Tidwell,1,3,29.8484,-95.3033,4,"6610 Tidwell, Houston, Texas",July,7
 723,2016-07-17,Louisiana,Baton Rouge,9611 Airline Highway,4,3,30.4334,-91.0817,7,"9611 Airline Highway, Baton Rouge, Louisiana",July,7
@@ -1333,8 +1333,8 @@
 701,2016-08-02,Florida,Hollywood (West Park),5700 block of Hallandale Beach Blvd,0,4,25.9842,-80.2004,4,"5700 block of Hallandale Beach Blvd, Hollywood (West Park), Florida",August,8
 700,2016-08-03,Georgia,Decatur,4110 Glenwood Road,1,3,33.738,-84.2498,4,"4110 Glenwood Road, Decatur, Georgia",August,8
 699,2016-08-04,Tennessee,Memphis,Ayers Street and Griffith Avenue,0,4,35.1614,-90.0277,4,"Ayers Street and Griffith Avenue, Memphis, Tennessee",August,8
-698,2016-08-05,Michigan,Pontiac,70 block of Thorpe Street,1,3,42.6377,-83.3116,4,"70 block of Thorpe Street, Pontiac, Michigan",August,8
-697,2016-08-05,California,Perris,21600 block of Rider St,2,2,33.83,-117.285,4,"21600 block of Rider St, Perris, California",August,8
+698,2016-08-05,California,Perris,21600 block of Rider St,2,2,33.83,-117.285,4,"21600 block of Rider St, Perris, California",August,8
+697,2016-08-05,Michigan,Pontiac,70 block of Thorpe Street,1,3,42.6377,-83.3116,4,"70 block of Thorpe Street, Pontiac, Michigan",August,8
 696,2016-08-06,Pennsylvania,Reading (Sinking Spring),51 Winding Brook Drive,5,0,40.33,-76.0256,5,"51 Winding Brook Drive, Reading (Sinking Spring), Pennsylvania",August,8
 695,2016-08-07,Illinois,Chicago,100 block of South Springfield,0,4,41.7741,-87.7202,4,"100 block of South Springfield, Chicago, Illinois",August,8
 694,2016-08-07,Colorado,Arvada,5400 block of Sheridan Boulevard,2,2,39.7946,-105.053,4,"5400 block of Sheridan Boulevard, Arvada, Colorado",August,8
@@ -1348,10 +1348,10 @@
 686,2016-08-11,Pennsylvania,Philadelphia,500 block of E Ashmead St,0,4,40.0373,-75.1606,4,"500 block of E Ashmead St, Philadelphia, Pennsylvania",August,8
 685,2016-08-12,Florida,Jacksonville,100 block of West 38th Street,1,3,30.368,-81.6548,4,"100 block of West 38th Street, Jacksonville, Florida",August,8
 684,2016-08-12,Texas,Dallas,10921 Estate Ln,1,3,32.8804,-96.6979,4,"10921 Estate Ln, Dallas, Texas",August,8
-683,2016-08-13,New York,Richmond Hill,Jamaica Ave and 105th St,0,4,40.6952,-73.842,4,"Jamaica Ave and 105th St, Richmond Hill, New York",August,8
-682,2016-08-13,California,Los Angeles,6300 block of 11th Avenue,0,4,33.9828,-118.329,4,"6300 block of 11th Avenue, Los Angeles, California",August,8
-681,2016-08-13,Missouri,Joplin,1800 Connecticut Ave,0,4,37.0713,-94.4943,4,"1800 Connecticut Ave, Joplin, Missouri",August,8
-680,2016-08-13,Wisconsin,Milwaukee,4001 West Fond Du Lac Ave,2,2,43.0799,-87.9637,4,"4001 West Fond Du Lac Ave, Milwaukee, Wisconsin",August,8
+683,2016-08-13,Wisconsin,Milwaukee,4001 West Fond Du Lac Ave,2,2,43.0799,-87.9637,4,"4001 West Fond Du Lac Ave, Milwaukee, Wisconsin",August,8
+682,2016-08-13,Missouri,Joplin,1800 Connecticut Ave,0,4,37.0713,-94.4943,4,"1800 Connecticut Ave, Joplin, Missouri",August,8
+681,2016-08-13,New York,Richmond Hill,Jamaica Ave and 105th St,0,4,40.6952,-73.842,4,"Jamaica Ave and 105th St, Richmond Hill, New York",August,8
+680,2016-08-13,California,Los Angeles,6300 block of 11th Avenue,0,4,33.9828,-118.329,4,"6300 block of 11th Avenue, Los Angeles, California",August,8
 679,2016-08-14,Virginia,Norfolk,1600 block of Selden Avenue,0,4,36.8273,-76.2677,4,"1600 block of Selden Avenue, Norfolk, Virginia",August,8
 678,2016-08-14,Minnesota,Minneapolis,1717 Plymouth Ave N,0,5,44.9914,-93.3021,5,"1717 Plymouth Ave N, Minneapolis, Minnesota",August,8
 677,2016-08-17,California,Oakland,Mandela Parkway,0,4,37.8153,-122.29,4,"Mandela Parkway, Oakland, California",August,8
@@ -1365,8 +1365,8 @@
 669,2016-08-21,Massachusetts,Boston,Westview and Stratton Street,0,4,42.2911,-71.0888,4,"Westview and Stratton Street, Boston, Massachusetts",August,8
 668,2016-08-21,Connecticut,Bridgeport,19 Plymouth St,0,13,41.1981,-73.1753,13,"19 Plymouth St, Bridgeport, Connecticut",August,8
 667,2016-08-25,New Jersey,Bridgeton,Marion Street,0,5,39.4318,-75.2289,5,"Marion Street, Bridgeton, New Jersey",August,8
-666,2016-08-27,Florida,Miami,1900 block of NW 83rd Terr,2,4,25.8505,-80.2298,6,"1900 block of NW 83rd Terr, Miami, Florida",August,8
-665,2016-08-27,Alabama,Bessemer (Brighton),3810 7th Ave,1,6,33.4414,-86.951,7,"3810 7th Ave, Bessemer (Brighton), Alabama",August,8
+666,2016-08-27,Alabama,Bessemer (Brighton),3810 7th Ave,1,6,33.4414,-86.951,7,"3810 7th Ave, Bessemer (Brighton), Alabama",August,8
+665,2016-08-27,Florida,Miami,1900 block of NW 83rd Terr,2,4,25.8505,-80.2298,6,"1900 block of NW 83rd Terr, Miami, Florida",August,8
 664,2016-08-28,Texas,College Station,1100 block of Luther St,2,2,30.595,-96.341,4,"1100 block of Luther St, College Station, Texas",August,8
 663,2016-08-28,New York,Bronx,514 E 156th St,0,4,40.8194,-73.9114,4,"514 E 156th St, Bronx, New York",August,8
 662,2016-08-28,Texas,Lubbock,2200 block of 17th St,0,6,33.5809,-101.918,6,"2200 block of 17th St, Lubbock, Texas",August,8
@@ -1380,8 +1380,8 @@
 654,2016-08-30,North Carolina,Clinton,400 block of Byrd Street,0,4,35.0054,-78.3374,4,"400 block of Byrd Street, Clinton, North Carolina",August,8
 653,2016-09-03,Illinois,Chicago,100 block of North Seeley Avenue,0,4,41.9706,-87.6805,4,"100 block of North Seeley Avenue, Chicago, Illinois",September,9
 652,2016-09-03,North Carolina,Wilmington,600 block of North 30th Street,1,3,34.2462,-77.9072,4,"600 block of North 30th Street, Wilmington, North Carolina",September,9
-651,2016-09-04,Virginia,Roanoke,1020 Orange Ave NE,1,10,37.2838,-79.9227,11,"1020 Orange Ave NE, Roanoke, Virginia",September,9
-650,2016-09-04,Iowa,Clive,2100 NW 100th Street,2,2,41.6118,-93.7584,4,"2100 NW 100th Street, Clive, Iowa",September,9
+651,2016-09-04,Iowa,Clive,2100 NW 100th Street,2,2,41.6118,-93.7584,4,"2100 NW 100th Street, Clive, Iowa",September,9
+650,2016-09-04,Virginia,Roanoke,1020 Orange Ave NE,1,10,37.2838,-79.9227,11,"1020 Orange Ave NE, Roanoke, Virginia",September,9
 649,2016-09-05,Illinois,Chicago,2700 block of W Lexington Ave,2,3,41.8723,-87.6937,5,"2700 block of W Lexington Ave, Chicago, Illinois",September,9
 648,2016-09-05,New York,Brooklyn,Empire Boulevard,2,2,40.6638,-73.9404,4,"Empire Boulevard, Brooklyn, New York",September,9
 647,2016-09-05,Pennsylvania,Reading,600 block of Moss Street,0,4,40.3444,-75.9189,4,"600 block of Moss Street, Reading, Pennsylvania",September,9
@@ -1396,8 +1396,8 @@
 638,2016-09-11,Indiana,Fort Wayne,3006 Holton Avenue,3,1,41.0574,-85.1186,4,"3006 Holton Avenue, Fort Wayne, Indiana",September,9
 637,2016-09-11,New Jersey,Jersey City,87 Van Wagenen Ave,1,3,40.7332,-74.07,4,"87 Van Wagenen Ave, Jersey City, New Jersey",September,9
 636,2016-09-13,Indiana,Fort Wayne,1723 E Wayne St,3,2,41.0803,-85.1155,5,"1723 E Wayne St, Fort Wayne, Indiana",September,9
-635,2016-09-14,Wyoming,Cheyenne,3912 Gregg Way,2,2,41.1619,-104.762,4,"3912 Gregg Way, Cheyenne, Wyoming",September,9
-634,2016-09-14,Texas,Humble,16000 block of Saybrook,1,3,29.9586,-95.3023,4,"16000 block of Saybrook, Humble, Texas",September,9
+635,2016-09-14,Texas,Humble,16000 block of Saybrook,1,3,29.9586,-95.3023,4,"16000 block of Saybrook, Humble, Texas",September,9
+634,2016-09-14,Wyoming,Cheyenne,3912 Gregg Way,2,2,41.1619,-104.762,4,"3912 Gregg Way, Cheyenne, Wyoming",September,9
 633,2016-09-16,Texas,Fort Worth,3828 Wharton Drive,2,2,32.6653,-97.3753,4,"3828 Wharton Drive, Fort Worth, Texas",September,9
 632,2016-09-16,California,Los Angeles (Hollywood),555 N Heliotrope Dr,2,2,34.0797,-118.295,4,"555 N Heliotrope Dr, Los Angeles (Hollywood), California",September,9
 631,2016-09-16,Pennsylvania,Philadelphia,5100 block of Sansom St,2,5,39.9575,-75.2234,7,"5100 block of Sansom St, Philadelphia, Pennsylvania",September,9
@@ -1441,8 +1441,8 @@
 593,2016-10-25,Virginia,Roanoke,830 Campbell Avenue Southeast,2,3,37.2732,-79.9306,5,"830 Campbell Avenue Southeast, Roanoke, Virginia",October,10
 592,2016-10-25,Ohio,Dayton,3300 block of Riverside Dr,1,3,39.7995,-84.2076,4,"3300 block of Riverside Dr, Dayton, Ohio",October,10
 591,2016-10-27,Georgia,Jackson,600 block of Moccasin Gap Road,4,0,33.384,-83.9905,4,"600 block of Moccasin Gap Road, Jackson, Georgia",October,10
-590,2016-10-28,Mississippi,Jackson,200 block of Lorenz Blvd,0,6,32.3339,-90.1861,6,"200 block of Lorenz Blvd, Jackson, Mississippi",October,10
-589,2016-10-28,Florida,Miami Gardens,Northwest 173rd Terrace and 27th Avenue,0,4,25.9322,-80.2448,4,"Northwest 173rd Terrace and 27th Avenue, Miami Gardens, Florida",October,10
+590,2016-10-28,Florida,Miami Gardens,Northwest 173rd Terrace and 27th Avenue,0,4,25.9322,-80.2448,4,"Northwest 173rd Terrace and 27th Avenue, Miami Gardens, Florida",October,10
+589,2016-10-28,Mississippi,Jackson,200 block of Lorenz Blvd,0,6,32.3339,-90.1861,6,"200 block of Lorenz Blvd, Jackson, Mississippi",October,10
 588,2016-10-29,Ohio,Dayton,2010 Cornell Ridge Dr,1,3,39.7772,-84.2521,4,"2010 Cornell Ridge Dr, Dayton, Ohio",October,10
 587,2016-10-29,California,Riverside,3500 block of Madison Street,0,4,33.9366,-117.406,4,"3500 block of Madison Street, Riverside, California",October,10
 586,2016-10-29,California,Los Angeles,1600 block of Century Boulevard,0,5,33.9374,-118.219,5,"1600 block of Century Boulevard, Los Angeles, California",October,10
@@ -1456,11 +1456,11 @@
 578,2016-11-03,New Jersey,Orange,234 Cleveland Street,2,2,40.7788,-74.2272,4,"234 Cleveland Street, Orange, New Jersey",November,11
 577,2016-11-03,Illinois,Chicago,8000 block of S Shore Dr,2,2,41.7935,-87.5804,4,"8000 block of S Shore Dr, Chicago, Illinois",November,11
 576,2016-11-04,Pennsylvania,Philadelphia,5451 Springfield Ave,0,4,39.9403,-75.2251,4,"5451 Springfield Ave, Philadelphia, Pennsylvania",November,11
-575,2016-11-05,Texas,San Antonio,10726 Perrin Beitel Rd,0,4,29.5376,-98.4109,4,"10726 Perrin Beitel Rd, San Antonio, Texas",November,11
-574,2016-11-05,Illinois,Chicago,4800 block of North Winthrop,0,5,41.9694,-87.658,5,"4800 block of North Winthrop, Chicago, Illinois",November,11
-573,2016-11-05,Florida,Fort Lauderdale (Lauderhill),3135 West Broward Boulevard,1,3,26.1213,-80.187,4,"3135 West Broward Boulevard, Fort Lauderdale (Lauderhill), Florida",November,11
-572,2016-11-05,California,Oakland,420 14th Street,0,8,37.8041,-122.27,8,"420 14th Street, Oakland, California",November,11
-571,2016-11-05,South Carolina,Myrtle Beach,803 Main St,0,5,33.6933,-78.885,5,"803 Main St, Myrtle Beach, South Carolina",November,11
+575,2016-11-05,California,Oakland,420 14th Street,0,8,37.8041,-122.27,8,"420 14th Street, Oakland, California",November,11
+574,2016-11-05,Florida,Fort Lauderdale (Lauderhill),3135 West Broward Boulevard,1,3,26.1213,-80.187,4,"3135 West Broward Boulevard, Fort Lauderdale (Lauderhill), Florida",November,11
+573,2016-11-05,South Carolina,Myrtle Beach,803 Main St,0,5,33.6933,-78.885,5,"803 Main St, Myrtle Beach, South Carolina",November,11
+572,2016-11-05,Texas,San Antonio,10726 Perrin Beitel Rd,0,4,29.5376,-98.4109,4,"10726 Perrin Beitel Rd, San Antonio, Texas",November,11
+571,2016-11-05,Illinois,Chicago,4800 block of North Winthrop,0,5,41.9694,-87.658,5,"4800 block of North Winthrop, Chicago, Illinois",November,11
 570,2016-11-09,Illinois,Chicago,3400 block of W Monroe,1,3,41.8796,-87.711,4,"3400 block of W Monroe, Chicago, Illinois",November,11
 569,2016-11-09,Tennessee,Memphis,1800 block of East Brooks Road,0,4,35.061,-90.0037,4,"1800 block of East Brooks Road, Memphis, Tennessee",November,11
 568,2016-11-09,Washington,Seattle,1524 3rd Ave,0,5,47.6101,-122.338,5,"1524 3rd Ave, Seattle, Washington",November,11
@@ -1471,24 +1471,24 @@
 563,2016-11-12,Connecticut,Bridgeport,2500 Park Avenue,0,5,41.1926,-73.2146,5,"2500 Park Avenue, Bridgeport, Connecticut",November,11
 562,2016-11-12,Missouri,Kansas City,21st St and Cleveland Ave,1,3,39.0862,-94.5382,4,"21st St and Cleveland Ave, Kansas City, Missouri",November,11
 561,2016-11-12,California,Sacramento,8600 block of Ardith Drive,1,5,38.4564,-121.384,6,"8600 block of Ardith Drive, Sacramento, California",November,11
-560,2016-11-13,Florida,Jacksonville,5105 Cleveland Rd,3,2,30.3648,-81.706,5,"5105 Cleveland Rd, Jacksonville, Florida",November,11
-559,2016-11-13,Florida,Orlando,Conley Street and South Ivey Lane,0,4,28.5325,-81.4343,4,"Conley Street and South Ivey Lane, Orlando, Florida",November,11
-558,2016-11-13,California,San Diego,3800 block of Marlborough Avenue,3,2,32.7478,-117.106,5,"3800 block of Marlborough Avenue, San Diego, California",November,11
-557,2016-11-13,Texas,San Antonio,8000 Midcrown,0,4,29.507,-98.3812,4,"8000 Midcrown, San Antonio, Texas",November,11
+560,2016-11-13,California,San Diego,3800 block of Marlborough Avenue,3,2,32.7478,-117.106,5,"3800 block of Marlborough Avenue, San Diego, California",November,11
+559,2016-11-13,Texas,San Antonio,8000 Midcrown,0,4,29.507,-98.3812,4,"8000 Midcrown, San Antonio, Texas",November,11
+558,2016-11-13,Florida,Jacksonville,5105 Cleveland Rd,3,2,30.3648,-81.706,5,"5105 Cleveland Rd, Jacksonville, Florida",November,11
+557,2016-11-13,Florida,Orlando,Conley Street and South Ivey Lane,0,4,28.5325,-81.4343,4,"Conley Street and South Ivey Lane, Orlando, Florida",November,11
 556,2016-11-17,Tennessee,Dyersburg,160 Longfellow,1,7,36.0293,-89.3647,8,"160 Longfellow, Dyersburg, Tennessee",November,11
 555,2016-11-18,Illinois,Chicago,5000 block of West Wabansia,0,4,41.9116,-87.7512,4,"5000 block of West Wabansia, Chicago, Illinois",November,11
 554,2016-11-22,California,Los Angeles,1400 block of East 51st Street,1,3,33.9965,-118.25,4,"1400 block of East 51st Street, Los Angeles, California",November,11
 553,2016-11-22,Florida,Clewiston,1068 Harlem Academy Avenue,1,4,26.7371,-80.9531,5,"1068 Harlem Academy Avenue, Clewiston, Florida",November,11
 552,2016-11-23,Mississippi,Olive Branch,928 Cross Road,0,4,34.9898,-89.7674,4,"928 Cross Road, Olive Branch, Mississippi",November,11
-551,2016-11-24,Kentucky,Louisville,4501 W Broadway,2,4,38.2506,-85.827,6,"4501 W Broadway, Louisville, Kentucky",November,11
-550,2016-11-24,New York,Albany,77 Central Ave,1,3,42.6591,-73.7658,4,"77 Central Ave, Albany, New York",November,11
+551,2016-11-24,New York,Albany,77 Central Ave,1,3,42.6591,-73.7658,4,"77 Central Ave, Albany, New York",November,11
+550,2016-11-24,Kentucky,Louisville,4501 W Broadway,2,4,38.2506,-85.827,6,"4501 W Broadway, Louisville, Kentucky",November,11
 549,2016-11-25,Alaska,Fairbanks,433 Harold Bentley Ave,4,0,64.86,-147.704,4,"433 Harold Bentley Ave, Fairbanks, Alaska",November,11
 548,2016-11-25,Louisiana,New Orleans,Magnolia Street and Felicity Street,0,4,29.9442,-90.0864,4,"Magnolia Street and Felicity Street, New Orleans, Louisiana",November,11
 547,2016-11-26,Illinois,Chicago,8800 block of S Exchange Ave,1,5,41.7354,-87.5532,6,"8800 block of S Exchange Ave, Chicago, Illinois",November,11
 546,2016-11-27,Louisiana,New Orleans,100 block of Bourbon Street,1,9,29.9542,-90.0692,10,"100 block of Bourbon Street, New Orleans, Louisiana",November,11
 545,2016-11-27,Missouri,Kansas City,Gregory and Prospect,0,7,38.998,-94.5569,7,"Gregory and Prospect, Kansas City, Missouri",November,11
-544,2016-11-28,Texas,Mission (Palmview),1840 West Palma Vista Drive,1,3,26.2335,-98.3845,4,"1840 West Palma Vista Drive, Mission (Palmview), Texas",November,11
-543,2016-11-28,California,Wilmington,1067 McDonald Avenue,0,4,33.7832,-118.272,4,"1067 McDonald Avenue, Wilmington, California",November,11
+544,2016-11-28,California,Wilmington,1067 McDonald Avenue,0,4,33.7832,-118.272,4,"1067 McDonald Avenue, Wilmington, California",November,11
+543,2016-11-28,Texas,Mission (Palmview),1840 West Palma Vista Drive,1,3,26.2335,-98.3845,4,"1840 West Palma Vista Drive, Mission (Palmview), Texas",November,11
 542,2016-11-28,California,San Pedro,300 block of West 2nd Street,0,4,33.7424,-118.284,4,"300 block of West 2nd Street, San Pedro, California",November,11
 541,2016-11-30,Maryland,Baltimore,2901 Garrison Blvd,2,4,39.3205,-76.6771,6,"2901 Garrison Blvd, Baltimore, Maryland",November,11
 540,2016-12-02,New Jersey,Bloomfield,3 1st Ave,0,6,40.7701,-74.1891,6,"3 1st Ave, Bloomfield, New Jersey",December,12
@@ -1505,25 +1505,25 @@
 529,2016-12-12,California,Sacramento,4800 block of Myrtle Avenue,1,3,38.6537,-121.353,4,"4800 block of Myrtle Avenue, Sacramento, California",December,12
 528,2016-12-12,Louisiana,Lafayette,350 Michael Ann Dr,0,4,30.2629,-91.9766,4,"350 Michael Ann Dr, Lafayette, Louisiana",December,12
 527,2016-12-15,North Carolina,Charlotte,6500 block of Spring Garden Lane,2,2,35.2753,-80.7782,4,"6500 block of Spring Garden Lane, Charlotte, North Carolina",December,12
-526,2016-12-16,Illinois,Chicago,4300 block of South Rockwell,2,2,41.8156,-87.6895,4,"4300 block of South Rockwell, Chicago, Illinois",December,12
-525,2016-12-16,Illinois,Chicago,13th and South Kedzie,0,4,41.8646,-87.7056,4,"13th and South Kedzie, Chicago, Illinois",December,12
+526,2016-12-16,Illinois,Chicago,13th and South Kedzie,0,4,41.8646,-87.7056,4,"13th and South Kedzie, Chicago, Illinois",December,12
+525,2016-12-16,Illinois,Chicago,4300 block of South Rockwell,2,2,41.8156,-87.6895,4,"4300 block of South Rockwell, Chicago, Illinois",December,12
 524,2016-12-17,North Carolina,Charlotte,4115 N. Tryon Street,0,4,35.2578,-80.7963,4,"4115 N. Tryon Street, Charlotte, North Carolina",December,12
 523,2016-12-17,Illinois,Chicago (Roseland),100 block of West 105th Street,5,0,41.7037,-87.6259,5,"100 block of West 105th Street, Chicago (Roseland), Illinois",December,12
 522,2016-12-22,Texas,San Antonio,5400 block of Stonybrook Drive,2,2,29.365,-98.6011,4,"5400 block of Stonybrook Drive, San Antonio, Texas",December,12
 521,2016-12-23,North Carolina,Plymouth,213 Rankin Lane,0,4,35.8663,-76.7412,4,"213 Rankin Lane, Plymouth, North Carolina",December,12
 520,2016-12-23,Alabama,Birmingham,3813 Richard Arrington Boulevard North,1,3,33.5384,-86.7826,4,"3813 Richard Arrington Boulevard North, Birmingham, Alabama",December,12
 519,2016-12-23,Illinois,Chicago,4900 block of West Hubbard,0,4,41.89,-87.6585,4,"4900 block of West Hubbard, Chicago, Illinois",December,12
-518,2016-12-24,North Carolina,Madison,490 K Ford Rd,0,7,36.3893,-80.0078,7,"490 K Ford Rd, Madison, North Carolina",December,12
-517,2016-12-24,North Carolina,Wilson,2241 Banks Lane East,4,0,35.734,-77.8724,4,"2241 Banks Lane East, Wilson, North Carolina",December,12
+518,2016-12-24,North Carolina,Wilson,2241 Banks Lane East,4,0,35.734,-77.8724,4,"2241 Banks Lane East, Wilson, North Carolina",December,12
+517,2016-12-24,North Carolina,Madison,490 K Ford Rd,0,7,36.3893,-80.0078,7,"490 K Ford Rd, Madison, North Carolina",December,12
 516,2016-12-25,New York,Mount Vernon,4 North 3rd Avenue,1,5,40.9125,-73.8365,6,"4 North 3rd Avenue, Mount Vernon, New York",December,12
 515,2016-12-25,Illinois,Chicago,8600 block of South Maryland Avenue,3,4,41.7383,-87.6039,7,"8600 block of South Maryland Avenue, Chicago, Illinois",December,12
 514,2016-12-25,Alabama,Ozark,858 US-231,0,4,31.4499,-85.6612,4,"858 US-231, Ozark, Alabama",December,12
 513,2016-12-28,Georgia,Columbus,2914 10th Street,1,4,32.4649,-84.949,5,"2914 10th Street, Columbus, Georgia",December,12
-512,2016-12-30,Ohio,Mansfield,3230 Possum Run Rd,0,5,40.6728,-82.4973,5,"3230 Possum Run Rd, Mansfield, Ohio",December,12
-511,2016-12-30,Alabama,Montgomery,100 block of Longbrook Drive,2,2,32.4251,-86.2918,4,"100 block of Longbrook Drive, Montgomery, Alabama",December,12
-510,2016-12-30,Connecticut,Wallingford,95 S Turnpike Road,2,2,41.4494,-72.8436,4,"95 S Turnpike Road, Wallingford, Connecticut",December,12
-509,2016-12-31,Georgia,Lenox (El Dorado),27 Briarwood Ct,2,2,31.3562,-83.4982,4,"27 Briarwood Ct, Lenox (El Dorado), Georgia",December,12
-508,2016-12-31,Texas,Houston,3704 Fannin Street,1,3,29.738,-95.3788,4,"3704 Fannin Street, Houston, Texas",December,12
+512,2016-12-30,Alabama,Montgomery,100 block of Longbrook Drive,2,2,32.4251,-86.2918,4,"100 block of Longbrook Drive, Montgomery, Alabama",December,12
+511,2016-12-30,Connecticut,Wallingford,95 S Turnpike Road,2,2,41.4494,-72.8436,4,"95 S Turnpike Road, Wallingford, Connecticut",December,12
+510,2016-12-30,Ohio,Mansfield,3230 Possum Run Rd,0,5,40.6728,-82.4973,5,"3230 Possum Run Rd, Mansfield, Ohio",December,12
+509,2016-12-31,Texas,Houston,3704 Fannin Street,1,3,29.738,-95.3788,4,"3704 Fannin Street, Houston, Texas",December,12
+508,2016-12-31,Georgia,Lenox (El Dorado),27 Briarwood Ct,2,2,31.3562,-83.4982,4,"27 Briarwood Ct, Lenox (El Dorado), Georgia",December,12
 507,2017-01-01,Florida,Miami,8000 block of NW 14th Ave,0,7,25.8688,-80.2221,7,"8000 block of NW 14th Ave, Miami, Florida",January,1
 506,2017-01-01,Mississippi,Winstonville,114 North Greyer Street,0,5,33.914,-90.7515,5,"114 North Greyer Street, Winstonville, Mississippi",January,1
 505,2017-01-01,Texas,Dallas,9220 Skillman Street,1,3,32.9027,-96.7145,4,"9220 Skillman Street, Dallas, Texas",January,1
@@ -1537,8 +1537,8 @@
 497,2017-01-07,Michigan,Flint,2500 block of Churchill Ave,1,3,43.0341,-83.6588,4,"2500 block of Churchill Ave, Flint, Michigan",January,1
 496,2017-01-08,Kentucky,Morehead,1090 Island Fork Road,3,1,38.3305,-83.4417,4,"1090 Island Fork Road, Morehead, Kentucky",January,1
 495,2017-01-10,Colorado,Colorado Springs,3655 El Morro Rd,4,0,38.8013,-104.762,4,"3655 El Morro Rd, Colorado Springs, Colorado",January,1
-494,2017-01-11,New Jersey,Newark,Hawkins Street and Christie Street,1,3,40.7279,-74.1388,4,"Hawkins Street and Christie Street, Newark, New Jersey",January,1
-493,2017-01-11,Illinois,Chicago,4200 block of S Talman,1,3,41.8173,-87.6911,4,"4200 block of S Talman, Chicago, Illinois",January,1
+494,2017-01-11,Illinois,Chicago,4200 block of S Talman,1,3,41.8173,-87.6911,4,"4200 block of S Talman, Chicago, Illinois",January,1
+493,2017-01-11,New Jersey,Newark,Hawkins Street and Christie Street,1,3,40.7279,-74.1388,4,"Hawkins Street and Christie Street, Newark, New Jersey",January,1
 492,2017-01-12,California,Salinas,500 block of Sunrise St,2,2,36.6852,-121.614,4,"500 block of Sunrise St, Salinas, California",January,1
 491,2017-01-12,Missouri,Kansas City,8607 E 61st Terrace,3,2,39.0128,-94.4875,5,"8607 E 61st Terrace, Kansas City, Missouri",January,1
 490,2017-01-13,Kentucky,Williamsburg (Savoy),2000 block of U.S. 25,3,1,36.7182,-84.1575,4,"2000 block of U.S. 25, Williamsburg (Savoy), Kentucky",January,1
@@ -1549,13 +1549,13 @@
 485,2017-01-16,Florida,Miami,6011 NW 32nd Ave,0,8,25.8297,-80.2489,8,"6011 NW 32nd Ave, Miami, Florida",January,1
 484,2017-01-20,Mississippi,Como,Smart Road,1,4,34.5333,-89.7742,5,"Smart Road, Como, Mississippi",January,1
 483,2017-01-20,California,Fresno,4700 block of E Montecito Ave,0,4,36.7341,-119.741,4,"4700 block of E Montecito Ave, Fresno, California",January,1
-482,2017-01-21,Tennessee,Memphis,500 block of Delta Road,2,2,35.0181,-90.0785,4,"500 block of Delta Road, Memphis, Tennessee",January,1
-481,2017-01-21,Florida,Boynton Beach,500 NE 2nd St,0,5,26.5308,-80.0617,5,"500 NE 2nd St, Boynton Beach, Florida",January,1
-480,2017-01-21,Georgia,Jonesboro,6510 Tara Blvd,0,6,33.5741,-84.3716,6,"6510 Tara Blvd, Jonesboro, Georgia",January,1
-479,2017-01-22,Illinois,Chicago (Englewood),1800 block of W 63rd,0,4,41.7796,-87.6693,4,"1800 block of W 63rd, Chicago (Englewood), Illinois",January,1
-478,2017-01-22,Texas,San Antonio,6909 N Loop 1604 E,1,3,29.5875,-98.4009,4,"6909 N Loop 1604 E, San Antonio, Texas",January,1
-477,2017-01-22,Texas,Manvel,200 block of Oak Shore Dr,3,2,29.5144,-95.3748,5,"200 block of Oak Shore Dr, Manvel, Texas",January,1
-476,2017-01-22,Georgia,Atlanta,2841 Greenbriar Pkwy SW,3,1,33.6882,-84.4916,4,"2841 Greenbriar Pkwy SW, Atlanta, Georgia",January,1
+482,2017-01-21,Georgia,Jonesboro,6510 Tara Blvd,0,6,33.5741,-84.3716,6,"6510 Tara Blvd, Jonesboro, Georgia",January,1
+481,2017-01-21,Tennessee,Memphis,500 block of Delta Road,2,2,35.0181,-90.0785,4,"500 block of Delta Road, Memphis, Tennessee",January,1
+480,2017-01-21,Florida,Boynton Beach,500 NE 2nd St,0,5,26.5308,-80.0617,5,"500 NE 2nd St, Boynton Beach, Florida",January,1
+479,2017-01-22,Georgia,Atlanta,2841 Greenbriar Pkwy SW,3,1,33.6882,-84.4916,4,"2841 Greenbriar Pkwy SW, Atlanta, Georgia",January,1
+478,2017-01-22,Texas,Manvel,200 block of Oak Shore Dr,3,2,29.5144,-95.3748,5,"200 block of Oak Shore Dr, Manvel, Texas",January,1
+477,2017-01-22,Illinois,Chicago (Englewood),1800 block of W 63rd,0,4,41.7796,-87.6693,4,"1800 block of W 63rd, Chicago (Englewood), Illinois",January,1
+476,2017-01-22,Texas,San Antonio,6909 N Loop 1604 E,1,3,29.5875,-98.4009,4,"6909 N Loop 1604 E, San Antonio, Texas",January,1
 475,2017-01-25,Illinois,Chicago,500 block of E 75th St,0,6,41.7587,-87.6123,6,"500 block of E 75th St, Chicago, Illinois",January,1
 474,2017-01-26,Georgia,Albany,1510 Maryland Drive,2,3,31.5858,-84.1828,5,"1510 Maryland Drive, Albany, Georgia",January,1
 473,2017-01-27,Washington,Bremerton,Tenino Dr W,4,0,47.5625,-122.828,4,"Tenino Dr W, Bremerton, Washington",January,1
@@ -1568,8 +1568,8 @@
 466,2017-01-31,Tennessee,Memphis,1576 S White Station Rd,0,4,35.0888,-89.892,4,"1576 S White Station Rd, Memphis, Tennessee",January,1
 465,2017-01-31,District of Columbia,Washington,2900 block of Martin Luther King Jr Ave,0,4,38.8459,-76.9965,4,"2900 block of Martin Luther King Jr Ave, Washington, District of Columbia",January,1
 464,2017-02-05,Florida,Jupiter,1105 Mohawk St,3,1,26.9285,-80.1145,4,"1105 Mohawk St, Jupiter, Florida",February,2
-463,2017-02-06,Pennsylvania,Pittsburgh (Swissvale),801 Smokeywood Drive,2,2,40.4244,-79.8753,4,"801 Smokeywood Drive, Pittsburgh (Swissvale), Pennsylvania",February,2
-462,2017-02-06,Mississippi,Yazoo City,11th Street,4,0,32.8634,-90.4092,4,"11th Street, Yazoo City, Mississippi",February,2
+463,2017-02-06,Mississippi,Yazoo City,11th Street,4,0,32.8634,-90.4092,4,"11th Street, Yazoo City, Mississippi",February,2
+462,2017-02-06,Pennsylvania,Pittsburgh (Swissvale),801 Smokeywood Drive,2,2,40.4244,-79.8753,4,"801 Smokeywood Drive, Pittsburgh (Swissvale), Pennsylvania",February,2
 461,2017-02-07,Oklahoma,Morris,17000 block of U.S. 62,4,0,35.6098,-95.8909,4,"17000 block of U.S. 62, Morris, Oklahoma",February,2
 460,2017-02-07,Arkansas,Little Rock,25 Par Drive,1,4,34.6721,-92.4265,5,"25 Par Drive, Little Rock, Arkansas",February,2
 459,2017-02-07,South Carolina,Columbia,5500 block of Fairfield Road,0,4,34.0593,-81.0257,4,"5500 block of Fairfield Road, Columbia, South Carolina",February,2
@@ -1584,9 +1584,9 @@
 450,2017-02-15,California,Salinas,30 Soledad Street,0,4,36.6791,-121.653,4,"30 Soledad Street, Salinas, California",February,2
 449,2017-02-15,Illinois,Chicago,3949 South Albany Avenue,3,2,41.8213,-87.7019,5,"3949 South Albany Avenue, Chicago, Illinois",February,2
 448,2017-02-17,New York,Binghamton,121 Susquehanna St,0,4,42.0967,-75.9057,4,"121 Susquehanna St, Binghamton, New York",February,2
-447,2017-02-18,Minnesota,Saint Paul (Maplewood),1700 Rice St,0,5,44.9931,-93.1059,5,"1700 Rice St, Saint Paul (Maplewood), Minnesota",February,2
-446,2017-02-18,Pennsylvania,Philadelphia,1 block of N Conestoga,0,4,39.9725,-75.23,4,"1 block of N Conestoga, Philadelphia, Pennsylvania",February,2
-445,2017-02-18,Indiana,South Bend,1000 block of Yukon St,1,3,41.6915,-86.2635,4,"1000 block of Yukon St, South Bend, Indiana",February,2
+447,2017-02-18,Pennsylvania,Philadelphia,1 block of N Conestoga,0,4,39.9725,-75.23,4,"1 block of N Conestoga, Philadelphia, Pennsylvania",February,2
+446,2017-02-18,Indiana,South Bend,1000 block of Yukon St,1,3,41.6915,-86.2635,4,"1000 block of Yukon St, South Bend, Indiana",February,2
+445,2017-02-18,Minnesota,Saint Paul (Maplewood),1700 Rice St,0,5,44.9931,-93.1059,5,"1700 Rice St, Saint Paul (Maplewood), Minnesota",February,2
 444,2017-02-19,Virginia,Norfolk,Church Street and East Virginia Beach Blvd,1,3,36.8564,-76.2791,4,"Church Street and East Virginia Beach Blvd, Norfolk, Virginia",February,2
 443,2017-02-19,Idaho,Preston,67 W. 200 S.,4,0,42.092,-111.879,4,"67 W. 200 S., Preston, Idaho",February,2
 442,2017-02-19,Iowa,Ames,200 block of Welch Avenue,0,5,42.0214,-93.6502,5,"200 block of Welch Avenue, Ames, Iowa",February,2
@@ -1616,8 +1616,8 @@
 418,2017-03-10,Louisiana,New Orleans (Gentilly),4200 block of Touro St,3,1,30.0008,-90.0619,4,"4200 block of Touro St, New Orleans (Gentilly), Louisiana",March,3
 417,2017-03-10,Illinois,Chicago,123 E 51st St,2,2,41.8019,-87.6225,4,"123 E 51st St, Chicago, Illinois",March,3
 416,2017-03-13,Maryland,Gwynn Oak,6401 Walnut St,1,3,39.3212,-76.7276,4,"6401 Walnut St, Gwynn Oak, Maryland",March,3
-415,2017-03-15,Texas,Austin,2000 block of Whitebead Trail,3,1,30.3755,-97.9288,4,"2000 block of Whitebead Trail, Austin, Texas",March,3
-414,2017-03-15,Louisiana,Metairie,2508 Pasadena Ave,3,1,29.997,-90.1763,4,"2508 Pasadena Ave, Metairie, Louisiana",March,3
+415,2017-03-15,Louisiana,Metairie,2508 Pasadena Ave,3,1,29.997,-90.1763,4,"2508 Pasadena Ave, Metairie, Louisiana",March,3
+414,2017-03-15,Texas,Austin,2000 block of Whitebead Trail,3,1,30.3755,-97.9288,4,"2000 block of Whitebead Trail, Austin, Texas",March,3
 413,2017-03-18,Michigan,Detroit,16000 block of Rutherford,3,2,42.4086,-83.2044,5,"16000 block of Rutherford, Detroit, Michigan",March,3
 412,2017-03-19,Kentucky,Louisville,1512 Portland Avenue,1,5,38.2627,-85.775,6,"1512 Portland Avenue, Louisville, Kentucky",March,3
 411,2017-03-21,Texas,Arlington,4600 block of W Bardin Rd,0,7,32.6681,-97.1819,7,"4600 block of W Bardin Rd, Arlington, Texas",March,3
@@ -1627,13 +1627,13 @@
 407,2017-03-24,Missouri,Saint Louis,5100 block of Palm St,1,6,38.6765,-90.2545,7,"5100 block of Palm St, Saint Louis, Missouri",March,3
 406,2017-03-24,California,Fresno,300 block of South Villa Avenue,1,4,36.7408,-119.714,5,"300 block of South Villa Avenue, Fresno, California",March,3
 405,2017-03-24,Pennsylvania,Middletown,2495 E Harrisburg Pike,0,4,40.1929,-76.6918,4,"2495 E Harrisburg Pike, Middletown, Pennsylvania",March,3
-404,2017-03-25,Michigan,Detroit,8443 Grand River Ave,1,3,42.3613,-83.1208,4,"8443 Grand River Ave, Detroit, Michigan",March,3
-403,2017-03-25,Pennsylvania,Allentown,233 Hamilton St,1,3,40.6055,-75.4602,4,"233 Hamilton St, Allentown, Pennsylvania",March,3
-402,2017-03-25,Tennessee,Knoxville,Minnesota Avenue,1,4,35.9846,-83.9578,5,"Minnesota Avenue, Knoxville, Tennessee",March,3
-401,2017-03-25,Ohio,Cleveland,E 79th St and Woodland Ave,2,2,41.4882,-81.6334,4,"E 79th St and Woodland Ave, Cleveland, Ohio",March,3
-400,2017-03-26,Ohio,Cleveland,E 75th St,2,2,41.4518,-81.6357,4,"E 75th St, Cleveland, Ohio",March,3
-399,2017-03-26,Ohio,Cincinnati,4601 Kellogg Ave,2,15,39.0943,-84.4286,17,"4601 Kellogg Ave, Cincinnati, Ohio",March,3
-398,2017-03-26,Texas,Houston,5619 Aldine Bender Rd,2,4,29.9306,-95.3065,6,"5619 Aldine Bender Rd, Houston, Texas",March,3
+404,2017-03-25,Ohio,Cleveland,E 79th St and Woodland Ave,2,2,41.4882,-81.6334,4,"E 79th St and Woodland Ave, Cleveland, Ohio",March,3
+403,2017-03-25,Michigan,Detroit,8443 Grand River Ave,1,3,42.3613,-83.1208,4,"8443 Grand River Ave, Detroit, Michigan",March,3
+402,2017-03-25,Pennsylvania,Allentown,233 Hamilton St,1,3,40.6055,-75.4602,4,"233 Hamilton St, Allentown, Pennsylvania",March,3
+401,2017-03-25,Tennessee,Knoxville,Minnesota Avenue,1,4,35.9846,-83.9578,5,"Minnesota Avenue, Knoxville, Tennessee",March,3
+400,2017-03-26,Texas,Houston,5619 Aldine Bender Rd,2,4,29.9306,-95.3065,6,"5619 Aldine Bender Rd, Houston, Texas",March,3
+399,2017-03-26,Ohio,Cleveland,E 75th St,2,2,41.4518,-81.6357,4,"E 75th St, Cleveland, Ohio",March,3
+398,2017-03-26,Ohio,Cincinnati,4601 Kellogg Ave,2,15,39.0943,-84.4286,17,"4601 Kellogg Ave, Cincinnati, Ohio",March,3
 397,2017-03-27,Florida,Sanford,209 Hays Dr,2,4,28.7912,-81.2819,6,"209 Hays Dr, Sanford, Florida",March,3
 396,2017-03-30,Ohio,Canton,529 Smith Ave NW,4,0,40.804,-81.3991,4,"529 Smith Ave NW, Canton, Ohio",March,3
 395,2017-03-30,Illinois,Chicago,2704 E 75th St,4,0,41.7601,-87.5583,4,"2704 E 75th St, Chicago, Illinois",March,3
@@ -1645,12 +1645,12 @@
 389,2017-04-03,Texas,Lubbock,5401 Ave Q,0,7,33.5453,-101.853,7,"5401 Ave Q, Lubbock, Texas",April,4
 388,2017-04-03,Pennsylvania,Philadelphia,1100 block of W Stiles St,3,1,39.9717,-75.154,4,"1100 block of W Stiles St, Philadelphia, Pennsylvania",April,4
 387,2017-04-06,Louisiana,Lake Charles,2000 block of Tulip St,1,3,30.2112,-93.193,4,"2000 block of Tulip St, Lake Charles, Louisiana",April,4
-386,2017-04-07,Texas,Houston,3829 Mount Pleasant St,5,0,29.6858,-95.3668,5,"3829 Mount Pleasant St, Houston, Texas",April,4
-385,2017-04-07,North Carolina,Hickory,1423 29th Ave Dr NE,3,1,35.7659,-81.3056,4,"1423 29th Ave Dr NE, Hickory, North Carolina",April,4
-384,2017-04-07,Minnesota,Saint Paul,1600 block of English St,4,1,44.9896,-93.0457,5,"1600 block of English St, Saint Paul, Minnesota",April,4
-383,2017-04-07,Illinois,Chicago,5600 block of W Lake St,1,5,41.8877,-87.7658,6,"5600 block of W Lake St, Chicago, Illinois",April,4
-382,2017-04-09,Texas,San Antonio,3100 block of Fidelia Drive,1,3,29.469,-98.5285,4,"3100 block of Fidelia Drive, San Antonio, Texas",April,4
-381,2017-04-09,Indiana,Fort Wayne,9439 Lima Rd,1,3,41.1688,-85.166,4,"9439 Lima Rd, Fort Wayne, Indiana",April,4
+386,2017-04-07,Minnesota,Saint Paul,1600 block of English St,4,1,44.9896,-93.0457,5,"1600 block of English St, Saint Paul, Minnesota",April,4
+385,2017-04-07,Illinois,Chicago,5600 block of W Lake St,1,5,41.8877,-87.7658,6,"5600 block of W Lake St, Chicago, Illinois",April,4
+384,2017-04-07,Texas,Houston,3829 Mount Pleasant St,5,0,29.6858,-95.3668,5,"3829 Mount Pleasant St, Houston, Texas",April,4
+383,2017-04-07,North Carolina,Hickory,1423 29th Ave Dr NE,3,1,35.7659,-81.3056,4,"1423 29th Ave Dr NE, Hickory, North Carolina",April,4
+382,2017-04-09,Indiana,Fort Wayne,9439 Lima Rd,1,3,41.1688,-85.166,4,"9439 Lima Rd, Fort Wayne, Indiana",April,4
+381,2017-04-09,Texas,San Antonio,3100 block of Fidelia Drive,1,3,29.469,-98.5285,4,"3100 block of Fidelia Drive, San Antonio, Texas",April,4
 380,2017-04-10,California,San Bernardino,5378 N H St,3,1,34.1769,-117.301,4,"5378 N H St, San Bernardino, California",April,4
 379,2017-04-13,Georgia,Atlanta,30 Anderson Ave SW,1,3,33.7536,-84.446,4,"30 Anderson Ave SW, Atlanta, Georgia",April,4
 378,2017-04-15,Indiana,Indianapolis,300 block of S Meridian St,0,4,39.7623,-86.1583,4,"300 block of S Meridian St, Indianapolis, Indiana",April,4
@@ -1663,8 +1663,8 @@
 371,2017-04-16,North Carolina,Elizabeth City,611 S Martin St,0,4,36.2918,-76.2209,4,"611 S Martin St, Elizabeth City, North Carolina",April,4
 370,2017-04-16,Illinois,Rockford,500 block of Score St,0,4,42.2334,-89.091,4,"500 block of Score St, Rockford, Illinois",April,4
 369,2017-04-16,Ohio,Columbus,1710 Cleveland Av,0,9,40.0008,-82.9753,9,"1710 Cleveland Av, Columbus, Ohio",April,4
-368,2017-04-20,Kentucky,Louisville,700 block of East Jacob Street,0,4,38.243,-85.7419,4,"700 block of East Jacob Street, Louisville, Kentucky",April,4
-367,2017-04-20,Washington,Seattle,909 1st Ave,1,3,47.604,-122.336,4,"909 1st Ave, Seattle, Washington",April,4
+368,2017-04-20,Washington,Seattle,909 1st Ave,1,3,47.604,-122.336,4,"909 1st Ave, Seattle, Washington",April,4
+367,2017-04-20,Kentucky,Louisville,700 block of East Jacob Street,0,4,38.243,-85.7419,4,"700 block of East Jacob Street, Louisville, Kentucky",April,4
 366,2017-04-21,Florida,Palm Bay,2500 block of Vernon Dr,2,2,28.0583,-80.5947,4,"2500 block of Vernon Dr, Palm Bay, Florida",April,4
 365,2017-04-21,Louisiana,New Orleans,Dryades St,1,5,29.9299,-90.0977,6,"Dryades St, New Orleans, Louisiana",April,4
 364,2017-04-26,Georgia,Commerce,800 Steven B Tanger Blvd,1,3,34.2507,-83.4722,4,"800 Steven B Tanger Blvd, Commerce, Georgia",April,4
@@ -1672,16 +1672,16 @@
 362,2017-04-27,New Jersey,Newark,1100 block of S Orange Ave,1,3,40.7456,-74.2344,4,"1100 block of S Orange Ave, Newark, New Jersey",April,4
 361,2017-04-28,Pennsylvania,Chester,5 E 21st St,0,4,39.8635,-75.367,4,"5 E 21st St, Chester, Pennsylvania",April,4
 360,2017-04-28,Connecticut,Hartford,Franklin Ave and Barker St,0,4,41.7435,-72.6764,4,"Franklin Ave and Barker St, Hartford, Connecticut",April,4
-359,2017-04-29,California,Whittier,10000 block of Carmentia Rd,1,5,33.9442,-118.046,6,"10000 block of Carmentia Rd, Whittier, California",April,4
-358,2017-04-29,California,Sacramento,3800 block of 26th Avenue,0,5,38.529,-121.466,5,"3800 block of 26th Avenue, Sacramento, California",April,4
-357,2017-04-29,California,Compton,2000 Block of N Nestor Ave,0,4,33.9029,-118.249,4,"2000 Block of N Nestor Ave, Compton, California",April,4
-356,2017-04-29,California,Los Angeles (Boyle Heights),Murchison St and Lancaster Ave,1,3,34.0579,-118.197,4,"Murchison St and Lancaster Ave, Los Angeles (Boyle Heights), California",April,4
-355,2017-04-29,Virginia,Virginia Beach,200 block of 18th St,0,4,36.8463,-75.9745,4,"200 block of 18th St, Virginia Beach, Virginia",April,4
-354,2017-04-29,Maryland,Germantown,12800 block of Kitchen House Way,1,3,39.1506,-77.2658,4,"12800 block of Kitchen House Way, Germantown, Maryland",April,4
-353,2017-04-30,Florida,Jacksonville,1200 Ken Knight Dr N,0,5,30.3914,-81.7169,5,"1200 Ken Knight Dr N, Jacksonville, Florida",April,4
-352,2017-04-30,South Carolina,Loris,268 N Sea Green Rd,1,5,34.1016,-78.9782,6,"268 N Sea Green Rd, Loris, South Carolina",April,4
-351,2017-04-30,Kansas,Topeka,4104 SW 28th,4,1,39.0161,-95.728,5,"4104 SW 28th, Topeka, Kansas",April,4
-350,2017-04-30,California,San Diego,9080 Judicial Dr,2,6,32.8716,-117.203,8,"9080 Judicial Dr, San Diego, California",April,4
+359,2017-04-29,Maryland,Germantown,12800 block of Kitchen House Way,1,3,39.1506,-77.2658,4,"12800 block of Kitchen House Way, Germantown, Maryland",April,4
+358,2017-04-29,California,Whittier,10000 block of Carmentia Rd,1,5,33.9442,-118.046,6,"10000 block of Carmentia Rd, Whittier, California",April,4
+357,2017-04-29,California,Sacramento,3800 block of 26th Avenue,0,5,38.529,-121.466,5,"3800 block of 26th Avenue, Sacramento, California",April,4
+356,2017-04-29,California,Compton,2000 Block of N Nestor Ave,0,4,33.9029,-118.249,4,"2000 Block of N Nestor Ave, Compton, California",April,4
+355,2017-04-29,California,Los Angeles (Boyle Heights),Murchison St and Lancaster Ave,1,3,34.0579,-118.197,4,"Murchison St and Lancaster Ave, Los Angeles (Boyle Heights), California",April,4
+354,2017-04-29,Virginia,Virginia Beach,200 block of 18th St,0,4,36.8463,-75.9745,4,"200 block of 18th St, Virginia Beach, Virginia",April,4
+353,2017-04-30,Kansas,Topeka,4104 SW 28th,4,1,39.0161,-95.728,5,"4104 SW 28th, Topeka, Kansas",April,4
+352,2017-04-30,California,San Diego,9080 Judicial Dr,2,6,32.8716,-117.203,8,"9080 Judicial Dr, San Diego, California",April,4
+351,2017-04-30,Florida,Jacksonville,1200 Ken Knight Dr N,0,5,30.3914,-81.7169,5,"1200 Ken Knight Dr N, Jacksonville, Florida",April,4
+350,2017-04-30,South Carolina,Loris,268 N Sea Green Rd,1,5,34.1016,-78.9782,6,"268 N Sea Green Rd, Loris, South Carolina",April,4
 349,2017-05-01,Texas,Dallas,3200 block of Reynolds Ave,2,3,32.7864,-96.7407,5,"3200 block of Reynolds Ave, Dallas, Texas",May,5
 348,2017-05-02,Florida,Jacksonville,1566 West 24th Street,1,3,30.3585,-81.6823,4,"1566 West 24th Street, Jacksonville, Florida",May,5
 347,2017-05-04,Michigan,Flint,600 block of Copeman Boulevard,1,3,43.0286,-83.7113,4,"600 block of Copeman Boulevard, Flint, Michigan",May,5
@@ -1711,9 +1711,9 @@
 323,2017-06-01,Missouri,Saint Louis,Beacon Ave and Lillian Ave,3,1,38.6943,-90.2523,4,"Beacon Ave and Lillian Ave, Saint Louis, Missouri",June,6
 322,2017-06-02,Texas,Laredo,5301 McPherson Rd,2,3,27.5454,-99.4821,5,"5301 McPherson Rd, Laredo, Texas",June,6
 321,2017-06-02,California,Los Angeles,89th St and Broadway,1,3,33.9555,-118.278,4,"89th St and Broadway, Los Angeles, California",June,6
-320,2017-06-03,Missouri,Saint Louis,1600 Block of Union Blvd,2,2,38.6665,-90.2672,4,"1600 Block of Union Blvd, Saint Louis, Missouri",June,6
-319,2017-06-03,Louisiana,New Orleans,6100 block of South Laverne,0,4,30.0205,-90.0201,4,"6100 block of South Laverne, New Orleans, Louisiana",June,6
-318,2017-06-03,Louisiana,New Orleans,3717 Tulane Ave,3,2,29.9673,-90.1016,5,"3717 Tulane Ave, New Orleans, Louisiana",June,6
+320,2017-06-03,Louisiana,New Orleans,6100 block of South Laverne,0,4,30.0205,-90.0201,4,"6100 block of South Laverne, New Orleans, Louisiana",June,6
+319,2017-06-03,Louisiana,New Orleans,3717 Tulane Ave,3,2,29.9673,-90.1016,5,"3717 Tulane Ave, New Orleans, Louisiana",June,6
+318,2017-06-03,Missouri,Saint Louis,1600 Block of Union Blvd,2,2,38.6665,-90.2672,4,"1600 Block of Union Blvd, Saint Louis, Missouri",June,6
 317,2017-06-04,Indiana,Salem,5882 S Becks Mill Road,4,0,38.5157,-86.1703,4,"5882 S Becks Mill Road, Salem, Indiana",June,6
 316,2017-06-05,Florida,Orlando,2427 Forsyth Rd,6,0,28.5799,-81.2934,6,"2427 Forsyth Rd, Orlando, Florida",June,6
 315,2017-06-06,California,Fresno,5267 E Hammond Ave,3,1,36.7582,-119.715,4,"5267 E Hammond Ave, Fresno, California",June,6
@@ -1728,9 +1728,9 @@
 306,2017-06-13,Missouri,Saint Louis (University City),Ferguson Ave and Plymouth Ave,0,4,38.6692,-90.31,4,"Ferguson Ave and Plymouth Ave, Saint Louis (University City), Missouri",June,6
 305,2017-06-13,Maryland,Baltimore,1200 block of Bonaparte Avenue,2,2,39.3154,-76.6,4,"1200 block of Bonaparte Avenue, Baltimore, Maryland",June,6
 304,2017-06-13,Maryland,Baltimore,3300 block of Ayrdale Avenue,0,4,39.3262,-76.6814,4,"3300 block of Ayrdale Avenue, Baltimore, Maryland",June,6
-303,2017-06-14,California,San Francisco,720 San Bruno,4,2,37.7596,-122.405,6,"720 San Bruno, San Francisco, California",June,6
-302,2017-06-14,Ohio,Canton,14th St. NE and Gibbs Ave. NE,0,4,40.8113,-81.3627,4,"14th St. NE and Gibbs Ave. NE, Canton, Ohio",June,6
-301,2017-06-14,Virginia,Alexandria,420 E Monroe Ave,1,5,38.8207,-77.0558,6,"420 E Monroe Ave, Alexandria, Virginia",June,6
+303,2017-06-14,Virginia,Alexandria,420 E Monroe Ave,1,5,38.8207,-77.0558,6,"420 E Monroe Ave, Alexandria, Virginia",June,6
+302,2017-06-14,California,San Francisco,720 San Bruno,4,2,37.7596,-122.405,6,"720 San Bruno, San Francisco, California",June,6
+301,2017-06-14,Ohio,Canton,14th St. NE and Gibbs Ave. NE,0,4,40.8113,-81.3627,4,"14th St. NE and Gibbs Ave. NE, Canton, Ohio",June,6
 300,2017-06-15,New Mexico,La Madera,491 NM 111,5,0,36.384,-106.041,5,"491 NM 111, La Madera, New Mexico",June,6
 299,2017-06-15,Virginia,Richmond,4053 Old Brook Road,1,3,37.5903,-77.4465,4,"4053 Old Brook Road, Richmond, Virginia",June,6
 298,2017-06-17,New York,Brooklyn,East 102nd street,0,4,40.6412,-73.8914,4,"East 102nd street, Brooklyn, New York",June,6
@@ -1742,11 +1742,11 @@
 292,2017-06-18,South Carolina,Myrtle Beach,311 N Ocean Blvd,0,7,33.6859,-78.8858,7,"311 N Ocean Blvd, Myrtle Beach, South Carolina",June,6
 291,2017-06-21,Alabama,Theodore,112000 Block of Thomas Rd,0,4,30.4604,-88.1407,4,"112000 Block of Thomas Rd, Theodore, Alabama",June,6
 290,2017-06-22,Georgia,Atlanta,1100 block of Osborne Street,1,6,33.7044,-84.4239,7,"1100 block of Osborne Street, Atlanta, Georgia",June,6
-289,2017-06-24,New Jersey,Willingboro,Pastoral Lane,0,4,40.0326,-74.8963,4,"Pastoral Lane, Willingboro, New Jersey",June,6
-288,2017-06-24,California,National City,1000 block of East Eighth Street,2,2,32.6787,-117.097,4,"1000 block of East Eighth Street, National City, California",June,6
+289,2017-06-24,North Carolina,Bethel,5011 NC-11 North,0,4,35.7241,-77.3606,4,"5011 NC-11 North, Bethel, North Carolina",June,6
+288,2017-06-24,New York,New York (Manhattan),114th St and Manhattan Ave,0,5,40.8037,-73.9578,5,"114th St and Manhattan Ave, New York (Manhattan), New York",June,6
 287,2017-06-24,Florida,Fort Lauderdale,2335 NW 16th Ct,1,4,26.1468,-80.1721,5,"2335 NW 16th Ct, Fort Lauderdale, Florida",June,6
-286,2017-06-24,North Carolina,Bethel,5011 NC-11 North,0,4,35.7241,-77.3606,4,"5011 NC-11 North, Bethel, North Carolina",June,6
-285,2017-06-24,New York,New York (Manhattan),114th St and Manhattan Ave,0,5,40.8037,-73.9578,5,"114th St and Manhattan Ave, New York (Manhattan), New York",June,6
+286,2017-06-24,California,National City,1000 block of East Eighth Street,2,2,32.6787,-117.097,4,"1000 block of East Eighth Street, National City, California",June,6
+285,2017-06-24,New Jersey,Willingboro,Pastoral Lane,0,4,40.0326,-74.8963,4,"Pastoral Lane, Willingboro, New Jersey",June,6
 284,2017-06-25,Missouri,Saint Louis,5000 block of Thekla Ave,1,3,38.6886,-90.242,4,"5000 block of Thekla Ave, Saint Louis, Missouri",June,6
 283,2017-06-25,District of Columbia,Washington,5900 block of Southern Ave SE,0,4,38.8885,-76.915,4,"5900 block of Southern Ave SE, Washington, District of Columbia",June,6
 282,2017-06-27,Illinois,Chicago,200 block of S Lotus,0,5,41.8783,-87.7618,5,"200 block of S Lotus, Chicago, Illinois",June,6
@@ -1758,8 +1758,8 @@
 276,2017-07-01,North Carolina,Winston Salem (Winston-salem),2800 block of Patria St,0,4,36.0609,-80.2365,4,"2800 block of Patria St, Winston Salem (Winston-salem), North Carolina",July,7
 275,2017-07-01,Arkansas,Little Rock,220 W 6th St,0,25,34.7434,-92.2727,25,"220 W 6th St, Little Rock, Arkansas",July,7
 274,2017-07-01,California,Oakland,3200 Humboldt Ave,0,4,37.7921,-122.207,4,"3200 Humboldt Ave, Oakland, California",July,7
-273,2017-07-02,South Carolina,Greenwood,SC 72 Bypass,0,4,34.1953,-82.1618,4,"SC 72 Bypass, Greenwood, South Carolina",July,7
-272,2017-07-02,New Jersey,Jersey City,Wilkinson Avenue,0,4,40.7063,-74.0804,4,"Wilkinson Avenue, Jersey City, New Jersey",July,7
+273,2017-07-02,New Jersey,Jersey City,Wilkinson Avenue,0,4,40.7063,-74.0804,4,"Wilkinson Avenue, Jersey City, New Jersey",July,7
+272,2017-07-02,South Carolina,Greenwood,SC 72 Bypass,0,4,34.1953,-82.1618,4,"SC 72 Bypass, Greenwood, South Carolina",July,7
 271,2017-07-03,Michigan,Pontiac,50 block of Thorpe St,1,3,42.6371,-83.3116,4,"50 block of Thorpe St, Pontiac, Michigan",July,7
 270,2017-07-03,Alabama,Prattville,112 US 82,3,1,32.4381,-86.4725,4,"112 US 82, Prattville, Alabama",July,7
 269,2017-07-04,Virginia,Hampton,500 block of Patterson Ave,1,4,37.0325,-76.3606,5,"500 block of Patterson Ave, Hampton, Virginia",July,7
@@ -1771,8 +1771,8 @@
 263,2017-07-05,Illinois,Chicago (Roseland),11000 block of S Eberhart,2,2,41.6945,-87.611,4,"11000 block of S Eberhart, Chicago (Roseland), Illinois",July,7
 262,2017-07-06,Mississippi,Meridian,Eighth Ave,0,4,32.3817,-88.6865,4,"Eighth Ave, Meridian, Mississippi",July,7
 261,2017-07-07,Pennsylvania,New Hope,6000 block of Lower York Rd,4,0,40.3496,-75.0176,4,"6000 block of Lower York Rd, New Hope, Pennsylvania",July,7
-260,2017-07-08,Illinois,Alton,700 block of Oakwood,0,4,38.9178,-90.1739,4,"700 block of Oakwood, Alton, Illinois",July,7
-259,2017-07-08,Ohio,Cincinnati,9917 Capstan Dr,1,8,39.2542,-84.5966,9,"9917 Capstan Dr, Cincinnati, Ohio",July,7
+260,2017-07-08,Ohio,Cincinnati,9917 Capstan Dr,1,8,39.2542,-84.5966,9,"9917 Capstan Dr, Cincinnati, Ohio",July,7
+259,2017-07-08,Illinois,Alton,700 block of Oakwood,0,4,38.9178,-90.1739,4,"700 block of Oakwood, Alton, Illinois",July,7
 258,2017-07-09,Virginia,Lawrenceville,500 block Sturgeon Rd,0,7,36.8119,-77.7709,7,"500 block Sturgeon Rd, Lawrenceville, Virginia",July,7
 257,2017-07-12,California,Desert Hot Springs,Cactus Dr and 4th St,0,4,33.9651,-116.506,4,"Cactus Dr and 4th St, Desert Hot Springs, California",July,7
 256,2017-07-12,Alabama,Gardendale,4100 block of Willow Bend Drive,4,0,33.6858,-86.8068,4,"4100 block of Willow Bend Drive, Gardendale, Alabama",July,7
@@ -1806,9 +1806,9 @@
 228,2017-08-03,District of Columbia,Washington,3426 18th St NE,1,3,38.9324,-76.9796,4,"3426 18th St NE, Washington, District of Columbia",August,8
 227,2017-08-03,Florida,Fort Walton Beach,11 SE Eglin Pkwy,0,4,30.4121,-86.6042,4,"11 SE Eglin Pkwy, Fort Walton Beach, Florida",August,8
 226,2017-08-04,Montana,Lodge Grass,200 block of North Helen Street,3,2,45.3162,-107.365,5,"200 block of North Helen Street, Lodge Grass, Montana",August,8
-225,2017-08-05,New Jersey,Lakewood,900 block of Brook Road,0,4,40.1021,-74.1892,4,"900 block of Brook Road, Lakewood, New Jersey",August,8
+225,2017-08-05,Florida,Tallahassee,1939 W Tennessee St,1,3,30.4482,-84.3158,4,"1939 W Tennessee St, Tallahassee, Florida",August,8
 224,2017-08-05,South Carolina,Allendale,300 block of Ellis St,1,3,33.0022,-81.296,4,"300 block of Ellis St, Allendale, South Carolina",August,8
-223,2017-08-05,Florida,Tallahassee,1939 W Tennessee St,1,3,30.4482,-84.3158,4,"1939 W Tennessee St, Tallahassee, Florida",August,8
+223,2017-08-05,New Jersey,Lakewood,900 block of Brook Road,0,4,40.1021,-74.1892,4,"900 block of Brook Road, Lakewood, New Jersey",August,8
 222,2017-08-06,California,Oakland,1000 block of 106th Avenue,0,7,37.7358,-122.172,7,"1000 block of 106th Avenue, Oakland, California",August,8
 221,2017-08-06,New York,Bronx,Unionport Rd,0,4,40.8413,-73.8634,4,"Unionport Rd, Bronx, New York",August,8
 220,2017-08-06,New York,Bronx,Wickham Ave,0,6,40.8942,-73.8489,6,"Wickham Ave, Bronx, New York",August,8
@@ -1822,8 +1822,8 @@
 212,2017-08-14,California,North Hollywood,Morrison St and Klump Ave,2,2,34.1608,-118.376,4,"Morrison St and Klump Ave, North Hollywood, California",August,8
 211,2017-08-16,Missouri,Saint Louis,5800 block of Wabada Ave,1,3,38.6751,-90.2775,4,"5800 block of Wabada Ave, Saint Louis, Missouri",August,8
 210,2017-08-16,New York,Wyandanch,Merritt Ave and 15th St,0,4,40.7544,-73.3613,4,"Merritt Ave and 15th St, Wyandanch, New York",August,8
-209,2017-08-19,Ohio,Cleveland,11143 Superior Ave,1,4,41.5228,-81.6076,5,"11143 Superior Ave, Cleveland, Ohio",August,8
-208,2017-08-19,Texas,San Antonio,500 block of Ferris Ave,0,4,29.4143,-98.4269,4,"500 block of Ferris Ave, San Antonio, Texas",August,8
+209,2017-08-19,Texas,San Antonio,500 block of Ferris Ave,0,4,29.4143,-98.4269,4,"500 block of Ferris Ave, San Antonio, Texas",August,8
+208,2017-08-19,Ohio,Cleveland,11143 Superior Ave,1,4,41.5228,-81.6076,5,"11143 Superior Ave, Cleveland, Ohio",August,8
 207,2017-08-20,Illinois,Chicago,11901 S Loomis St,2,5,41.6776,-87.6564,7,"11901 S Loomis St, Chicago, Illinois",August,8
 206,2017-08-20,New York,Brooklyn,100th St and Ave M,0,4,40.6386,-73.891,4,"100th St and Ave M, Brooklyn, New York",August,8
 205,2017-08-21,New Jersey,Newark,700 block of S 19th St,1,3,40.7324,-74.2122,4,"700 block of S 19th St, Newark, New Jersey",August,8
@@ -1839,26 +1839,26 @@
 195,2017-08-28,New Mexico,Clovis,701 N Main St,2,4,34.4047,-103.205,6,"701 N Main St, Clovis, New Mexico",August,8
 194,2017-08-30,California,Sacramento,2600 Auburn Blvd,2,2,38.6298,-121.4,4,"2600 Auburn Blvd, Sacramento, California",August,8
 193,2017-08-31,Illinois,Chicago (Englewood),6500 block of S Bell,2,10,41.7755,-87.6801,12,"6500 block of S Bell, Chicago (Englewood), Illinois",August,8
-192,2017-09-02,Kentucky,Louisville,8008 Watterson Trail,0,4,38.1806,-85.6219,4,"8008 Watterson Trail, Louisville, Kentucky",September,9
-191,2017-09-02,Illinois,Chicago,8300 block of S Hermitage,1,3,41.7428,-87.6672,4,"8300 block of S Hermitage, Chicago, Illinois",September,9
+192,2017-09-02,Illinois,Chicago,8300 block of S Hermitage,1,3,41.7428,-87.6672,4,"8300 block of S Hermitage, Chicago, Illinois",September,9
+191,2017-09-02,Kentucky,Louisville,8008 Watterson Trail,0,4,38.1806,-85.6219,4,"8008 Watterson Trail, Louisville, Kentucky",September,9
 190,2017-09-03,California,Inglewood,10100 block of S Firmona Ave,2,3,33.9444,-118.357,5,"10100 block of S Firmona Ave, Inglewood, California",September,9
 189,2017-09-04,Illinois,Bellwood,1000 block of Bellwood Ave,0,4,41.8742,-87.8784,4,"1000 block of Bellwood Ave, Bellwood, Illinois",September,9
 188,2017-09-06,Illinois,Chicago,2700 block of Madison,0,4,41.8814,-87.6941,4,"2700 block of Madison, Chicago, Illinois",September,9
 187,2017-09-09,Alabama,Selma,Kings Bend Road,0,4,32.3945,-87.0287,4,"Kings Bend Road, Selma, Alabama",September,9
 186,2017-09-10,Texas,Plano,1712 West Spring Creek Parkway,9,1,33.056,-96.7261,10,"1712 West Spring Creek Parkway, Plano, Texas",September,9
 185,2017-09-10,Louisiana,New Orleans,2101 N Claiborne Ave,1,3,29.9736,-90.0584,4,"2101 N Claiborne Ave, New Orleans, Louisiana",September,9
-184,2017-09-13,Washington,Rockford,14626 S Jackson Rd,1,3,47.5164,-117.193,4,"14626 S Jackson Rd, Rockford, Washington",September,9
-183,2017-09-13,Pennsylvania,York,400 block of S Duke St,0,4,39.9574,-76.7231,4,"400 block of S Duke St, York, Pennsylvania",September,9
-182,2017-09-13,Pennsylvania,Philadelphia,3100 block of N 2nd St,0,4,39.9973,-75.1332,4,"3100 block of N 2nd St, Philadelphia, Pennsylvania",September,9
-181,2017-09-13,Tennessee,Memphis,1000 block of Morehead St,1,5,35.168,-90.0251,6,"1000 block of Morehead St, Memphis, Tennessee",September,9
+184,2017-09-13,Tennessee,Memphis,1000 block of Morehead St,1,5,35.168,-90.0251,6,"1000 block of Morehead St, Memphis, Tennessee",September,9
+183,2017-09-13,Pennsylvania,Philadelphia,3100 block of N 2nd St,0,4,39.9973,-75.1332,4,"3100 block of N 2nd St, Philadelphia, Pennsylvania",September,9
+182,2017-09-13,Pennsylvania,York,400 block of S Duke St,0,4,39.9574,-76.7231,4,"400 block of S Duke St, York, Pennsylvania",September,9
+181,2017-09-13,Washington,Rockford,14626 S Jackson Rd,1,3,47.5164,-117.193,4,"14626 S Jackson Rd, Rockford, Washington",September,9
 180,2017-09-16,South Carolina,Columbia,920 Lady Street,0,8,34.0012,-81.0383,8,"920 Lady Street, Columbia, South Carolina",September,9
 179,2017-09-17,Virginia,Petersburg,300 Mistletoe St,1,4,37.2166,-77.4053,5,"300 Mistletoe St, Petersburg, Virginia",September,9
 178,2017-09-17,Michigan,Detroit,5000 block of Stanton Street,1,3,42.3498,-83.0905,4,"5000 block of Stanton Street, Detroit, Michigan",September,9
 177,2017-09-20,Indiana,Gary,4300 block of 23rd Ct,0,5,41.5755,-87.3906,5,"4300 block of 23rd Ct, Gary, Indiana",September,9
-176,2017-09-23,Connecticut,Hartford,1164 Albany Ave,2,2,41.782,-72.6954,4,"1164 Albany Ave, Hartford, Connecticut",September,9
-175,2017-09-23,Connecticut,New Haven,638 Elm St,0,4,41.3149,-72.9426,4,"638 Elm St, New Haven, Connecticut",September,9
-174,2017-09-23,California,Bakersfield,818 Real Rd,1,4,35.3658,-119.042,5,"818 Real Rd, Bakersfield, California",September,9
-173,2017-09-23,Illinois,Danville,Seminary St and Jackson St,0,5,40.1303,-87.6273,5,"Seminary St and Jackson St, Danville, Illinois",September,9
+176,2017-09-23,Illinois,Danville,Seminary St and Jackson St,0,5,40.1303,-87.6273,5,"Seminary St and Jackson St, Danville, Illinois",September,9
+175,2017-09-23,California,Bakersfield,818 Real Rd,1,4,35.3658,-119.042,5,"818 Real Rd, Bakersfield, California",September,9
+174,2017-09-23,Connecticut,Hartford,1164 Albany Ave,2,2,41.782,-72.6954,4,"1164 Albany Ave, Hartford, Connecticut",September,9
+173,2017-09-23,Connecticut,New Haven,638 Elm St,0,4,41.3149,-72.9426,4,"638 Elm St, New Haven, Connecticut",September,9
 172,2017-09-24,Maryland,Baltimore,500 block of E. Patapsco Avenue,0,4,39.2367,-76.6037,4,"500 block of E. Patapsco Avenue, Baltimore, Maryland",September,9
 171,2017-09-24,Tennessee,Antioch,3890 Pin Hook Rd,1,8,36.0465,-86.583,9,"3890 Pin Hook Rd, Antioch, Tennessee",September,9
 170,2017-09-24,New York,Syracuse,1226 E Fayette St,0,4,43.0483,-76.1317,4,"1226 E Fayette St, Syracuse, New York",September,9
@@ -1887,10 +1887,10 @@
 147,2017-10-17,New York,Brooklyn,181 Martense St,0,4,40.6516,-73.9527,4,"181 Martense St, Brooklyn, New York",October,10
 146,2017-10-18,Maryland,Edgewood,2111 Emmorton Park Rd,3,3,39.452,-76.31,6,"2111 Emmorton Park Rd, Edgewood, Maryland",October,10
 145,2017-10-19,Colorado,Fort Collins,720 City Park Ave,3,1,40.5773,-105.099,4,"720 City Park Ave, Fort Collins, Colorado",October,10
-144,2017-10-21,Tennessee,Nashville,1277 12th Ave S,0,4,36.1408,-86.7875,4,"1277 12th Ave S, Nashville, Tennessee",October,10
-143,2017-10-21,Florida,Jacksonville,164 E Eubanks St,0,4,30.4847,-81.6222,4,"164 E Eubanks St, Jacksonville, Florida",October,10
-142,2017-10-21,Florida,Tampa,400 Block of E Nordica St,0,4,27.9782,-82.4566,4,"400 Block of E Nordica St, Tampa, Florida",October,10
-141,2017-10-21,Pennsylvania,Chester,1200 block of W Carlas Ln,0,4,39.8471,-75.3826,4,"1200 block of W Carlas Ln, Chester, Pennsylvania",October,10
+144,2017-10-21,Pennsylvania,Chester,1200 block of W Carlas Ln,0,4,39.8471,-75.3826,4,"1200 block of W Carlas Ln, Chester, Pennsylvania",October,10
+143,2017-10-21,Florida,Tampa,400 Block of E Nordica St,0,4,27.9782,-82.4566,4,"400 Block of E Nordica St, Tampa, Florida",October,10
+142,2017-10-21,Tennessee,Nashville,1277 12th Ave S,0,4,36.1408,-86.7875,4,"1277 12th Ave S, Nashville, Tennessee",October,10
+141,2017-10-21,Florida,Jacksonville,164 E Eubanks St,0,4,30.4847,-81.6222,4,"164 E Eubanks St, Jacksonville, Florida",October,10
 140,2017-10-22,Connecticut,Hartford,Wethersfield Avenue and Elliott Street,0,4,41.7464,-72.6733,4,"Wethersfield Avenue and Elliott Street, Hartford, Connecticut",October,10
 139,2017-10-22,Alabama,Lanett,1606 19th St Sw,2,7,32.8489,-85.2056,9,"1606 19th St Sw, Lanett, Alabama",October,10
 138,2017-10-27,California,San Francisco,1100 block of Fillmore,0,4,37.7799,-122.432,4,"1100 block of Fillmore, San Francisco, California",October,10
@@ -1899,14 +1899,14 @@
 135,2017-10-28,Virginia,Petersburg,N Sycamore St and Franklin,1,3,37.2285,-77.4036,4,"N Sycamore St and Franklin, Petersburg, Virginia",October,10
 134,2017-10-29,Texas,Austin,5500 block of Ave F,1,3,30.3201,-97.7199,4,"5500 block of Ave F, Austin, Texas",October,10
 133,2017-10-31,Indiana,Hammond,500 block of Pointe Dr,1,3,41.6091,-87.5161,4,"500 block of Pointe Dr, Hammond, Indiana",October,10
-132,2017-11-03,Minnesota,Minneapolis,10th Ave S and E 24th St,0,4,44.9591,-93.26,4,"10th Ave S and E 24th St, Minneapolis, Minnesota",November,11
-131,2017-11-03,New York,Buffalo,147 Roosevelt Ave,0,4,42.9336,-78.808,4,"147 Roosevelt Ave, Buffalo, New York",November,11
-130,2017-11-03,California,Gardena,E 163rd St and S Main St,0,4,33.8839,-118.276,4,"E 163rd St and S Main St, Gardena, California",November,11
+132,2017-11-03,California,Gardena,E 163rd St and S Main St,0,4,33.8839,-118.276,4,"E 163rd St and S Main St, Gardena, California",November,11
+131,2017-11-03,Minnesota,Minneapolis,10th Ave S and E 24th St,0,4,44.9591,-93.26,4,"10th Ave S and E 24th St, Minneapolis, Minnesota",November,11
+130,2017-11-03,New York,Buffalo,147 Roosevelt Ave,0,4,42.9336,-78.808,4,"147 Roosevelt Ave, Buffalo, New York",November,11
 129,2017-11-03,Louisiana,Lacombe,27600 block of Mirmar Street,1,4,30.3093,-89.9429,5,"27600 block of Mirmar Street, Lacombe, Louisiana",November,11
-128,2017-11-04,Texas,Austin,N Lamar Blvd and Masterson Pass,0,4,30.3712,-97.6924,4,"N Lamar Blvd and Masterson Pass, Austin, Texas",November,11
-127,2017-11-04,California,Santa Monica,1515 Ocean Avenue,1,3,34.0125,-118.496,4,"1515 Ocean Avenue, Santa Monica, California",November,11
-126,2017-11-04,Ohio,Youngstown,2810 Market St,0,4,41.071,-80.6579,4,"2810 Market St, Youngstown, Ohio",November,11
-125,2017-11-04,California,Bakersfield,1001 S Union Ave,1,3,35.345,-119.004,4,"1001 S Union Ave, Bakersfield, California",November,11
+128,2017-11-04,California,Bakersfield,1001 S Union Ave,1,3,35.345,-119.004,4,"1001 S Union Ave, Bakersfield, California",November,11
+127,2017-11-04,Ohio,Youngstown,2810 Market St,0,4,41.071,-80.6579,4,"2810 Market St, Youngstown, Ohio",November,11
+126,2017-11-04,Texas,Austin,N Lamar Blvd and Masterson Pass,0,4,30.3712,-97.6924,4,"N Lamar Blvd and Masterson Pass, Austin, Texas",November,11
+125,2017-11-04,California,Santa Monica,1515 Ocean Avenue,1,3,34.0125,-118.496,4,"1515 Ocean Avenue, Santa Monica, California",November,11
 124,2017-11-05,Texas,Sutherland Springs,216 4th St,27,20,29.2733,-98.0564,47,"216 4th St, Sutherland Springs, Texas",November,11
 123,2017-11-09,Texas,Grand Prairie,300 block of Dawson Cir,0,4,32.73,-97.0059,4,"300 block of Dawson Cir, Grand Prairie, Texas",November,11
 122,2017-11-09,Utah,Mapleton,1502 N. Highway 89,4,0,40.1165,-111.598,4,"1502 N. Highway 89, Mapleton, Utah",November,11
@@ -1920,8 +1920,8 @@
 114,2017-11-12,California,Fresno,S Calvin Ave,0,5,36.6823,-119.735,5,"S Calvin Ave, Fresno, California",November,11
 113,2017-11-12,North Carolina,La Grange,308 W Queen St,3,1,35.3133,-77.7927,4,"308 W Queen St, La Grange, North Carolina",November,11
 112,2017-11-12,Georgia,Atlanta,50 Lower Alabama St,2,2,33.7537,-84.3905,4,"50 Lower Alabama St, Atlanta, Georgia",November,11
-111,2017-11-14,California,Richmond,900 Block of View Dr,2,2,37.9779,-122.314,4,"900 Block of View Dr, Richmond, California",November,11
-110,2017-11-14,California,Corning,17357 Stagecoach Rd,6,12,40.0187,-122.393,18,"17357 Stagecoach Rd, Corning, California",November,11
+111,2017-11-14,California,Corning,17357 Stagecoach Rd,6,12,40.0187,-122.393,18,"17357 Stagecoach Rd, Corning, California",November,11
+110,2017-11-14,California,Richmond,900 Block of View Dr,2,2,37.9779,-122.314,4,"900 Block of View Dr, Richmond, California",November,11
 109,2017-11-16,Georgia,Columbus,1400 block of 15th Street,0,7,32.4742,-84.9713,7,"1400 block of 15th Street, Columbus, Georgia",November,11
 108,2017-11-17,Louisiana,New Iberia,900 Block of Mississippi St,0,4,30.0113,-91.8413,4,"900 Block of Mississippi St, New Iberia, Louisiana",November,11
 107,2017-11-18,Minnesota,Minneapolis,3600 block of Emerson Avenue North,0,4,45.0205,-93.294,4,"3600 block of Emerson Avenue North, Minneapolis, Minnesota",November,11
@@ -1935,8 +1935,8 @@
 99,2017-12-03,Tennessee,Memphis,656 Marshall Ave,1,3,35.1402,-90.039,4,"656 Marshall Ave, Memphis, Tennessee",December,12
 98,2017-12-04,Pennsylvania,Pittsburgh,7200 block of Everton St,2,2,40.4632,-79.8935,4,"7200 block of Everton St, Pittsburgh, Pennsylvania",December,12
 97,2017-12-06,Illinois,Chicago,4620 N Broadway,0,4,41.9663,-87.6581,4,"4620 N Broadway, Chicago, Illinois",December,12
-96,2017-12-09,Massachusetts,Boston,Proctor St,0,4,42.327,-71.0691,4,"Proctor St, Boston, Massachusetts",December,12
-95,2017-12-09,North Carolina,Charlotte,2205 Kilborne Dr,3,1,35.2256,-80.7719,4,"2205 Kilborne Dr, Charlotte, North Carolina",December,12
+96,2017-12-09,North Carolina,Charlotte,2205 Kilborne Dr,3,1,35.2256,-80.7719,4,"2205 Kilborne Dr, Charlotte, North Carolina",December,12
+95,2017-12-09,Massachusetts,Boston,Proctor St,0,4,42.327,-71.0691,4,"Proctor St, Boston, Massachusetts",December,12
 94,2017-12-10,California,Stockton,4900 Block of Greensboro Way,2,3,38.0001,-121.295,5,"4900 Block of Greensboro Way, Stockton, California",December,12
 93,2017-12-12,Texas,Garland,1301 Rivercrest Ln,0,4,32.9244,-96.606,4,"1301 Rivercrest Ln, Garland, Texas",December,12
 92,2017-12-12,Kentucky,Louisville,17th and Gallagher Streets,0,4,38.2389,-85.7836,4,"17th and Gallagher Streets, Louisville, Kentucky",December,12
@@ -1965,9 +1965,9 @@
 69,2018-01-04,Illinois,Maywood,500 W Lake St,1,3,41.8896,-87.8395,4,"500 W Lake St, Maywood, Illinois",January,1
 68,2018-01-05,Mississippi,Hattiesburg,6168 US 49,0,6,31.3269,-89.3285,6,"6168 US 49, Hattiesburg, Mississippi",January,1
 67,2018-01-05,California,Santa Clarita,28800 block of Startree Ln,4,0,34.4738,-118.533,4,"28800 block of Startree Ln, Santa Clarita, California",January,1
-66,2018-01-07,Florida,Plantation,5225 W Broward Blvd,0,4,26.1209,-80.2188,4,"5225 W Broward Blvd, Plantation, Florida",January,1
+66,2018-01-07,Alabama,Union Springs,U.S. Highway 29,1,5,32.1443,-85.7134,6,"U.S. Highway 29, Union Springs, Alabama",January,1
 65,2018-01-07,California,Bella Vista,11935 Bella Vista Ct,4,0,40.6349,-122.231,4,"11935 Bella Vista Ct, Bella Vista, California",January,1
-64,2018-01-07,Alabama,Union Springs,U.S. Highway 29,1,5,32.1443,-85.7134,6,"U.S. Highway 29, Union Springs, Alabama",January,1
+64,2018-01-07,Florida,Plantation,5225 W Broward Blvd,0,4,26.1209,-80.2188,4,"5225 W Broward Blvd, Plantation, Florida",January,1
 63,2018-01-08,Texas,Galveston,5222 Seawall Blvd,4,0,29.2712,-94.8192,4,"5222 Seawall Blvd, Galveston, Texas",January,1
 62,2018-01-11,Missouri,Saint Robert (St Robert),St Robert Outer Road and Houston Road,2,2,37.8319,-92.1035,4,"St Robert Outer Road and Houston Road, Saint Robert (St Robert), Missouri",January,1
 61,2018-01-12,North Carolina,Charlotte,11000 Block of Kingston Place Dr,0,5,35.0549,-80.8653,5,"11000 Block of Kingston Place Dr, Charlotte, North Carolina",January,1
