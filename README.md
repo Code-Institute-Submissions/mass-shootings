@@ -6,7 +6,7 @@ The application was developed using Python 3 and Dash, with dynamic charts gener
 The user can view the shooting incidents in the interactive map, or in graphs displaying incidents by day, by month, or by state.
 
 
-![Responsive Mockup](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/responsive.png)
+![Responsive Mockup](https://alexandrearantes1.github.io/mass-shootings/assets/images/responsive.png)
 
 ## Project Goals
 
@@ -32,32 +32,32 @@ The Mass Shooting Tracker is divided into 3 sections:
 - __The Header__ 
   - The Header contains a title and the Navbar with the links for each tab of the dashboard. 
  
-![Header](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/header.png)
+![Header](https://alexandrearantes1.github.io/mass-shootings/assets/images/header.png)
 
 - __Locations Tab__
   - The locations tab contains an interactive map of the locations of each mass shooting incident. 
     - The user can hover over each dot to display more information about the incident such as location name, number of fatal victims and number of total victims.
 
-![Locations](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/locations.png)
+![Locations](https://alexandrearantes1.github.io/mass-shootings/assets/images/locations.png)
 
 
 - __By Day Tab__
   - This tab displays a scatter plot of the number of the shootings incidents vs day.
   - Most of the datapoints are at the base of the plot (as in 1 shooting per day), however, in some cases we can see as much as 7 mass shootings in a single day.
 
-![By Day](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/day.png)
+![By Day](https://alexandrearantes1.github.io/mass-shootings/assets/images/day.png)
 
 - __By Month Tab__
   - This tab displays a bar plot of shootings by month of occurrence.
   - From this plot we can see that June, July and August are the months with highest number of incidents. This is supporting evidence to a theory that hot weather is linked to increase in violent behaviour.
 
-![By Month](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/month.png)
+![By Month](https://alexandrearantes1.github.io/mass-shootings/assets/images/month.png)
 
 - __By State Tab__
   - This tab displays a horiozontal bar plot of shootings divided by state.
   - As it would be expected, the number of mass shooting incidents are strongly correlated with the state population.
 
-![By State](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/state.png)
+![By State](https://alexandrearantes1.github.io/mass-shootings/assets/images/state.png)
 
 - __List Tab__
   - This tab is divided into 2 sections:
@@ -71,19 +71,19 @@ The Mass Shooting Tracker is divided into 3 sections:
         - The address is used to fetch latitude and longitude using Nominatim tool from Geopy library in order to plot the incident on the map.
         - Number of injured and killed must be non-negative integers.
 
-    ![Form](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/form.png)
+    ![Form](https://alexandrearantes1.github.io/mass-shootings/assets/images/form.png)
 
     __The List__
     - The list is sorted in descending order by date, meaning the first item on the list is the most recent incident. 
     - Each row contains a button to delete the row, if necessary. 
 
-    ![Form](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/list.png)
+    ![Form](https://alexandrearantes1.github.io/mass-shootings/assets/images/list.png)
 
 
 - __The Footer__
   - The footer only contains a link to the dash / plotly website.
 
-![Form](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/footer.png)
+![Form](https://alexandrearantes1.github.io/mass-shootings/assets/images/footer.png)
 
 
 ### Features Left to Implement
@@ -192,19 +192,19 @@ Actual: the app behaves as expected. There are no warnings or erros displayed in
 
 - Python code validation was performed by [CI Python Linter](https://pep8ci.herokuapp.com/#)
 
- ![Python Validation](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/python_validation.png)
+ ![Python Validation](https://alexandrearantes1.github.io/mass-shootings/assets/images/python_validation.png)
 
 
 - HTML
   - No errors found when passing through the official [W3C Validator](https://validator.w3.org/).
   - One warning was issued for the "inputmode" attribute which is not supported by all browsers. This attribute was included to force mobile devices to display the numeric keypad when the Value text field is selected.
- ![HTML Validation](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/html_validation.png)
+ ![HTML Validation](https://alexandrearantes1.github.io/mass-shootings/assets/images/html_validation.png)
 
 - CSS
   - bootstrap.min.css: 16 parse errors were found when passing through [Jigsaw Validator](https://jigsaw.w3.org/). These errors were all flagged at the bootstrap.min.css. It was not possible to establish the cause of these errors in time. 
 
   - style.css:
-    ![Jigsaw style.css](https://mass-shootings-us.herokuapp.com/mass-shootings/assets/images/css_validation.png)
+    ![Jigsaw style.css](https://alexandrearantes1.github.io/mass-shootings/assets/images/css_validation.png)
 
 
 ### Bugs Fixed
